@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4afdff95-d379-4871-9640-b99bfdb6dc48" name="Changes" comment="initial commit" />
+    <list default="true" id="4afdff95-d379-4871-9640-b99bfdb6dc48" name="Changes" comment="gh pages">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -141,7 +144,7 @@
       <option name="presentableId" value="Default" />
       <updated>1663956807869</updated>
       <workItem from="1663956810767" duration="1951000" />
-      <workItem from="1663994023711" duration="2327000" />
+      <workItem from="1663994023711" duration="2793000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1664013348648</created>
@@ -171,7 +174,21 @@
       <option name="project" value="LOCAL" />
       <updated>1664013772108</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="gh pages">
+      <created>1664013962619</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1664013962619</updated>
+    </task>
+    <task id="LOCAL-00006" summary="gh pages">
+      <created>1664014217576</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1664014217576</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +207,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="gh pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="gh pages" />
   </component>
 </project>
