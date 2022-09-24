@@ -1,4 +1,4 @@
-import { createRef, useEffect } from "react";
+import React, { createRef, useEffect } from "react";
 
 export default function Comment() {
   const containerRef = createRef<HTMLDivElement>();
