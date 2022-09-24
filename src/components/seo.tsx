@@ -6,7 +6,7 @@
  */
 
 import * as React from "react"
-import PropTypes from "prop-types"
+import * as PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 const Seo = ({ description, lang, title, children }) => {
