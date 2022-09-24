@@ -3,7 +3,7 @@
   "private": true,
   "description": "A starter for a blog powered by Gatsby and Markdown",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "김승현 <sunrivs@gmail.com>",
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
@@ -30,7 +30,7 @@
   "devDependencies": {
     "prettier": "^2.7.1"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://github.com/heyask/heyask.github.io#readme",
   "keywords": [
     "gatsby"
   ],
