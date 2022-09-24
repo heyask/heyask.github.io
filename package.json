@@ -28,6 +28,9 @@
     "typeface-montserrat": "0.0.75"
   },
   "devDependencies": {
+    "@types/node": "^18.7.19",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
     "prettier": "^2.7.1"
   },
   "homepage": "https://github.com/heyask/heyask.github.io#readme",

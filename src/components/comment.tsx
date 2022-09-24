@@ -1,10 +1,10 @@
-import React, { createRef, useEffect } from "react"
+import { createRef, useEffect } from "react";
 
 export default function Comment() {
-  const containerRef = createRef()
+  const containerRef = createRef<HTMLDivElement>();
 
   useEffect(() => {
-    const utterances = document.createElement("script")
+    const utterances = document.createElement("script");
     const attributes = {
       src: "https://utteranc.es/client.js",
       repo: "heyask/heyask.github.io",
@@ -12,13 +12,13 @@ export default function Comment() {
       label: "comment",
       theme: "github-light",
       crossOrigin: "anonymous",
-      async: "true",
-    }
+      async: "true"
+    };
     Object.entries(attributes).forEach(([key, value]) => {
-      utterances.setAttribute(key, value)
-    })
-    containerRef.current.appendChild(utterances)
-  }, [])
+      utterances.setAttribute(key, value);
+    });
+    containerRef.current.appendChild(utterances);
+  }, []);
 
-  return <div id="comment" ref={containerRef} />
+  return <div id="comment" ref={containerRef} />;
 }
