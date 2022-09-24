@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `SunRiv`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `김승현`,
+      summary: `그릿을 해빗으로`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: `기술블로그`,
+    siteUrl: `https://heyask.github.io/`,
     social: {
-      twitter: `kylemathews`,
+      github: `heyask`,
     },
   },
   plugins: [
