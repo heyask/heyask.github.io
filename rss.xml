@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[기술블로그]]></description><link>https://heyask.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 25 Sep 2022 20:46:12 GMT</lastBuildDate><item><title><![CDATA[엣지케이스(Edge Case), 코너케이스(Corner Case)]]></title><description><![CDATA[엣지케이스(Edge Case), 경계 케이스(Boundary Case…]]></description><link>https://heyask.github.io/2022-09-17-EdgeCase-CornerCase/</link><guid isPermaLink="false">https://heyask.github.io/2022-09-17-EdgeCase-CornerCase/</guid><pubDate>Sat, 17 Sep 2022 04:31:12 GMT</pubDate><content:encoded>&lt;h1&gt;엣지케이스(Edge Case), 경계 케이스(Boundary Case)&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[기술블로그]]></description><link>https://heyask.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 25 Sep 2022 20:59:18 GMT</lastBuildDate><item><title><![CDATA[엣지케이스(Edge Case), 코너케이스(Corner Case)]]></title><description><![CDATA[엣지케이스(Edge Case), 경계 케이스(Boundary Case…]]></description><link>https://heyask.github.io/2022-09-17-EdgeCase-CornerCase/</link><guid isPermaLink="false">https://heyask.github.io/2022-09-17-EdgeCase-CornerCase/</guid><pubDate>Sat, 17 Sep 2022 04:31:12 GMT</pubDate><content:encoded>&lt;h1&gt;엣지케이스(Edge Case), 경계 케이스(Boundary Case)&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;엣지 케이스는 극단적인 작동 매개변수에서만 발생하는 문제 또는 상황입니다. 예를 들어, 스테레오 스피커는 다른 극단적인 설정이나 조건이 없는 경우에도 최대 볼륨으로 재생할 때 오디오를 눈에 띄게 왜곡할 수 있습니다. 극단적인 경우는 예상할 수도 있고 예상하지 못할 수도 있습니다. — Wiki&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -15,15 +15,42 @@
 &lt;li&gt;같은 값이 들어가는 케이스&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h1&gt;코너 케이스(Corner Case)&lt;/h1&gt;
-&lt;p&gt;여러 가지 변수와 환경의 복합적인 상호작용으로 발생하는 문제다. 날씨가 너무 습해 스피커에 문제가 생기는 등의 경우이다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[안드로이드 스튜디오 무선 디버깅(WiFi) 하기]]></title><description><![CDATA[안드로이드 스튜디오에서 기기와 케이블을 연결하지 않고 디버깅을 할 수 있는 방법이 있습니다. adb connect를 사용하는 방법입니다. ![a][./assets-1.png] 먼저, 무선 디버깅을 위해 최초 한번은 기기를 usb…]]></description><link>https://heyask.github.io/2020-06-01-Android-Studio-WiFi-Debugging/</link><guid isPermaLink="false">https://heyask.github.io/2020-06-01-Android-Studio-WiFi-Debugging/</guid><pubDate>Mon, 01 Jun 2020 01:37:33 GMT</pubDate><content:encoded>&lt;p&gt;안드로이드 스튜디오에서 기기와 케이블을 연결하지 않고 디버깅을 할 수 있는 방법이 있습니다. &lt;strong&gt;adb connect&lt;/strong&gt;를 사용하는 방법입니다.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;![a][./assets-1.png]&lt;/p&gt;
+&lt;p&gt;여러 가지 변수와 환경의 복합적인 상호작용으로 발생하는 문제다. 날씨가 너무 습해 스피커에 문제가 생기는 등의 경우이다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[안드로이드 스튜디오 무선 디버깅(WiFi) 하기]]></title><description><![CDATA[안드로이드 스튜디오에서 기기와 케이블을 연결하지 않고 디버깅을 할 수 있는 방법이 있습니다. adb connect를 사용하는 방법입니다.  먼저, 무선 디버깅을 위해 최초 한번은 기기를 usb에 연결해야 합니다. tcp…]]></description><link>https://heyask.github.io/2020-06-01-Android-Studio-WiFi-Debugging/</link><guid isPermaLink="false">https://heyask.github.io/2020-06-01-Android-Studio-WiFi-Debugging/</guid><pubDate>Mon, 01 Jun 2020 01:37:33 GMT</pubDate><content:encoded>&lt;p&gt;안드로이드 스튜디오에서 기기와 케이블을 연결하지 않고 디버깅을 할 수 있는 방법이 있습니다. &lt;strong&gt;adb connect&lt;/strong&gt;를 사용하는 방법입니다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 407px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/3599e2c19221e14abb1b266145d3e1c9/0ff56/asset-1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 26.58227848101266%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAIAAADKYVtkAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA3klEQVQY03XLT2vCMAAF8H4PO5DZdG62CcvSfzFmaZo2TdPSiooytouwg9fBDrsJfvGxKewgg8fjHd7PKfdHUq1xTueqFWbJyo5V3RRnMzIHKA7ihQejEQhcP7yOQyBSLx9i95lUimqrug2ve2lXKH0GKMasmOLM9cObO3gdRw57tT3wYct0k8qalW1ulkW7psqiVBCm7jH9F5v3E+9fua1pYbnuM9kIMwgzLHQv21WS1yMQXN4+dP1zh+7vduTbl94dmGzGD4+TgExgBFDihdHt7AnA2IPRD/jDF3bG3+5uPq/pVDMjAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;image&quot;
+        title=&quot;image&quot;
+        src=&quot;/static/3599e2c19221e14abb1b266145d3e1c9/0ff56/asset-1.png&quot;
+        srcset=&quot;/static/3599e2c19221e14abb1b266145d3e1c9/c26ae/asset-1.png 158w,
+/static/3599e2c19221e14abb1b266145d3e1c9/6bdcf/asset-1.png 315w,
+/static/3599e2c19221e14abb1b266145d3e1c9/0ff56/asset-1.png 407w&quot;
+        sizes=&quot;(max-width: 407px) 100vw, 407px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;먼저, 무선 디버깅을 위해 최초 한번은 기기를 usb에 연결해야 합니다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;adb tcpip &lt;span class=&quot;token number&quot;&gt;5555&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;tcp 프로토콜로 기기에 접속합니다. &lt;code class=&quot;language-text&quot;&gt;restarting in TCP mode port: 5555&lt;/code&gt; 메시지가 나오면 성공한 것 입니다.&lt;/p&gt;
 &lt;p&gt;이제 기기와 usb 연결을 해제해도 됩니다.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;그 후 기기의 네트워크 설정에 들어가서 공유기로부터 할당된 내부 아이피 주소를 확인합니다. G6의 경우 설정-&gt;일반-&gt;휴대폰정보-&gt;네트워크-&gt;IP 주소에서 확인할 수 있네요.&lt;/p&gt;
+&lt;p&gt;그 후 기기의 네트워크 설정에 들어가서 공유기로부터 할당된 내부 아이피 주소를 확인합니다. G6의 경우 설정 -&gt; 일반-&gt;휴대폰정보 -&gt; 네트워크 -&gt; IP 주소에서 확인할 수 있네요.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;adb connect &lt;span class=&quot;token number&quot;&gt;192.168&lt;/span&gt;.0.115&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;connected to 192.168.0.115:5555&lt;/code&gt; 메시지가 나타나면 무선 디버깅 세팅이 완료되었습니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[유니티용 Plugin 만들기 : iOS편 (Swift)]]></title><description><![CDATA[이 글은 아래 버전 기준으로 작성되었습니다. Unity: 2018.4.19f Xcode: 11.4.1 (11E503a) 유니티용 iOS 플러그인은 기본적으로 Objective-C만 지원이 됩니다. 하지만 브릿지를 통해 인터페이스만 Objective-C…]]></description><link>https://heyask.github.io/2020-05-06-Unity-plugin-iOS-swift/</link><guid isPermaLink="false">https://heyask.github.io/2020-05-06-Unity-plugin-iOS-swift/</guid><pubDate>Wed, 13 May 2020 07:11:13 GMT</pubDate><content:encoded>&lt;blockquote&gt;
 &lt;p&gt;이 글은 아래 버전 기준으로 작성되었습니다.&lt;/p&gt;
@@ -37,18 +64,226 @@
 Xcode: 맥 앱스토어에서 설치할 수 있습니다.(&lt;a href=&quot;https://apps.apple.com/kr/app/xcode/id497799835?mt=12&quot;&gt;https://apps.apple.com/kr/app/xcode/id497799835?mt=12&lt;/a&gt;)&lt;/p&gt;
 &lt;h1&gt;Workspace 생성&lt;/h1&gt;
 &lt;p&gt;두개의 프로젝트를 생성할 것이므로 Xcode에서 workspace를 생성해줍니다. Xcode를 실행하고 상단 메뉴에서 File-New-Workspace를 선택하여 생성합니다.&lt;/p&gt;
-&lt;p&gt;undefined&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 542px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/b42e9e78221f103fd9bba37cc65e6f62/c0388/asset-1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 110.75949367088609%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAWCAIAAABPIytRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEUElEQVQ4y3XQW2/aZhzHcb+XtitFTdIlGQMM2PiAz0dsMGDAHBwSDgmGFEhscDgTUmhoqnbaul1M200vNu1m0i6radVu9p6mKIo0tZr0u/3o+38eADv4Odz6B473fLFKmLf2Y4d+prGHH+KJ3g5cClDmrp989hUWweLeHShKqHt+wh/hQogYQSVg+t2H/ORPY/a37Pyluh/l/ke2+yHa+GM3937PeL+bWJOMWDIPaVZAcSIARoJhOAShWjrHchLg9J1mq+VeXNj2eb/vuO7AcWzLarIcqyRUgqZYXi6WDkU5wXBiAIz4QQgMI9l8OQhGgOF4euZc9N3xUa1pHjaK5pFumPFkFqcFXkkpmk6xklmpUYzgD0IhCA2EooFQVEsb+z4QuBiO7cFwtrhaLFfNdidrlNLZgqhoMZpXtUw8kWb4uKrpUYyCUSISjYUg7OsgxHDxQBAGxpNZ67TnuKPRdNE5c4xSJWuUlUSa5qSSWcnkDF5SG81TTlRhlIRRMgzjATAKhrGdL33AxWjyvGtP5pfucHJUb2aNspbJi/FkjGT0nFEsm6ygFM2jbL5MsVIYwkMQjhGsljb8QRgYjibVhtXpOc1256jerB+3CqWKpCQJipXiqigrPC/aziBfKMtxFUFQvz8Iw0i93oBh/Lbcs92r1fX6+mbz+s14dtk4aUtKMkaxpmnmDyxf9kep/ava+Y2yfvcmf/pC/uGx/D3Z+GWPagGDi3G92WlY3cOa1bA6xYOaphdEJRWjeEFWGUGJsoVM+ZSSCwFM82MZH5ryISlJtwIQB9ju+GxwNZxvDk/OU0Y9bTRUvcJK6QhKp7MlNZlBUMwwSpqWUdVEKp3mBSEYDOl6DgQhoDt5rRad4sk8VxunKq6S73LaMSHkIVyI4iwIYSEIRWM0TrAxksNJDsFpnz+8/czn9T4DcOPbwsm81N7QGYfV+6xu01oLEwoRTPSHMT8IUzTLcQJ7P16QSIrxeLY8ni2gN/rGtBbH55uydVm2lunKQNJbTLyEkHIYIUMQxvKCHFclWbmbHFdpmvN6d5482QZebt7ao/Vs9fbq1burzbvp1ZtytSOoeZySwggBQhjLCZKsiFL8bpKs0gzn8Tx99MgLLNfX7W7fHkwGo/lZf1Q9Pi1V6oqWjdFCJEqAEfQzrFAMt7W1u729Dzjz4WS6XF/f3G5zM5ou3NE0VzBxiosgBBhBbrF0hxVRUu7KW9t72zv7wHK9Pu3ao+nijlUbVvmgmkxlCVpAcBonOZrlPynTDPf48dMHDzzA9aubk1bnzHbtwdBxR812t1ypJVJZkhFglIxE8f+crdy/mfd4nj58+ARYvdw87znzyxejyWK2XC2Wq0q1oSQzBCOEICwQjrK8KN1nP8WTy8254y6W6/F00Wx3aset0kFV1XSC5rWMIaspimY/++17/GJ17Q4nw/Gs9bx73GxX6yflg6OEpsMoIciJ+C3m/g//C5ze1zFuWFT+AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;image&quot;
+        title=&quot;image&quot;
+        src=&quot;/static/b42e9e78221f103fd9bba37cc65e6f62/c0388/asset-1.png&quot;
+        srcset=&quot;/static/b42e9e78221f103fd9bba37cc65e6f62/c26ae/asset-1.png 158w,
+/static/b42e9e78221f103fd9bba37cc65e6f62/6bdcf/asset-1.png 315w,
+/static/b42e9e78221f103fd9bba37cc65e6f62/c0388/asset-1.png 542w&quot;
+        sizes=&quot;(max-width: 542px) 100vw, 542px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;h2&gt;Xcode Project 생성&lt;/h2&gt;
 &lt;p&gt;마찬가지로 File-New-Project를 클릭하여 두개의 프로젝트를 생성해줍니다. 템플릿은 Framework를 선택하고 하나는 언어를 Swift로 다른 한개의 프로젝트는 Objective-C로 설정합니다.&lt;/p&gt;
 &lt;p&gt;프로젝트 생성시 “Add to”와 “Group” 은 workspace로 설정합니다.&lt;/p&gt;
 &lt;h2&gt;Swift 프로젝트 생성&lt;/h2&gt;
-&lt;p&gt;undefinedundefinedundefined&lt;/p&gt;
-&lt;hr&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/4a0469106f768f121c7b4d4a3369f5f6/5a190/asset-2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 70.88607594936708%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsTAAALEwEAmpwYAAACEklEQVQ4y42T22rbQBCG9Qg1bupEu9qzDt6VZR3iEgebQsCOk6b3bVNaehPnPSLIKwel1pTdOIKa1u7Fxw+7w8fMHryqrPT8YvZ4sVg+nE7e12V1WpfFuJ7P5/X1x0/1anVVL5aX9eXlql5umU7P6zwv6qKo6tn8Q728unlYrK4fz85nxpOh+WFGYxhlYzBpBkJwGI6nUE3OoCxLyIsCtDEQJ4nDmBTSNIUwioBzAVmWQ1FOYJznEMfJT48y/jmMEgij5CmKhw0hpOEqbqSKG0JZI1XUUCYcmNCGctEIqRrKmKvVWluetNagpPzqMS6/RPEQ4kRv4kS3lPGWUtoyLtqAUIdUYYeQysG5aCklrTGmTdN0Y4wBpdQ3j3GxI2TAGAch1ZbQJZcKcEAgIBQQDlxSSuGwkDIniHUGKow6mYVx8YKQwDjvhMaYfUICRI6AjG6AcglcqK5b25nt0iYhpBNmWfZvoS0c6hTyagpCSpAO5VIICXGkIBrNgCdTIAGCNB21ZVlu7M1LKf8+MsYYSIABIfQHdj2wEAYIU9flf4zMwPf9TrArfcF3vAoPXUqLEGoxxi53seuve4Tsfza/rJQytkEIbTDGe7E1hBArsuf3vBXeepSJW/tTrNRCKO1G3oetsSPbH2JlNqWU372jo3dscHxyPzg+ubP0+2/Xvd6bda/XO0i/31/7vn+35X4wGPDfWY9m/NdsF8YAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;image&quot;
+        title=&quot;image&quot;
+        src=&quot;/static/4a0469106f768f121c7b4d4a3369f5f6/f058b/asset-2.png&quot;
+        srcset=&quot;/static/4a0469106f768f121c7b4d4a3369f5f6/c26ae/asset-2.png 158w,
+/static/4a0469106f768f121c7b4d4a3369f5f6/6bdcf/asset-2.png 315w,
+/static/4a0469106f768f121c7b4d4a3369f5f6/f058b/asset-2.png 630w,
+/static/4a0469106f768f121c7b4d4a3369f5f6/5a190/asset-2.png 800w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/bee05dcb3d5d36b7f7770d7568e5b893/5a190/asset-3.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 70.88607594936708%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsTAAALEwEAmpwYAAACK0lEQVQ4y5WT21LbMBBA/QtJSgNxLF9lWytfZeOmIQYmU8KlvPStLZ12+kL4DzzDLzNuo+3IgZShUNqHMxp7V2d2Ja1WiALq+exmfrS4LnerJhdlI4qyqfcPmrP3583xyWlztDjesDg+ad5O95osE00uiqauD5rF6fn10cnZzWQ645pL+TcepxgnKfIoQcelCAAohEBRFJimKXLOMYqiDerb9320HQ/jJMdMVJhmOfoB+66Zlv2R+iFSP7z1A9YS0249z2sZY20QBG3IWMsgakPgaxi0ANBSSluDWF2MQXTLIELXpZ81y3Y/+QHDIIRVEII0LUdS6ksAkFmWyuneTC7OP8jp4bsOMZ1LBpGklEpi2hJ4LHmUrIDH6Hr+F82yncdCpNTv2q6qCuu6xsODfZy8qbDaLTHLCwTgXQ4xbfwvIWMM8zzH2WyGk8kEy7LENN+9E9KNEHj8knB9MffS+zUMQwzDAAHYRsijRMZJ9ryQmFZXgarM87xu4298zLMEuZijw6ZIiIE8SmUuypV6Ia5Ln65wbJioxPqY/AEhFhqmi7rhdDkPW/aea3mkrzcr8WPWYqPjXy9F6mMix4bZrY9R/+9jLz2bn0pqWs5KH5PV2DD/isohpr0Cnqjz+3HX8oVmWs6FmhQlVag2Rrrx5Pk9ROUYxEI1IUp2Nylfta2t19Zwe+dquL1zqRgMtpa9Xn/Z6w+Wvd4zdLH+sj94tdwZ6ZejNVfD4bb9C4G7b8cccjoPAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;image&quot;
+        title=&quot;image&quot;
+        src=&quot;/static/bee05dcb3d5d36b7f7770d7568e5b893/f058b/asset-3.png&quot;
+        srcset=&quot;/static/bee05dcb3d5d36b7f7770d7568e5b893/c26ae/asset-3.png 158w,
+/static/bee05dcb3d5d36b7f7770d7568e5b893/6bdcf/asset-3.png 315w,
+/static/bee05dcb3d5d36b7f7770d7568e5b893/f058b/asset-3.png 630w,
+/static/bee05dcb3d5d36b7f7770d7568e5b893/5a190/asset-3.png 800w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/5dcf8fe7372dde7270936f27e7c5f51d/5a190/asset-4.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 70.88607594936708%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsTAAALEwEAmpwYAAACZElEQVQ4y32Ta1PaQBSG+QtALUouu5tNdnMH5A4hShEV6rROtZ22dtrpF/F/mBn/skNL3k4i2rFFPjxzkpwzz+45my2E9ZY7jOK7o6Pj21arkzRb7aTb6ydvJtPk5HSWzM/eJZcfPyUfLi6T2fxt8u79eXI0PU4GwyivjUZxcjw7u52ezu96g8grGJb3w/NrCMI6HNeH6wUYDqOcbm+Adm+Io+kpDscTDKMYUXyI+GCcPzuuBz+oob7fQa3egJDOzwKh7LMlbFjCvreEvTQtsRyPx8swDJdBWFsSauRohC0Nbj29U8bz6Lh+xn22Gc6trwXK+BchHUjbXQnppELYaRzHaRAEqZROSqiRMsZz6AZcL0g9P1xlnXFTfCtQZjwJLemklpAYjUZoNpuwPR/Cdtd4sKQN6Xj5aExLgjKOrUIh3ZQZHJxz2FIiqoU4GUWYHcSY9HsYNloIhQQ3TZicgTKWC10veEnopNy0EIQhar6PaT3E+fgQF5Mx5oMujjsRWpaAGwSQfh+M23A9Pw3C+mahtN1sLmi32+j3+5BCgOk6DELAKYVJCRr1GjqdLmQwgM4EPD9IG/utleeH2aH8L9QJQ1XRoGokj4pGnqERBlXToShV6IQ+a9nctENCDSiqnpNJVZU8xDWPOUUlyBbfeihrYaqoeqpqJI//kn1/zOmEbf1tfmdSQo2VouorVSNbyWp0wlauF2bz+7Vu+apAqHGV3ZRMmvE4w7+tbSar0XT6dF3XN+V7YWfnNa3s7t1UdveuM8rlnUWxWFoUS+VFsfgCea60KJVfLfaqynX1gZtKZZf9AXK/cklvfYjUAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;image&quot;
+        title=&quot;image&quot;
+        src=&quot;/static/5dcf8fe7372dde7270936f27e7c5f51d/f058b/asset-4.png&quot;
+        srcset=&quot;/static/5dcf8fe7372dde7270936f27e7c5f51d/c26ae/asset-4.png 158w,
+/static/5dcf8fe7372dde7270936f27e7c5f51d/6bdcf/asset-4.png 315w,
+/static/5dcf8fe7372dde7270936f27e7c5f51d/f058b/asset-4.png 630w,
+/static/5dcf8fe7372dde7270936f27e7c5f51d/5a190/asset-4.png 800w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;h2&gt;Objective-C Bridge 프로젝트 생성&lt;/h2&gt;
-&lt;p&gt;undefinedundefined&lt;/p&gt;
-&lt;hr&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/d363e9dba839e408b01c9a1a238d51ad/5a190/asset-5.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 70.88607594936708%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsTAAALEwEAmpwYAAACG0lEQVQ4y5WTW2/TMBSA8xOoyuiWi5M0N1+yxHHa0muKinrZqHgGhkC8rPsfi7S/PAXqg5ytFRRYx8Mny87xl3N8bC0XOZ3Mxnez+eK20+2VmchLkXfKSTEtL9+ty+XqopwvlnsWy1U5GI5KzrMyy/JyPJmWi4v17Xx1edcfjpnmBewrO0/hPEmBxQm0PR8opSCEAJHnkKZqPYa45ryGMQZhGILrtiFJOGSiCynnEEX4m2Y77ocgxBCE+D6MSIWQXfm+XxFCqiiKKoxxRQiuKMEVVvMoqiilVRAElWVZFaNUze9VEr7nfdIc1/sYRgQiTLcRptK2HRkEgaSUSs65HA5Hcrl+L4vZXA6LNzLvTyWhcR2DEJKMMRnH8VZl7fv+Z81x24dCCIKgLrvX7cKkKGD6dgGvRwX0hhNIOwOglNUxCCH4LyEhBDjnMC0mMOj3odsRkPIOUBr/JmSMHRM+NGYn3YExBowjoJTshXEcyyRJ/i1EyK5FWZapgHrjr2Q8ASZm0CYDQJahui6FEFt1CzzP+3uGpmnWfzcM4w+QZYGFXDBM+/kl67peb1biQx7Ees1zmyINw5CmadbjIWp99+3YtfmhpLbjbA3D2Jqm+SQqBiGkROr8vj8KrzTbaV+pl6KkCmTb+5KfQsWoklUDlUyNnud90U5OXjmt07Ob1unZtaLZfLlpNF5sGo3GUZrN5kbX9etHblqtlvsTsDJudZjd1joAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;image&quot;
+        title=&quot;image&quot;
+        src=&quot;/static/d363e9dba839e408b01c9a1a238d51ad/f058b/asset-5.png&quot;
+        srcset=&quot;/static/d363e9dba839e408b01c9a1a238d51ad/c26ae/asset-5.png 158w,
+/static/d363e9dba839e408b01c9a1a238d51ad/6bdcf/asset-5.png 315w,
+/static/d363e9dba839e408b01c9a1a238d51ad/f058b/asset-5.png 630w,
+/static/d363e9dba839e408b01c9a1a238d51ad/5a190/asset-5.png 800w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/e59c6c71e78218d3d7ccff9c967583c3/5a190/asset-6.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 70.88607594936708%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsTAAALEwEAmpwYAAACa0lEQVQ4y4WT207bQBRF8wmNUhqIzVxie2zP2CaQG0lsQxICBHpBhVZtqVr1BfgPLPHLyG28qzGXqi1NH5a25XNmSefYU4laHTmK05u9vf3rTqeXtTvdrN8fZJPpLNs/OMzmx6+ys3fvs7enZ9l8fpy9fnOS7c32s+EoLnvjZCfbn7+8nh0e3WwPY1VpOuqrCjYQRi34MoBUAUajuGQwjNEfppjODrA7niJOdpCku0h3JhjFKXxfIggjbG51sdFqwXW9bxXK+AdHeHCEd+sIL7dtJx+Px3kUhvlmp58LT+aU8nydsFzXGbfuaNo5oTSXUuZKylspJWzL+lRh3PooXB+uJxfC9Qsh3CJNkyIMw/KZUF5wbpUw1iyYzgcYL5RSRRAEC6UUbNv+XGG8+Sh0XL9whECSJGi32/BVCOErCF/epefDk6pcjS08MMaxVChcWXDehGVZ8FwXw40IB0mC+U6KvcE2hpsdKOHqg7AtDs5YKVRK/UvoF5ZtI4wiREGASSvCyXgXp9MJjobbmPUSRI4LFYZwgwG4JaCULKIoelroerJgnKPb7WIwGMAVDjghaFIKizFYjKLV2kCv14MbDkGZjSBQxdbW1iIIAj3Z30JCKRqNBkzTRMMwYJjmbxBCyprRWAUh68tH1kJKGQwtMozyoKnzAdN4rBmGltPlH+VeWBiGUZimWeaf6PcPNULI0t/mh5ZSxhaGYSxM01yK7iGEaJHe3/d74XmFsua5vilaqnnY4a/Rnkb36H3qG6JlOi3L+lJZWXnB6qtrV/XVtQtNrfb8slp9dlmtVv9LrVa7bDQaF/dc1et1/hOEDHEwVvYkSwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;image&quot;
+        title=&quot;image&quot;
+        src=&quot;/static/e59c6c71e78218d3d7ccff9c967583c3/f058b/asset-6.png&quot;
+        srcset=&quot;/static/e59c6c71e78218d3d7ccff9c967583c3/c26ae/asset-6.png 158w,
+/static/e59c6c71e78218d3d7ccff9c967583c3/6bdcf/asset-6.png 315w,
+/static/e59c6c71e78218d3d7ccff9c967583c3/f058b/asset-6.png 630w,
+/static/e59c6c71e78218d3d7ccff9c967583c3/5a190/asset-6.png 800w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;h1&gt;프로젝트 구조&lt;/h1&gt;
-&lt;p&gt;undefined&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 307px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/53fd0d393ae70bee42830a0af8a692cd/4651d/asset-7.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 156.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAfCAYAAADnTu3OAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFD0lEQVRIx42VyW7bVhSG9QwFmsiRnUTi5SiKmkdLljVRoqhZip3EVmTJQwLYWaQI2iINiqLtpkCfqes+ALdF4qz6EsRfnCtTlp046OLgkgT18f/PJF9ISjpCxEZEY242FUMkLCMZjyCsMBhhGZoswNBl6KoIIywhqiuIGyoimsTfSdG7qoRsLo90JgufmJs6av0dIrtTN2WewajMkW6eQS2+QKR8hGhljmj1BErxBdTSDOHyHJHdY0iFKeTCFFp5DiU3QSSaQsSIwafO/nKqv39C/PsPbunHTyj/9BGV95eovP+E+s+XPHbefcS3s3+wsbiEf/GRx8bxJe4dfQC7+BelN3/jfvgAG8E8fI+1giOnB/jth6778vQpSp1XaAwWsCZnaI1P0Xt2geHBa9R6C7BoDWKsvgpGZ7wBQS/hkVyAZhTgE4WgI4oixlbM/eNNEk+6RZhmE81GDduFHFKJONKpJDLpJJgQhMRC1yEKkCUGJoQQeLCBUqkEHxNlR1Y0BKWE+908gYtFC6Y1hNXuIJ5IQwsbqzCiCRixBHQjjogRh6YbUFQdkqwhsPkI9/0B+AQmcaCsqO6DhyKeTE7Q6w1htix0un30+gP0ByO07S6/p2hZNo/ybgV6JAojGseDwBaYKK8DNVdSVJw+P0S/00OjaaHZasNsWlxtrW6iYbb4PV3Ts2yuAFXTeXUJWNrZvQlkkoKX0xkG3T7MVhttu8N/SKpIIQUp263UEIsnEdYpFRHE4gmkMxlks9mbQEFScHo4w6A34ECCURCo2+uj2xvA7vRQ3Clzq2SRgNFYAmFdRywWv2VZVvB0b4FubwSz2eJqyKanjBR7CnfKFYiSwoFk2b+xyW1zoKKGERIl9/TZAYZ2F/Wr/JEaUjYcTXhhKKgAApM47EoIv9/cfIjNrUfwMQ7U4A8I7uzFMUajMaq1Bre6XdzhAFJAJ+WNPu6BJFnlJ1kPeECBiY4ajqLf0NyzxRiWPUDDbHKr62roRxQehM47gMxRwgn8cp52Lw7TKFfbsO0OiqXySgm1hqItlZFCD+TFDSATJUeWFXzjV9yTPsPRJI+a2YXVttHrDzGe7GFv/xmPyZP9VS7purBd4jBycEOhqifx60XSfT3Lo1q3uWWqJqkkyxSe3ZAg3rD9xRyKkoaRlXTPn8cw7DZg2dcjRtOQLxSRy28jncnxa+rB21VeASVJdvRYElq86J4MIjgY7qDR6qHZsviYUQ9S1alI9AGqPlWdgKTQq/oKqErMqe6fozR65VZrNurmsnlJIanZeviYWyKrXngggpLaVDrLm3ppWRAcRUvgz7cZ981xHrt1Alqr2SXLj4MCh3r5JCidXh7p/kaVJUVHZVt1X589RX8w5lZpUqjKtFmowalANHK0UWjsSL03y7QkrhUyyVHVMPxbzD2bzrE/nqBuWrxtvPFb7r4qB3pBRVoHBtaBlA8my+58bx9jvlzbaF1tGwKSSrIWDLFVHj3Ln1XZm+V7GyF3tniJwXDIq+oVZX3c6MP/c5YTeDuPufR/Umn00DBNnrP1GV6PrzY2Y6Ijqwamw7h7fhBD127B7vRRqzd4IyeSaSRTGX7StqFrytv6PN8CSo6iqPBvqe6RzXA4LKBSt9FqLVuHKt28yielgbY2baH1SbllebmxVVVzg0xDUFDA1vrNK0BIuH7mwe7I4RIoyaqr8MRrN1bTXfGVfXgNlBV6QeV/3F8C3PVsHfgfY+HylUlgmlEAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;image&quot;
+        title=&quot;image&quot;
+        src=&quot;/static/53fd0d393ae70bee42830a0af8a692cd/4651d/asset-7.png&quot;
+        srcset=&quot;/static/53fd0d393ae70bee42830a0af8a692cd/c26ae/asset-7.png 158w,
+/static/53fd0d393ae70bee42830a0af8a692cd/4651d/asset-7.png 307w&quot;
+        sizes=&quot;(max-width: 307px) 100vw, 307px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;MyUnityPluginBridge&lt;/code&gt; Objective-C로 작성된 브리지 프로젝트. 인터페이스 역할을 합니다.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;MyUnityPluginUnityProtocol.m&lt;/code&gt; 유니티로 콜백 이벤트를 보내기 위한 프로토콜들을 모아놓은 파일입니다.&lt;/li&gt;
@@ -63,19 +298,76 @@ Xcode: 맥 앱스토어에서 설치할 수 있습니다.(&lt;a href=&quot;https
 &lt;/blockquote&gt;
 &lt;p&gt;이렇게 프로젝트를 생성하고 MyUnityPlugin 프로젝트를 Build하면 &lt;code class=&quot;language-text&quot;&gt;MyUnityPlugin.framework&lt;/code&gt;파일이 생성됩니다. (Build시 Target을 ios simulator로 하면 안됩니다!)&lt;/p&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;MyUnityPluginBridge&lt;/code&gt; 프로젝트를 선택하여 General-Frameworks and Libraries에 &lt;code class=&quot;language-text&quot;&gt;MyUnityPlugin.framework&lt;/code&gt;를 추가해줍니다.&lt;/p&gt;
-&lt;p&gt;undefined&lt;/p&gt;
-&lt;hr&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/8c31352254644d61e8ad8176deb0d4bd/5a190/asset-8.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 70.88607594936708%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC40lEQVQ4y32T+W7bOBDG9QhptkdkUTx0USQl+YgcX4mV2IntNm2TuEFRNw4K9VUqoK9cGBVnIXobYIvd/vEDR0Px0wznkzXNQnk+7X1/vSi+fbq9rD7cf6w2nx+ru9t19e7dTXV396Far++rm9t1df32fbVaXVdFcVHl+Ul1fNyvJpOzavH67bfFm/ffh5MzZanBzZfh8hF6sy2k00fIJyvIT0bQH4yh18shSduGIOTAYwkRF8C5MGsYcej2cmh3ckiyDoRclBb2ok9Xyzdwdf3xR2cw38ks36kk2zEv3FHmG4KQ7yIuTIwJ2yGXGFxMdyeD0W69vv8xv1xCII4/W06rtTkdT2C1XNV5nmsRc91ud7Tnh/rIdnQQcp2kbZ1mHS1Vov0g0g7CBhdTnbW7erFc1dPiAiIeby0lvM3y8hSO+8NaJZnGhMEr2wHkEgijGDw/NDR5Qj2gzAdMPLPfxKPRRF/M5vVoMoVI5VuL83CzWl7BtJjVzdealxyEzQGXUPAjAVlvDAEXQFgALvEAUx8clxrB4nymx5OzOu8Pgavu1ooCtlnMCxiNz2opE91U8UuQEAaBF0DocxA8NjFxMRCXAEbYVJ33h7o4n9eD0SnIbLi1GPM2QgiIhap5LJ8EW4hAkQi46vWg30yTeTCSCsZSwVBKGFIKHqEgkkynWbeWKoUgCLcWpd4m3NvgSRAhDEcIwymjMPMYcMKAYwIxJiAaEcpAYQyUMJAq1UqlRtAPoq1Fmbcx3orlvypEmELUDIX5YDftNcNo7tcl0EJ4n/slmGR/FHyyhcElGrnEWARjqt1/nhHCjSP0b4IP+5ajGMJI/GzaJtSrWwjXDsI1cskTzm+5JsaENVZr+Lm/w+jBYp7/0PxaadaBrN3dew5TM+WW45r2/4tmz8UUhExAqsSsvh8+WnbLwUKqr1IlZZKkJXJxadt2+fz5i/Lg4Fl58Ozwfzk8/Ks8slulvefry1dH5G8UNnW0F1LvOgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;image&quot;
+        title=&quot;image&quot;
+        src=&quot;/static/8c31352254644d61e8ad8176deb0d4bd/f058b/asset-8.png&quot;
+        srcset=&quot;/static/8c31352254644d61e8ad8176deb0d4bd/c26ae/asset-8.png 158w,
+/static/8c31352254644d61e8ad8176deb0d4bd/6bdcf/asset-8.png 315w,
+/static/8c31352254644d61e8ad8176deb0d4bd/f058b/asset-8.png 630w,
+/static/8c31352254644d61e8ad8176deb0d4bd/5a190/asset-8.png 800w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;h1&gt;유니티 Project 생성&lt;/h1&gt;
 &lt;p&gt;유니티 프로젝트의 구조는 다음과 같습니다.&lt;/p&gt;
-&lt;p&gt;undefined&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/d5a995de9078a21ac36cf13bed661a39/5a190/asset-9.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 59.49367088607595%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAAAsTAAALEwEAmpwYAAABKUlEQVQoz42P3W7DIAxG80INGAyGQCAJ+WGp2k1qO21Xu937P8HUatXSrKp65CvsY/MVVVXlKfepr6wFAHFBCqFjnj++w+5LT5/QHqE9iu50U+2hQMRhGJxzpAmucIBys/F12L++xRAqa4no2vmrQik1jVOfkvceFpRlWVUu59l7T0RSSM453FIAgLXWGKO1XjYYY1Liy3bXNI3WZIyx1kopb2S+YCUDwOH0nrpU17VzbrX9V4Y7cMZY2/XzvCUipdT/7Q9kKMtNiG3TJq2UUpqIEPFpmZUSccxz6roYo/d+FfiRzBjjnCutx3GMIYYQYozOueX8I5kxRkQ55/PvU2pjgxKfuHx55AD73X7oe2ONqxwirobvy5xzKdH72lorhECJ58BCrDL/AA1mllEFFuB7AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;image&quot;
+        title=&quot;image&quot;
+        src=&quot;/static/d5a995de9078a21ac36cf13bed661a39/f058b/asset-9.png&quot;
+        srcset=&quot;/static/d5a995de9078a21ac36cf13bed661a39/c26ae/asset-9.png 158w,
+/static/d5a995de9078a21ac36cf13bed661a39/6bdcf/asset-9.png 315w,
+/static/d5a995de9078a21ac36cf13bed661a39/f058b/asset-9.png 630w,
+/static/d5a995de9078a21ac36cf13bed661a39/5a190/asset-9.png 800w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Assets/MyUnityPlugin/&lt;strong&gt;Samples&lt;/strong&gt;: 샘플 씬과 스크립트가 들어있는 디렉토리&lt;/p&gt;
 &lt;p&gt;Assets/MyUnityPlugin/Scripts/iOS/&lt;strong&gt;MyUnityPluginiOSImpl.cs&lt;/strong&gt;: MyUnityPlugin.cs에서 Android, iOS 각 플랫폼의 함수 호출을 맵핑하기 위한 Implements 클래스입니다.&lt;br&gt;
 Assets/MyUnityPlugin/Scripts/&lt;strong&gt;MyUnityPlugin.cs&lt;/strong&gt;: 샘플 스크립트(즉, 이 플러그인을 사용하는 클라이언트가 싱글톤 instance에 접근하여 메소드를 호출하는 클래스입니다.&lt;/p&gt;
 &lt;p&gt;Assets/Plugins/iOS/&lt;strong&gt;MyUnityPlugin.framework&lt;/strong&gt;: 아까 생성한 swift 프로젝트를 빌드하여 생성된 .framework파일 입니다. 복사하여 이 디렉토리에 붙여넣습니다.&lt;br&gt;
 Assets/Plugins/iOS/&lt;strong&gt;MyUnityPluginBridge&lt;/strong&gt;: Objective-C로 작성된 브리지 프로젝트입니다. 이 프로젝트의 파일를 그대로 붙여넣습니다.&lt;/p&gt;
-&lt;hr&gt;
 &lt;p&gt;이제 Samples 디렉토리에 있는 SampleScene을 열고 유니티 상단메뉴에서 File-Build Settings -&gt; iOS 선택 -&gt; Build를 누르면 xcode프로젝트가 생성됩니다.&lt;/p&gt;
-&lt;hr&gt;
 &lt;h1&gt;Git&lt;/h1&gt;
 &lt;h2&gt;Unity Project&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/heyask/MyUnityPlugin-unity&quot;&gt;https://github.com/heyask/MyUnityPlugin-unity&lt;/a&gt;&lt;/p&gt;
@@ -89,31 +381,120 @@ Assets/Plugins/iOS/&lt;strong&gt;MyUnityPluginBridge&lt;/strong&gt;: Objective-C
 &lt;li&gt;JDK: OpenJDK “1.8.0_242”&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;유니티용 안드로이드 플러그인을 만드는 방법은 다양하게 있지만 여기서는 대표적인 AAR을 사용하는 방법으로 진행하겠습니다.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3&gt;&lt;strong&gt;설치&lt;/strong&gt;&lt;/h3&gt;
+&lt;h1&gt;설치&lt;/h1&gt;
 &lt;p&gt;아래 링크에서 유니티와 안드로이드 스튜디오를 다운로드 및 설치해주세요&lt;/p&gt;
 &lt;p&gt;유니티: &lt;a href=&quot;https://unity3d.com/get-unity/update&quot;&gt;https://unity3d.com/get-unity/update&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;안드로이드 스튜디오: &lt;a href=&quot;https://developer.android.com/studio&quot;&gt;https://developer.android.com/studio&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3&gt;안드로이드 프로젝트 생성&lt;/h3&gt;
+&lt;h1&gt;안드로이드 프로젝트 생성&lt;/h1&gt;
 &lt;p&gt;먼저 안드로이드 스튜디오에서 프로젝트를 하나 생성해줍니다.&lt;/p&gt;
 &lt;p&gt;Activity는 필요없으므로 No Activity를 선택하고&lt;/p&gt;
-&lt;p&gt;undefined&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/c813b35e1a5e0b79f5eebfec27d90bc9/5a190/asset-1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 77.21518987341771%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsTAAALEwEAmpwYAAADyklEQVQ4y3WS309bZRjHXxcTlgHKGbTQwTSutJRSWnrOed9zTs+vUhARGaOVDrBxIIwVGKSNU2vLMmLmssRMjZuLXmgyFxMTb/RCEy/MLpZ4od4scRrNlNrMLRjI/oB5Tr7mHHHBC5/kk/f5vu+Tb55885LMngP1L66d+rZ4tnxv7dXy3XKlvFkulzcrlYpLqVTaLBaLLk7v3Dnvu7hbqVTulUql71RVbSCPEMKZq9N/DK4+j6NHMkhn0shms8hk0piensbIyAg0VYVhGNB1/X/RVPWOz+fjSHNLS5OuGxummYSuG3/phmE7GIZpJ82kbZrJ/+ikq02XHW3phglV06uuYWN9HUcVvWoOPA29f9iWEwYkRUOcSujmRfQIIhKqDp5J6IzG0BWLQ6AS4iJDINqHYLTPdrRApVqLx8sRT/OjnMASVUUzwRTVpnIC8TjDUC6HpU8/Ru7CefC8iP50GouffIRj774NkUrQhoexcPUDzH34ni1pBiiTa/u9bRzxtDS5hkzRwOSE7WwX6ulDZe00nLp1awORaB8Wl066entrGzyVkJvOYafsVGoAPGW19vaDHPG2+jhBZFVKBYhUsGWZojscRnntjDv9yw/XXcP8juGfW1tgTMbA+AR+3/4RN2/fsJmRgijSmq/jIEfa9hKOV8eq8eQipP55W+xfREybwtDQME6trGB28jB4kSGVGkRhtYAT8wuQmYyoamIsreHJMd3uU3SIlNW8bT6OtLU/zPFif5VOnIS6fsGmC2WIyih6DB3eyQwen3jWyQcxJYEuScYTjCEuKaCGifrJLB6bmLDVhOrE8I/h4DPjnN/vr555fd3N48vrX0OM9MCfzYBcPod9r70MicponH8OHZfO49z338Ccm0XyqWFc/PkGLl77ypalhJvhgfYOjgg8z4UjsWqlchp3arftK1euQogJ6BodQeMrK/AuHHMz805l0FouInn5TYTGD2N8ZBS/3vwJX3z2+YNv4xqSh/Y0aUbyt2RqEDFevC8wyaKSYlEqWRJPLUlglshkSxKZxeKiFY3ELEGgFk8lqyvcY4UjvfdFJjuGGx5vK0c8Hi8nUGmLyQkoqg45oYFKCsRd7NZ6MoWEZkCSFcjGEOTUEUiK6sxsN7d495OGhsa6zkDwqD8QXD7UGcg7+APBfGcg6J7/9q7uDObjvJCP9MbyoVAoH+xl+W5xIB8MhZdD3d2TdXv31RFNN0l2Kkdm5vNkZu6Ey9zC0gNe2NXPHl8kb7z1DqmsnyWFQoEsr79PipeukeXCS2Rm7jg51NVL/gZbOPtxbMKosgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;image&quot;
+        title=&quot;image&quot;
+        src=&quot;/static/c813b35e1a5e0b79f5eebfec27d90bc9/f058b/asset-1.png&quot;
+        srcset=&quot;/static/c813b35e1a5e0b79f5eebfec27d90bc9/c26ae/asset-1.png 158w,
+/static/c813b35e1a5e0b79f5eebfec27d90bc9/6bdcf/asset-1.png 315w,
+/static/c813b35e1a5e0b79f5eebfec27d90bc9/f058b/asset-1.png 630w,
+/static/c813b35e1a5e0b79f5eebfec27d90bc9/5a190/asset-1.png 800w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;프로젝트 이름과 Package Name, 언어 등을 설정해주세요.&lt;/p&gt;
-&lt;p&gt;undefined&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/bef3499731f99e7e44f2256d9186b3cb/5a190/asset-2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 77.21518987341771%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsTAAALEwEAmpwYAAACjklEQVQ4y32SW08TQRTHR154oDHUtNX6SimgiZfuZXZ3dmb2UlpKuQQwgIYHJeoKkaReknWXFxNNjA8afdD4QfwS+h2EkChpouEDKJtjZrrcGsrDP+fszM5v/ufMQfN9lweebj771noV7W2+iHejOGpHUdyOoqgdx3E7DMN2q9WSErlYE3vHtBvH8V4Yht8JIRl0HqGss3HnZ/XxCtyanoWl5WWYmZmBhYUFmJ+bA0opMMakRN5LNiG/isViFuVyuUFK+RbjDtiU/aOMJ5SxVDyxKUuITRNKWS/tU8aB2HT7kgDmCxezFVXfVnUDVN1I0pjKBMergs0d0A1LCpvkhHSTyDOKhncEC+Xyhayi4W0Nm6BhU26K/ABabzShOT0L3PXBZg4YxO5WIv4XwIIA5o8BhUNCOTDHA0KZBHLXA8evAnO9DtDqAlo9gKmzRBwSpVDuSGBtogH1xqQs3fXHwR+vyxbgFGza9GyHls2kQxFVHYPj+dJV58Kj/opcx6bo6yEwfxpQ/CyaLw9iE7hfA9erAq9Ogltrgl+fAq8+BQb1QLM46MRNNGyd/igCaBIqH0BERTfAcifAqc0C9RvA3aq8gDo+mDYHFRNQDdLboeihHIV0PIRLUa5NuXwkES2bpmVj0ETpupECjZ18oSAdDioa/pE6/Kvqxv5ZUjR8Isozmg6Kqm0VLhUPHf7uOOzM4JG6v035wgejJdzLapwmaLT+Jztw7gIayGT6S8Mji6Xh8vrQcDkonaGhUjm4WVGCa9dvBIqmB2NXrgblkbFgtMLXRyt0qQ+hfoRNghZvr6DVh+vo3oM1tNql42t37z9Cb999QC9fv0EfP31BT56HaG2jhVrvv6LV6DPKIIT+AzWYw8m9nJjTAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;image&quot;
+        title=&quot;image&quot;
+        src=&quot;/static/bef3499731f99e7e44f2256d9186b3cb/f058b/asset-2.png&quot;
+        srcset=&quot;/static/bef3499731f99e7e44f2256d9186b3cb/c26ae/asset-2.png 158w,
+/static/bef3499731f99e7e44f2256d9186b3cb/6bdcf/asset-2.png 315w,
+/static/bef3499731f99e7e44f2256d9186b3cb/f058b/asset-2.png 630w,
+/static/bef3499731f99e7e44f2256d9186b3cb/5a190/asset-2.png 800w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3&gt;안드로이드 프로젝트 설정&lt;/h3&gt;
-&lt;p&gt;undefined&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;com.unity3d.player.UnityPlayer&lt;/strong&gt; 패키지 사용을 위해 Unity에 있는 &lt;strong&gt;classes.jar&lt;/strong&gt;파일을 안드로이드 플러그인 프로젝트의 &lt;strong&gt;app/libs&lt;/strong&gt; 폴더에 복사해줍니다&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;classes.jar&lt;/strong&gt; 파일의 경로는 Mac기준으로 다음과 같습니다.&lt;/p&gt;
+&lt;h1&gt;안드로이드 프로젝트 설정&lt;/h1&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/dcecd0c656484dc26cbaa8164802d3fa/5a190/asset-3.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 55.69620253164557%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACDUlEQVQoz42R627TMBiGcy3k4CSNc/YpSduNjalj3Ma2wg5t0zawDiHEbUz+DXe4CU/5kN1qQ2ggfjz6/EnWo/e1rdnldLJYr77P5u3d5dVMXlxey3m7ku2qk3o/O38vz6cf5On5VJ6eTeXF1bWcL5eyXa3lbNHK68VCzlfdXdvd/Og+3ry1xoeHXw4mExjt70M1HAKva6hHezDafw1UMCCMQV6UkGY5xEkKSZqZs0afzZ4TyImAqhl+s1gzXL85OYGDyfG9GO+pvKoUznKVpKka4IHykKscx1GObW/nE8+7bb+69zwXsqL4ZKUF6Y6O38HB0bEivOmzUgBOtinykoLv++AHPnjIA897kd51XaXv5SXZWFlRdoxXwESlCBM95QKSLIdBhE1FhJCRIR8Zgeu6fxUWhG6sgrCupBxKylVJeU+YgCTNIQhDwBhDEASA/F1CLTZJXSPeYYRaHkXRxuJV3TFRA+XbhFqY5oVJGAShEWup/yf+E73vB0rfHUR4YzWjcVcPxyDqoWKi1sJ+l7RPkrTHOO7DcNAHQdgHYfg8f8MPgp/6eXjVbCwu6rWuXBD2UFL+qCFMmIkQenRdx+A4L+M6zqNt2w+6CaH8Rlf+THmlK4Ouu3tPg66BkL/96X+gPw7HCYi6+WoRxklVN5uqbtqipMsIJ0scp8soTpcDHP8XcZK2lIlbwjj9BZYLRQu6abODAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;image&quot;
+        title=&quot;image&quot;
+        src=&quot;/static/dcecd0c656484dc26cbaa8164802d3fa/f058b/asset-3.png&quot;
+        srcset=&quot;/static/dcecd0c656484dc26cbaa8164802d3fa/c26ae/asset-3.png 158w,
+/static/dcecd0c656484dc26cbaa8164802d3fa/6bdcf/asset-3.png 315w,
+/static/dcecd0c656484dc26cbaa8164802d3fa/f058b/asset-3.png 630w,
+/static/dcecd0c656484dc26cbaa8164802d3fa/5a190/asset-3.png 800w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;com.unity3d.player.UnityPlayer&lt;/code&gt; 패키지 사용을 위해 Unity에 있는 &lt;code class=&quot;language-text&quot;&gt;classes.jar&lt;/code&gt;파일을 안드로이드 플러그인 프로젝트의 &lt;code class=&quot;language-text&quot;&gt;app/libs&lt;/code&gt; 폴더에 복사해줍니다&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;classes.jar&lt;/code&gt; 파일의 경로는 맥 기준으로 다음과 같습니다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;/Applications/Unity/Hub/Editor/2018.4.19f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Release/Classes/classes.jar&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;hr&gt;
-&lt;p&gt;app 모듈의 build.gradle 파일을 수정해줍니다.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;app&lt;/code&gt; 모듈의 &lt;code class=&quot;language-text&quot;&gt;build.gradle&lt;/code&gt; 파일을 수정해줍니다.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;com.android.&lt;strong&gt;application&lt;/strong&gt; 을 com.android.&lt;strong&gt;library&lt;/strong&gt;로 수정합니다.&lt;/li&gt;
-&lt;li&gt;applicationId, versionCode, versionName은 필요없으므로 모두 주석처리 또는 지워줍니다.&lt;/li&gt;
-&lt;li&gt;dependencies 에서 libs 폴더에있는 classes.jar 파일 불러오는 부분을 implementation -&gt; compileOnly로 수정합니다.&lt;br&gt;
-이는 .aar파일로 빌드할때 app/libs폴더에 복사했던 unity-classes.jar 파일을 제외하기 위함입니다. 이 파일이 포함되면 유니티에서 빌드할때 충돌이 나게 됩니다.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;applicationId&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;versionCode&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;versionName&lt;/code&gt;은 필요없으므로 모두 주석처리 또는 지워줍니다.&lt;/li&gt;
+&lt;li&gt;dependencies 에서 libs 폴더에있는 &lt;code class=&quot;language-text&quot;&gt;classes.jar&lt;/code&gt;파일 불러오는 부분을 &lt;code class=&quot;language-text&quot;&gt;implementation&lt;/code&gt; -&gt; &lt;code class=&quot;language-text&quot;&gt;compileOnly&lt;/code&gt;로 수정합니다.&lt;br&gt;
+이는 &lt;code class=&quot;language-text&quot;&gt;.aar&lt;/code&gt;파일로 빌드할때 &lt;code class=&quot;language-text&quot;&gt;app/libs&lt;/code&gt;폴더에 복사했던 &lt;code class=&quot;language-text&quot;&gt;unity-classes.jar&lt;/code&gt;파일을 제외하기 위함입니다. 이 파일이 포함되면 유니티에서 빌드할때 충돌이 나게 됩니다.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;// apply plugin: &apos;com.android.application&apos;
 apply plugin: &apos;com.android.library&apos;
@@ -138,32 +519,174 @@ dependencies {
 
     ...
 }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;hr&gt;
-&lt;p&gt;AndroidManifest.xml 파일에서 application을 지웁니다.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;충돌 예방 차원에서 res/drawable, res/mipmap, res/values 등등 res/.. 하위 폴더를 다 지웁니다.&lt;/p&gt;
-&lt;p&gt;undefined&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;유니티 프로젝트의 C#스크립트에서 Call 할 수 있는 메소드들이 정의된UnityPluginTestClass.java 파일을 안드로이드 프로젝트에 생성합니다.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;우측상단의 Gradle을 클릭하여 [projectname]/Tasks/build/assemble 을 더블클릭하여 실행하면 app/build/outputs/aar/app-debug.aar 파일이 만들어집니다.&lt;/p&gt;
-&lt;p&gt;undefinedundefinedundefined&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3&gt;유니티 프로젝트 설정&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;AndroidManifest.xml&lt;/code&gt; 파일에서 &lt;code class=&quot;language-text&quot;&gt;application&lt;/code&gt;을 지웁니다.&lt;/p&gt;
+&lt;p&gt;충돌 예방 차원에서 &lt;code class=&quot;language-text&quot;&gt;res/drawable&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;res/mipmap&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;res/values&lt;/code&gt; 등등 &lt;code class=&quot;language-text&quot;&gt;res/..&lt;/code&gt; 하위 폴더를 다 지웁니다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 456px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/e432b12a689cc29623407dbeee0f7f3a/7f664/asset-4.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 99.36708860759494%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC2UlEQVQ4y43TS6/cNBgG4CzZsKAggSgbKC0VLXMm8eXzLTfn4viSTJJJhlZihdTlqUBC/AIK3QB/GWWmHR3KokiPLGfxyq/tOCpKbef1uJ6qps1KrataKEWAUcbfK/riKdvJSpjDTjYoN1/F6tPH+P638Pl7PYHogy/RJ0/U4/yw02NSjfd38uNv6L1H+C1yZ0I+eogv7j3CHz7A0WdPxddE78uBthPKWi5U6AehUkwAU0AE8Nk2oW/2QoBnef7gBqKybsNhGo/LdFw6FwjwxtjGWF03nfVt54z1rbEu9FVjMGXAJYEtjwhECaF53fXjPM7H1jqZ5rpu07wQKs0KnZdVlus0L0tdq6y4xGSap1mRYBolBIxz07oM42x9f5iXMIwyzWNEL1XRufPb2iJGxPo+DONNjKIY0877eV3mZa0aU+h6nI79YWpMx4RCBC6rXSECh3FuO3eT4CjGYJyd12U6roWuKROHcV7W0+nZcx+Guu2umyTAMWUqK07fP2+N3Sd4q926MK/rtKwuDJ3107zUjaHApcqkyoAJCvwKU2Z9sC5cwqxuKuOdsaHQFROyalrTWSFTQhkFDky8g1AmZYopizBwdD6VhLI9IlymnfUuDCovKRPAJWXiHZcDx8C38FVCgAllXbDOq6zAlBHg/zuMgcss9Afr+872zg+tDUyklKsNkxfAVZqXmP47jCnVOvPBGdMMvR0G24fO+zZsDADCeE9I7JwpyyxGyTUsMKUxd3B4fXzx5/jjXzi8Qv5V4rcRhd/J8Do5f+7tb+nxD/PD3zux3g1DzGqwP3Xrr+X4M2lf4uYNVN+i6nYb69ukumXdy3z4Jebhbm0RA+YtPQxeKY6S3dl3GO0o2V8B2SN0IyUllGw/yeW2YkwR49Xkp3ldTs/q1lZNVxtX6AZTTkBcYcqzoiIgoqzUmHGe5rmu07xURZEV5faedKWrpm5Noav/XhiXClH2D79dH4Cez7zDAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;image&quot;
+        title=&quot;image&quot;
+        src=&quot;/static/e432b12a689cc29623407dbeee0f7f3a/7f664/asset-4.png&quot;
+        srcset=&quot;/static/e432b12a689cc29623407dbeee0f7f3a/c26ae/asset-4.png 158w,
+/static/e432b12a689cc29623407dbeee0f7f3a/6bdcf/asset-4.png 315w,
+/static/e432b12a689cc29623407dbeee0f7f3a/7f664/asset-4.png 456w&quot;
+        sizes=&quot;(max-width: 456px) 100vw, 456px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;유니티 프로젝트의 C#스크립트에서 Call 할 수 있는 메소드들이 정의된 &lt;code class=&quot;language-text&quot;&gt;UnityPluginTestClass.java&lt;/code&gt; 파일을 안드로이드 프로젝트에 생성합니다.&lt;/p&gt;
+&lt;p&gt;우측상단의 Gradle을 클릭하여 &lt;code class=&quot;language-text&quot;&gt;[projectname]/Tasks/build/assemble&lt;/code&gt;을 더블클릭하여 실행하면 &lt;code class=&quot;language-text&quot;&gt;app/build/outputs/aar/app-debug.aar&lt;/code&gt;파일이 만들어집니다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/7d9192774408b84bda2334953a0cfd6f/61c63/asset-5.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAAsTAAALEwEAmpwYAAACPklEQVQ4y5WRyXLaQBRF9S3B7IiFWj231KNaSGhEYCYna28SFlnn41My2OU44HKqTqleL07d+54CwoWyvqh7m1faL7l0TGdcOp46nChsDVOOSEOlScxC6DzJSmq89tWw2QazWSg4VFkZc4OTjKQZkZ6kWcwN5AYycxm4iZmOuQZMI2GZ9Km2wWRyN5+H2i2WdVvVrbaOiZSJFBGGMBu/r8ObZ4yIkDqYTqdheJ9I0Qx9UXiMIYwjhMBHYIBRxJUOpndf5jCJ/UkMv8vDb939QvkJuJ8g+4goO9liF0zvJhBRqB+hPnb7H5tvJ9c+meYJ2+9AHmJ1vApQR6GrsXYUhRgBynDbNV3XlEXOOYlhBOHN/hBGTD3vDECEKSc8XTb9bn8cNrtUWZ4qkWrMEkT4v0DMrPOjPJ9HmDDCE18s67Zt+1Xbr3xeGOcpTyCmlyO/AWKqjX1OjiJMR3mxrPth3Q+bbjUsyiqR+qr5/LcoFvKlNmGYiqrpt7vD/vC43R/6Ya1thim/KkNMpcsvyYRyaX232qw326br66YryuqWeZatzV5r80S7sm61cTEiZ26Zl52tu9Qek11eVI1x/uaef0MYDyaTyWw2I5Tn/UPd9OhzJhpvxIKv92EYjsnler9aPyhj/0OOEQYRlCZr1ruyqqumTZX9TPOX5HlEmOCJhJgCiN+Z+MbBRhnECEB0Pi/E9B0AYgBxjMh5ABBHMYKYilSNMpdqJL0CS6QyVhuXKm2cN87bLPd5kSrDREqY+AMr5xgGAb9jHQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;image&quot;
+        title=&quot;image&quot;
+        src=&quot;/static/7d9192774408b84bda2334953a0cfd6f/f058b/asset-5.png&quot;
+        srcset=&quot;/static/7d9192774408b84bda2334953a0cfd6f/c26ae/asset-5.png 158w,
+/static/7d9192774408b84bda2334953a0cfd6f/6bdcf/asset-5.png 315w,
+/static/7d9192774408b84bda2334953a0cfd6f/f058b/asset-5.png 630w,
+/static/7d9192774408b84bda2334953a0cfd6f/61c63/asset-5.png 693w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/642410fe3510ddf9115bde10f7d335e7/5a190/asset-6.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 17.72151898734177%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAIAAAABPYjBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAjUlEQVQI13XMRxKCMBhA4dyFREbEtL+kQShi2ej9j+NCxw3jm2/9xPp4rfdnrmscZs6V0ohxGOqyXG512TiWrtddb/aOJy08EBAjR/oICQBrHa/bNs+TtUY2zUGpPSWlQE4UMoX0g8Q5p1Kyc65tW/UnKRtRximkElPh+F0gB0DygB7QOjhrs6eNtc6/Ae9LLn9DSfaCAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;image&quot;
+        title=&quot;image&quot;
+        src=&quot;/static/642410fe3510ddf9115bde10f7d335e7/f058b/asset-6.png&quot;
+        srcset=&quot;/static/642410fe3510ddf9115bde10f7d335e7/c26ae/asset-6.png 158w,
+/static/642410fe3510ddf9115bde10f7d335e7/6bdcf/asset-6.png 315w,
+/static/642410fe3510ddf9115bde10f7d335e7/f058b/asset-6.png 630w,
+/static/642410fe3510ddf9115bde10f7d335e7/5a190/asset-6.png 800w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/ca07b4732eac9f628c77c21719f1dda8/160a3/asset-7.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 47.46835443037975%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAAAsTAAALEwEAmpwYAAABjUlEQVQoz01RTWvbQBTUn2ja0tr73n5LslbSrlZaKZHtOnZcG0ICgUIPPfTQew9uoC00tDTQY39ysQRu4B0ewwzz3kwkUrO5uev7HpASQKRsHMZF3YTQtkrHgBQpA6RKx5nJ86JExpGyCAHMxep8d2vLUsXJyEPKKOOu8tZVUukTiJRxIY/iYY8AQBV+fvdhOe9L508kykXla1f5k/M4Qqr/YgSQs/zN+0+h7V5PJlMCgIiUUs5DaENoB+cjgpQCohDSWkcACWD0wt+fFZ/p6tf+49/u9vfy3R82//7MHl7V9/760V8/wvnX5+7w0n85swfWf0vXP7Krn2b7YK4eIqCCIM8Xu8XlNs2KLLdCJQQ55co3Xd10UqcE+UhjQuvEFNbrJFPxLELAsFjN9zcmM9MpeXI3c65y1RDYgODwuVI6M2ZCyJSQCCmrl5vL9aYsrVRqzGbszNeN97WQigCORQqpknRm8kInCRfqKO7Xb7e7/UXf103DuDj1HNoutJ1+0l9pnSnKoih1nHAh/wEv0mCMbmKneAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;image&quot;
+        title=&quot;image&quot;
+        src=&quot;/static/ca07b4732eac9f628c77c21719f1dda8/f058b/asset-7.png&quot;
+        srcset=&quot;/static/ca07b4732eac9f628c77c21719f1dda8/c26ae/asset-7.png 158w,
+/static/ca07b4732eac9f628c77c21719f1dda8/6bdcf/asset-7.png 315w,
+/static/ca07b4732eac9f628c77c21719f1dda8/f058b/asset-7.png 630w,
+/static/ca07b4732eac9f628c77c21719f1dda8/160a3/asset-7.png 682w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h1&gt;유니티 프로젝트 설정&lt;/h1&gt;
 &lt;p&gt;다음으로 유니티 프로젝트에서 해야할 작업들입니다.&lt;/p&gt;
 &lt;p&gt;프로젝트 아무곳에다가 UnityPluginTest.cs 파일을 생성합니다.&lt;/p&gt;
 &lt;p&gt;Assets/Plugins/Android/ 디렉토리에 아까 안드로이드 프로젝트에서 생성한 app-debug.aar 파일을 복사하여 붙여넣습니다.&lt;/p&gt;
-&lt;p&gt;undefined&lt;/p&gt;
-&lt;hr&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/91d3b556b5a564ade5a49e6237cbcab9/5a190/asset-8.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 29.746835443037973%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAIAAABM9SnKAAAACXBIWXMAAAsTAAALEwEAmpwYAAABVUlEQVQY0z3LW0vCYADG8X2yCKGZmEikpnlaW6l5yATRllqgq1SEosi6qFDnkm3hDu6d77u1JKTuuuuqPkBfI1Lwf/Hw3PywWI5J0teJ4sVOphLPN4lMldyvUVmGytaog7N4vtV+EDhB50VJkoYAAFVVdQAQQrquY06iGig+eXOPdn/BQTTx8KktcLLkLS/7KivBqoNo3NyL4vAfP4uiYRiyooxGo/F4DCHE6h3Ef/x2rZ/KFd8ef1/KXy3+s9GdnnfemN60zr3LwJxYBi/wLNvXNA0hZMwyDQMrV0qqLA0GXDKdLh+X6RJdY2oc2727bRfow+IRLYiiab5osyCEczxfzL/hjkWDVMjvxG0eJ+5dw/3rjrDHHdxwbbrsPtdqn+29TiYGQpZlLdg8jAht7VHRBBnZjgRTMTK1S2biZJoi0rOfipG9bkcDQJZlVVUVRYEQLvAfLu7NDfoP5Z0AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;image&quot;
+        title=&quot;image&quot;
+        src=&quot;/static/91d3b556b5a564ade5a49e6237cbcab9/f058b/asset-8.png&quot;
+        srcset=&quot;/static/91d3b556b5a564ade5a49e6237cbcab9/c26ae/asset-8.png 158w,
+/static/91d3b556b5a564ade5a49e6237cbcab9/6bdcf/asset-8.png 315w,
+/static/91d3b556b5a564ade5a49e6237cbcab9/f058b/asset-8.png 630w,
+/static/91d3b556b5a564ade5a49e6237cbcab9/5a190/asset-8.png 800w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;이제 빌드하면 apk 파일이 생성될텐데 이 파일을 AVD나 안드로이드폰에 설치하여 테스트를 진행합니다.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3&gt;Git&lt;/h3&gt;
-&lt;p&gt;Unity Project&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/heyask/MyUnityPlugin-unity&quot; title=&quot;https://github.com/heyask/MyUnityPlugin-unity&quot;&gt;&lt;strong&gt;heyask/MyUnityPlugin-unity&lt;/strong&gt;&lt;br&gt;
-_Contribute to heyask/MyUnityPlugin-unity development by creating an account on GitHub._github.com&lt;/a&gt;&lt;a href=&quot;https://github.com/heyask/MyUnityPlugin-unity&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Android Project&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/heyask/MyUnityPlugin-android&quot; title=&quot;https://github.com/heyask/MyUnityPlugin-android&quot;&gt;&lt;strong&gt;heyask/MyUnityPlugin-android&lt;/strong&gt;&lt;br&gt;
-_Contribute to heyask/MyUnityPlugin-android development by creating an account on GitHub._github.com&lt;/a&gt;&lt;a href=&quot;https://github.com/heyask/MyUnityPlugin-android&quot;&gt;&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Dropbox가 Symbolic Link 지원을 종료하다. (feat. DuckSync)]]></title><description><![CDATA[드롭박스가 더 이상 Symbolic Link를 지원하지 않는다고 한다. 
+&lt;h1&gt;Git&lt;/h1&gt;
+&lt;h2&gt;Unity Project&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/heyask/MyUnityPlugin-unity&quot;&gt;https://github.com/heyask/MyUnityPlugin-unity&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Android Project&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/heyask/MyUnityPlugin-android&quot;&gt;https://github.com/heyask/MyUnityPlugin-android&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Dropbox가 Symbolic Link 지원을 종료하다. (feat. DuckSync)]]></title><description><![CDATA[드롭박스가 더 이상 Symbolic Link를 지원하지 않는다고 한다. 
 https://help.dropbox.com/ko-kr/installs-integrations/sync-uploads/symlinks 사실 드롭박스에서는 Symbolic Link…]]></description><link>https://heyask.github.io/2019-10-25-Dropbox-Symbolic-Link-feat-DuckSync/</link><guid isPermaLink="false">https://heyask.github.io/2019-10-25-Dropbox-Symbolic-Link-feat-DuckSync/</guid><pubDate>Fri, 25 Oct 2019 06:23:02 GMT</pubDate><content:encoded>&lt;p&gt;드롭박스가 더 이상 Symbolic Link를 지원하지 않는다고 한다.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
