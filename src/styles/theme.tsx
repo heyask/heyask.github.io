@@ -123,6 +123,6 @@ const localStorageEffect = (key: string) => ({ setSelf, trigger, onSet }: any) =
 
 export const themeState = atom({
   key: "theme",
-  default: "dark",
+  default: "light",
   effects: [localStorageEffect("theme")]
 });

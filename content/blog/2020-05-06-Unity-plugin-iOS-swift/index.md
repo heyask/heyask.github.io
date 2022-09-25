@@ -29,7 +29,7 @@ Xcode: 맥 앱스토어에서 설치할 수 있습니다.([https://apps.apple.co
 
 두개의 프로젝트를 생성할 것이므로 Xcode에서 workspace를 생성해줍니다. Xcode를 실행하고 상단 메뉴에서 File-New-Workspace를 선택하여 생성합니다.
 
-undefined
+![image](./asset-1.png)
 
 ## Xcode Project 생성
 
@@ -39,19 +39,20 @@ undefined
 
 ## Swift 프로젝트 생성
 
-undefinedundefinedundefined
+![image](./asset-2.png)
+![image](./asset-3.png)
+![image](./asset-4.png)
 
----
 
 ## Objective-C Bridge 프로젝트 생성
 
-undefinedundefined
+![image](./asset-5.png)
+![image](./asset-6.png)
 
----
 
 # 프로젝트 구조
 
-undefined
+![image](./asset-7.png)
 
 `MyUnityPluginBridge` Objective-C로 작성된 브리지 프로젝트. 인터페이스 역할을 합니다.
 - `MyUnityPluginUnityProtocol.m` 유니티로 콜백 이벤트를 보내기 위한 프로토콜들을 모아놓은 파일입니다.  
@@ -66,15 +67,14 @@ undefined
 
 `MyUnityPluginBridge` 프로젝트를 선택하여 General-Frameworks and Libraries에 `MyUnityPlugin.framework`를 추가해줍니다.
 
-undefined
+![image](./asset-8.png)
 
----
 
 # 유니티 Project 생성
 
 유니티 프로젝트의 구조는 다음과 같습니다.
 
-undefined
+![image](./asset-9.png)
 
 Assets/MyUnityPlugin/**Samples**: 샘플 씬과 스크립트가 들어있는 디렉토리
 
@@ -84,11 +84,9 @@ Assets/MyUnityPlugin/Scripts/**MyUnityPlugin.cs**: 샘플 스크립트(즉, 이 
 Assets/Plugins/iOS/**MyUnityPlugin.framework**: 아까 생성한 swift 프로젝트를 빌드하여 생성된 .framework파일 입니다. 복사하여 이 디렉토리에 붙여넣습니다.  
 Assets/Plugins/iOS/**MyUnityPluginBridge**: Objective-C로 작성된 브리지 프로젝트입니다. 이 프로젝트의 파일를 그대로 붙여넣습니다.
 
----
 
 이제 Samples 디렉토리에 있는 SampleScene을 열고 유니티 상단메뉴에서 File-Build Settings -> iOS 선택 -> Build를 누르면 xcode프로젝트가 생성됩니다.
 
----
 
 # Git
 
