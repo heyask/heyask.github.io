@@ -37,8 +37,7 @@ const Bio = () => {
   return (
     <div css={css`
       display: flex;
-      width: 720px;
-      margin: 64px auto;
+      margin: 64px 24px 48px 24px;
       padding: 32px;
       border: 1px solid ${theme.colors.default[1]};
     `}>
@@ -46,8 +45,8 @@ const Bio = () => {
         layout="fixed"
         formats={["auto", "webp", "avif"]}
         src="../assets/images/profile-pic.jpg"
-        width={100}
-        height={100}
+        width={80}
+        height={80}
         quality={95}
         alt="Profile picture"
         css={css`
@@ -57,13 +56,13 @@ const Bio = () => {
       />
       {author?.name && (
         <div>
-          <p>
+          <p css={css`margin-top: 4px; margin-bottom: 0px;`}>
             <Link to={`/about`}><strong>{author.name}</strong></Link>
           </p>
-          <p>{author?.summary || null}</p>
-          <a href={`https://github.com/${social?.github || ``}`}>
-            GitHub
-          </a>
+          <p css={css`color: ${theme.colors.default[10]}; margin-top: 10px; margin-bottom: 6px;`}>{author?.summary || null}</p>
+          <Link to={`https://github.com/${social?.github || ``}`}>
+            <small>GitHub</small>
+          </Link>
         </div>
       )}
     </div>

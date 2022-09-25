@@ -16,20 +16,20 @@ const BlogPostTemplate = ({ data: { previous, next, site, markdownRemark: post }
       <article
         className={`blog-post ` + css`max-width: 760px; margin: 0 auto;`}
         itemScope
-        itemType="http://schema.org/Article"
+        itemType="https://schema.org/Article"
       >
         <header>
           <h1 css={css`
-            max-width: 720px;
+            max-width: 800px;
             margin: 0 auto;
-            padding: 120px 0 24px 0;
+            padding: 120px 24px 30px 24px;
             text-align: center;
             font-size: 30pt;
           `}>
             {post.frontmatter.title}
           </h1>
           <p css={css`
-           padding:0 0 60px 0;
+           margin-bottom: 100px;
            text-align: center;
            color: ${theme.colors.default[10]}
           `}>{post.frontmatter.date}</p>
@@ -38,35 +38,75 @@ const BlogPostTemplate = ({ data: { previous, next, site, markdownRemark: post }
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
           css={css`
-            max-width: 720px;
+            max-width: 800px;
             margin: 0 auto;
             padding: 0 24px; 
           `}
         />
         <footer>
-          <Bio />
-          <nav className="blog-post-nav">
+          <div css={css`
+            display: flex;
+            margin: 64px 24px 48px 24px;
+            max-width: 800px;
+            flex-direction: column;
+            margin: 0 auto;
+            align-items: stretch;
+            justify-content: center;
+          `}>
+            <Bio />
+          </div>
+          <nav css={css`max-width: 800px; margin: 30px auto 50px;`}>
             <ul
-              style={{
-                display: `flex`,
-                flexWrap: `wrap`,
-                justifyContent: `space-between`,
-                listStyle: `none`,
-                padding: 0
-              }}
+              css={css`
+                display: flex;
+                list-style: none;
+                padding: 0;
+              `}
             >
-              <li>
+              <li css={css`
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                white-space: nowrap;
+                flex-grow: 1;
+                flex-basis: 0;
+                overflow: hidden;
+                text-overflow: ellipsis;
+              `}>
                 {previous && (
-                  <Link to={previous.fields.slug} rel="prev">
-                    ← {previous.frontmatter.title}
-                  </Link>
+                  <>
+                    <span>← </span>
+                    <Link to={previous.fields.slug} style={css`
+                      overflow: hidden;
+                      text-overflow: ellipsis;
+                    `}>
+                      {previous.frontmatter.title}
+                    </Link>
+                    <span css={css`min-width: 10px;`}/>
+                  </>
                 )}
               </li>
-              <li>
+              <li css={css`
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                white-space: nowrap;
+                flex-grow: 1;
+                flex-basis: 0;
+                overflow: hidden;
+                text-overflow: ellipsis;
+              `}>
                 {next && (
-                  <Link to={next.fields.slug} rel="next">
-                    {next.frontmatter.title} →
-                  </Link>
+                  <>
+                    <span css={css`min-width: 10px;`}/>
+                    <Link to={next.fields.slug} style={css`
+                      overflow: hidden;
+                      text-overflow: ellipsis;
+                    `}>
+                      {next.frontmatter.title}
+                    </Link>
+                    <span> →</span>
+                  </>
                 )}
               </li>
             </ul>

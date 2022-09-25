@@ -50,6 +50,8 @@ const Header = ({ data }: any) => {
       `}>
         <div>
           <Link to="/" style={css`
+          font-family: 'Nanum Gothic';
+          font-weight: bold;
           font-size: 16pt;
         `}>
             {data.site?.siteMetadata?.title}
