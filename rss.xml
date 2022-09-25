@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[기술블로그]]></description><link>https://heyask.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 25 Sep 2022 21:51:34 GMT</lastBuildDate><item><title><![CDATA[엣지케이스(Edge Case), 코너케이스(Corner Case)]]></title><description><![CDATA[엣지케이스(Edge Case), 경계 케이스(Boundary Case…]]></description><link>https://heyask.github.io/2022-09-17-EdgeCase-CornerCase/</link><guid isPermaLink="false">https://heyask.github.io/2022-09-17-EdgeCase-CornerCase/</guid><pubDate>Sat, 17 Sep 2022 04:31:12 GMT</pubDate><content:encoded>&lt;h1&gt;엣지케이스(Edge Case), 경계 케이스(Boundary Case)&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[기술블로그]]></description><link>https://heyask.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 25 Sep 2022 22:38:01 GMT</lastBuildDate><item><title><![CDATA[엣지케이스(Edge Case), 코너케이스(Corner Case)]]></title><description><![CDATA[엣지케이스(Edge Case), 경계 케이스(Boundary Case…]]></description><link>https://heyask.github.io/2022-09-17-EdgeCase-CornerCase/</link><guid isPermaLink="false">https://heyask.github.io/2022-09-17-EdgeCase-CornerCase/</guid><pubDate>Sat, 17 Sep 2022 04:31:12 GMT</pubDate><content:encoded>&lt;h2&gt;엣지케이스(Edge Case), 경계 케이스(Boundary Case)&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;엣지 케이스는 극단적인 작동 매개변수에서만 발생하는 문제 또는 상황입니다. 예를 들어, 스테레오 스피커는 다른 극단적인 설정이나 조건이 없는 경우에도 최대 볼륨으로 재생할 때 오디오를 눈에 띄게 왜곡할 수 있습니다. 극단적인 경우는 예상할 수도 있고 예상하지 못할 수도 있습니다. — Wiki&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -14,7 +14,7 @@
 &lt;li&gt;overflow 가 나는 케이스 (int 대신 long 사용)&lt;/li&gt;
 &lt;li&gt;같은 값이 들어가는 케이스&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h1&gt;코너 케이스(Corner Case)&lt;/h1&gt;
+&lt;h2&gt;코너 케이스(Corner Case)&lt;/h2&gt;
 &lt;p&gt;여러 가지 변수와 환경의 복합적인 상호작용으로 발생하는 문제다. 날씨가 너무 습해 스피커에 문제가 생기는 등의 경우이다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[안드로이드 스튜디오 무선 디버깅(WiFi) 하기]]></title><description><![CDATA[안드로이드 스튜디오에서 기기와 케이블을 연결하지 않고 디버깅을 할 수 있는 방법이 있습니다. adb connect를 사용하는 방법입니다.  먼저, 무선 디버깅을 위해 최초 한번은 기기를 usb에 연결해야 합니다. tcp…]]></description><link>https://heyask.github.io/2020-06-01-Android-Studio-WiFi-Debugging/</link><guid isPermaLink="false">https://heyask.github.io/2020-06-01-Android-Studio-WiFi-Debugging/</guid><pubDate>Mon, 01 Jun 2020 01:37:33 GMT</pubDate><content:encoded>&lt;p&gt;안드로이드 스튜디오에서 기기와 케이블을 연결하지 않고 디버깅을 할 수 있는 방법이 있습니다. &lt;strong&gt;adb connect&lt;/strong&gt;를 사용하는 방법입니다.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
@@ -54,15 +54,18 @@
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;adb connect &lt;span class=&quot;token number&quot;&gt;192.168&lt;/span&gt;.0.115&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;connected to 192.168.0.115:5555&lt;/code&gt; 메시지가 나타나면 무선 디버깅 세팅이 완료되었습니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[유니티용 Plugin 만들기 : iOS편 (Swift)]]></title><description><![CDATA[이 글은 아래 버전 기준으로 작성되었습니다. Unity: 2018.4.19f Xcode: 11.4.1 (11E503a) 유니티용 iOS 플러그인은 기본적으로 Objective-C만 지원이 됩니다. 하지만 브릿지를 통해 인터페이스만 Objective-C…]]></description><link>https://heyask.github.io/2020-05-06-Unity-plugin-iOS-swift/</link><guid isPermaLink="false">https://heyask.github.io/2020-05-06-Unity-plugin-iOS-swift/</guid><pubDate>Wed, 13 May 2020 07:11:13 GMT</pubDate><content:encoded>&lt;blockquote&gt;
 &lt;p&gt;이 글은 아래 버전 기준으로 작성되었습니다.&lt;/p&gt;
-&lt;p&gt;Unity: 2018.4.19f&lt;/p&gt;
-&lt;p&gt;Xcode: 11.4.1 (11E503a)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Unity: 2018.4.19f&lt;/li&gt;
+&lt;li&gt;Xcode: 11.4.1 (11E503a)&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;유니티용 iOS 플러그인은 기본적으로 Objective-C만 지원이 됩니다. 하지만 브릿지를 통해 인터페이스만 Objective-C로 작성하고 Swift로 실구현내용을 작성하는 방식을 통해 유니티 플러그인을 만들 수 있습니다.&lt;/p&gt;
-&lt;h1&gt;설치&lt;/h1&gt;
+&lt;h2&gt;설치&lt;/h2&gt;
 &lt;p&gt;유니티가 설치되어있지 않으면 먼저 설치해줍니다.&lt;/p&gt;
 &lt;p&gt;유니티: &lt;a href=&quot;https://unity3d.com/get-unity/update&quot;&gt;https://unity3d.com/get-unity/update&lt;/a&gt;&lt;br&gt;
-Xcode: 맥 앱스토어에서 설치할 수 있습니다.(&lt;a href=&quot;https://apps.apple.com/kr/app/xcode/id497799835?mt=12&quot;&gt;https://apps.apple.com/kr/app/xcode/id497799835?mt=12&lt;/a&gt;)&lt;/p&gt;
-&lt;h1&gt;Workspace 생성&lt;/h1&gt;
+Xcode: 맥 앱스토어에서 설치할 수 있습니다. &lt;a href=&quot;https://apps.apple.com/kr/app/xcode/id497799835?mt=12&quot;&gt;https://apps.apple.com/kr/app/xcode/id497799835?mt=12&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Workspace 생성&lt;/h2&gt;
 &lt;p&gt;두개의 프로젝트를 생성할 것이므로 Xcode에서 workspace를 생성해줍니다. Xcode를 실행하고 상단 메뉴에서 File-New-Workspace를 선택하여 생성합니다.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
@@ -94,10 +97,10 @@ Xcode: 맥 앱스토어에서 설치할 수 있습니다.(&lt;a href=&quot;https
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;h2&gt;Xcode Project 생성&lt;/h2&gt;
+&lt;h3&gt;Xcode Project 생성&lt;/h3&gt;
 &lt;p&gt;마찬가지로 File-New-Project를 클릭하여 두개의 프로젝트를 생성해줍니다. 템플릿은 Framework를 선택하고 하나는 언어를 Swift로 다른 한개의 프로젝트는 Objective-C로 설정합니다.&lt;/p&gt;
 &lt;p&gt;프로젝트 생성시 “Add to”와 “Group” 은 workspace로 설정합니다.&lt;/p&gt;
-&lt;h2&gt;Swift 프로젝트 생성&lt;/h2&gt;
+&lt;h3&gt;Swift 프로젝트 생성&lt;/h3&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
@@ -191,7 +194,7 @@ Xcode: 맥 앱스토어에서 설치할 수 있습니다.(&lt;a href=&quot;https
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;h2&gt;Objective-C Bridge 프로젝트 생성&lt;/h2&gt;
+&lt;h3&gt;Objective-C Bridge 프로젝트 생성&lt;/h3&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
@@ -254,7 +257,7 @@ Xcode: 맥 앱스토어에서 설치할 수 있습니다.(&lt;a href=&quot;https
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;h1&gt;프로젝트 구조&lt;/h1&gt;
+&lt;h2&gt;프로젝트 구조&lt;/h2&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 307px; &quot;
@@ -329,7 +332,7 @@ Xcode: 맥 앱스토어에서 설치할 수 있습니다.(&lt;a href=&quot;https
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;h1&gt;유니티 Project 생성&lt;/h1&gt;
+&lt;h2&gt;유니티 Project 생성&lt;/h2&gt;
 &lt;p&gt;유니티 프로젝트의 구조는 다음과 같습니다.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
@@ -362,16 +365,17 @@ Xcode: 맥 앱스토어에서 설치할 수 있습니다.(&lt;a href=&quot;https
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Assets/MyUnityPlugin/&lt;strong&gt;Samples&lt;/strong&gt;: 샘플 씬과 스크립트가 들어있는 디렉토리&lt;/p&gt;
-&lt;p&gt;Assets/MyUnityPlugin/Scripts/iOS/&lt;strong&gt;MyUnityPluginiOSImpl.cs&lt;/strong&gt;: MyUnityPlugin.cs에서 Android, iOS 각 플랫폼의 함수 호출을 맵핑하기 위한 Implements 클래스입니다.&lt;br&gt;
-Assets/MyUnityPlugin/Scripts/&lt;strong&gt;MyUnityPlugin.cs&lt;/strong&gt;: 샘플 스크립트(즉, 이 플러그인을 사용하는 클라이언트가 싱글톤 instance에 접근하여 메소드를 호출하는 클래스입니다.&lt;/p&gt;
-&lt;p&gt;Assets/Plugins/iOS/&lt;strong&gt;MyUnityPlugin.framework&lt;/strong&gt;: 아까 생성한 swift 프로젝트를 빌드하여 생성된 .framework파일 입니다. 복사하여 이 디렉토리에 붙여넣습니다.&lt;br&gt;
-Assets/Plugins/iOS/&lt;strong&gt;MyUnityPluginBridge&lt;/strong&gt;: Objective-C로 작성된 브리지 프로젝트입니다. 이 프로젝트의 파일를 그대로 붙여넣습니다.&lt;/p&gt;
-&lt;p&gt;이제 Samples 디렉토리에 있는 SampleScene을 열고 유니티 상단메뉴에서 File-Build Settings -&gt; iOS 선택 -&gt; Build를 누르면 xcode프로젝트가 생성됩니다.&lt;/p&gt;
-&lt;h1&gt;Git&lt;/h1&gt;
-&lt;h2&gt;Unity Project&lt;/h2&gt;
+&lt;p&gt;Assets/MyUnityPlugin/&lt;code class=&quot;language-text&quot;&gt;Samples&lt;/code&gt;: 샘플 씬과 스크립트가 들어있는 디렉토리&lt;/p&gt;
+&lt;p&gt;Assets/MyUnityPlugin/Scripts/iOS/&lt;code class=&quot;language-text&quot;&gt;MyUnityPluginiOSImpl.cs&lt;/code&gt;: MyUnityPlugin.cs에서 Android, iOS 각 플랫폼의 함수 호출을 맵핑하기 위한 Implements 클래스입니다.&lt;/p&gt;
+&lt;p&gt;Assets/MyUnityPlugin/Scripts/&lt;code class=&quot;language-text&quot;&gt;MyUnityPlugin.cs&lt;/code&gt;: 샘플 스크립트(즉, 이 플러그인을 사용하는 클라이언트가 싱글톤 instance에 접근하여 메소드를 호출하는 클래스입니다.&lt;/p&gt;
+&lt;p&gt;Assets/Plugins/iOS/&lt;code class=&quot;language-text&quot;&gt;MyUnityPlugin.framework&lt;/code&gt;: 아까 생성한 swift 프로젝트를 빌드하여 생성된 .framework파일 입니다. 복사하여 이 디렉토리에 붙여넣습니다.&lt;/p&gt;
+&lt;p&gt;Assets/Plugins/iOS/&lt;code class=&quot;language-text&quot;&gt;MyUnityPluginBridge&lt;/code&gt;: Objective-C로 작성된 브리지 프로젝트입니다. 이 프로젝트의 파일를 그대로 붙여넣습니다.&lt;/p&gt;
+&lt;p&gt;이제 &lt;code class=&quot;language-text&quot;&gt;Samples&lt;/code&gt; 디렉토리에 있는 &lt;code class=&quot;language-text&quot;&gt;SampleScene&lt;/code&gt;을 열고 유니티 상단메뉴에서 &lt;code class=&quot;language-text&quot;&gt;File -&gt; Build Settings -&gt; iOS 선택 -&gt; Build&lt;/code&gt;를 누르면 xcode프로젝트가 생성됩니다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Git&lt;/h2&gt;
+&lt;h4&gt;Unity Project&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/heyask/MyUnityPlugin-unity&quot;&gt;https://github.com/heyask/MyUnityPlugin-unity&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;iOS Project&lt;/h2&gt;
+&lt;h4&gt;iOS Project&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/heyask/MyUnityPlugin-ios&quot;&gt;https://github.com/heyask/MyUnityPlugin-ios&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[유니티용 Plugin 만들기 : 안드로이드편 (AAR)]]></title><description><![CDATA[이 글은 아래 버전 기준으로 작성되었습니다. Unity: 2018.4.19f Android Studio: 3.6.3 JDK: OpenJDK “1.8.0_242” 유니티용 안드로이드 플러그인을 만드는 방법은 다양하게 있지만 여기서는 대표적인 AAR…]]></description><link>https://heyask.github.io/2020-05-06-Unity-plugin-Android-AAR/</link><guid isPermaLink="false">https://heyask.github.io/2020-05-06-Unity-plugin-Android-AAR/</guid><pubDate>Wed, 06 May 2020 08:30:59 GMT</pubDate><content:encoded>&lt;blockquote&gt;
 &lt;p&gt;이 글은 아래 버전 기준으로 작성되었습니다.&lt;/p&gt;
 &lt;ul&gt;
@@ -380,13 +384,13 @@ Assets/Plugins/iOS/&lt;strong&gt;MyUnityPluginBridge&lt;/strong&gt;: Objective-C
 &lt;li&gt;JDK: OpenJDK “1.8.0_242”&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;유니티용 안드로이드 플러그인을 만드는 방법은 다양하게 있지만 여기서는 대표적인 AAR을 사용하는 방법으로 진행하겠습니다.&lt;/p&gt;
-&lt;h1&gt;설치&lt;/h1&gt;
+&lt;p&gt;유니티용 안드로이드 플러그인을 만드는 방법은 다양하게 있지만 여기서는 대표적인 AAR(&lt;strong&gt;A&lt;/strong&gt;ndroid &lt;strong&gt;AR&lt;/strong&gt;chive)을 사용하는 방법으로 진행하겠습니다.&lt;/p&gt;
+&lt;h2&gt;설치&lt;/h2&gt;
 &lt;p&gt;아래 링크에서 유니티와 안드로이드 스튜디오를 다운로드 및 설치해주세요&lt;/p&gt;
-&lt;p&gt;유니티: &lt;a href=&quot;https://unity3d.com/get-unity/update&quot;&gt;https://unity3d.com/get-unity/update&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;안드로이드 스튜디오: &lt;a href=&quot;https://developer.android.com/studio&quot;&gt;https://developer.android.com/studio&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;유니티: &lt;a href=&quot;https://unity3d.com/get-unity/update&quot;&gt;https://unity3d.com/get-unity/update&lt;/a&gt;&lt;br&gt;
+안드로이드 스튜디오: &lt;a href=&quot;https://developer.android.com/studio&quot;&gt;https://developer.android.com/studio&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h1&gt;안드로이드 프로젝트 생성&lt;/h1&gt;
+&lt;h2&gt;안드로이드 프로젝트 생성&lt;/h2&gt;
 &lt;p&gt;먼저 안드로이드 스튜디오에서 프로젝트를 하나 생성해줍니다.&lt;/p&gt;
 &lt;p&gt;Activity는 필요없으므로 No Activity를 선택하고&lt;/p&gt;
 &lt;p&gt;&lt;span
@@ -452,7 +456,7 @@ Assets/Plugins/iOS/&lt;strong&gt;MyUnityPluginBridge&lt;/strong&gt;: Objective-C
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;h1&gt;안드로이드 프로젝트 설정&lt;/h1&gt;
+&lt;h2&gt;안드로이드 프로젝트 설정&lt;/h2&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
@@ -644,7 +648,7 @@ android &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;h1&gt;유니티 프로젝트 설정&lt;/h1&gt;
+&lt;h2&gt;유니티 프로젝트 설정&lt;/h2&gt;
 &lt;p&gt;다음으로 유니티 프로젝트에서 해야할 작업들입니다.&lt;/p&gt;
 &lt;p&gt;프로젝트 아무곳에다가 &lt;code class=&quot;language-text&quot;&gt;UnityPluginTest.cs&lt;/code&gt; 파일을 생성합니다.&lt;/p&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;Assets/Plugins/Android/&lt;/code&gt; 디렉토리에 아까 안드로이드 프로젝트에서 생성한 &lt;code class=&quot;language-text&quot;&gt;app-debug.aar&lt;/code&gt; 파일을 복사하여 붙여넣습니다.&lt;/p&gt;
@@ -680,17 +684,25 @@ android &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;이제 빌드하면 apk 파일이 생성될텐데 이 파일을 AVD나 안드로이드폰에 설치하여 테스트를 진행합니다.&lt;/p&gt;
-&lt;h1&gt;Git&lt;/h1&gt;
-&lt;h2&gt;Unity Project&lt;/h2&gt;
+&lt;hr&gt;
+&lt;h2&gt;Git&lt;/h2&gt;
+&lt;h3&gt;Unity Project&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/heyask/MyUnityPlugin-unity&quot;&gt;https://github.com/heyask/MyUnityPlugin-unity&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;Android Project&lt;/h2&gt;
+&lt;h3&gt;Android Project&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/heyask/MyUnityPlugin-android&quot;&gt;https://github.com/heyask/MyUnityPlugin-android&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Dropbox가 Symbolic Link 지원을 종료하다. (feat. DuckSync)]]></title><description><![CDATA[드롭박스가 더 이상 Symbolic Link를 지원하지 않는다고 한다. 
 https://help.dropbox.com/ko-kr/installs-integrations/sync-uploads/symlinks 사실 드롭박스에서는 Symbolic Link…]]></description><link>https://heyask.github.io/2019-10-25-Dropbox-Symbolic-Link-feat-DuckSync/</link><guid isPermaLink="false">https://heyask.github.io/2019-10-25-Dropbox-Symbolic-Link-feat-DuckSync/</guid><pubDate>Fri, 25 Oct 2019 06:23:02 GMT</pubDate><content:encoded>&lt;p&gt;드롭박스가 더 이상 Symbolic Link를 지원하지 않는다고 한다.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
-      &lt;span
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/dd76f48ed4315e7a3e5c9b748b76c1a4/5d030/asset-1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
     style=&quot;padding-bottom: 61.39240506329114%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAAAsTAAALEwEAmpwYAAABbUlEQVQoz5XRS4+CMBAHcL7/ZzEmXnxd9KYYD0aJW4QgPuKDFoiAtEw7sIGuxI3Zw/4OzWTSPx1aY7PZ9Hq9brfb6XQGg8F4PF4ul6vVqt/vz+dz0zSHw+F2ux2NRpPJxLbt6XS6WCyqqirL0kBEAHg8HpxzIYSUEhGFEHmeA4BSSgihO0opvUcIUTWMNE1vt1uSJGEYUkrDF0ppEASU0iiKKKVxHFNK2Zs6nOc551w2iqKQUiqlpJTQ0LUGAHqDLuowIpZlqcdAxPYTAKBXpRQAIGL1wbhcLrPZzDRNQojjOIQQy7Jc17Usy3Ec27YJIbvdjnOuL+lXWB9YvlR/KD/UYQDIsoxznjd4I//ts/N8PhHRKIqCMea6rud5vu8fDof9fn86nXTtvzkej57nnc/nIAiSJFFKGVLK+/2+Xq+/GtfrtX2SMAwZY7Sh348xFkVRHMdpmv6c/D52O1W7tp13WZbVYf33+E/6wr4BI5KjlAPRwp4AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
@@ -708,8 +720,9 @@ https://help.dropbox.com/ko-kr/installs-integrations/sync-uploads/symlinks 사�
         loading=&quot;lazy&quot;
         decoding=&quot;async&quot;
       /&gt;
+  &lt;/a&gt;
     &lt;/span&gt;
-&lt;a href=&quot;https://help.dropbox.com/ko-kr/installs-integrations/sync-uploads/symlinks&quot;&gt;https://help.dropbox.com/ko-kr/installs-integrations/sync-uploads/symlinks&lt;/a&gt;&lt;/p&gt;
+&lt;em&gt;&lt;a href=&quot;https://help.dropbox.com/ko-kr/installs-integrations/sync-uploads/symlinks&quot;&gt;https://help.dropbox.com/ko-kr/installs-integrations/sync-uploads/symlinks&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;사실 드롭박스에서는 Symbolic Link라는 개념이 없어서 소프트링크가 존재하면 링크가 아니라 그냥 폴더로 인식한다고 한다. 따라서 드롭박스폴더 내에 실제 데이터를 담은 폴더가 있고 해당 폴더를 소프트링크로 생성하면 같은 데이터가 두개가 되고 용량을 두배로 잡아먹게 된다.&lt;/p&gt;
 &lt;p&gt;장점이 될 수 도있고 단점이 될 수 도 있는데, 나는 이것을 아래와 같이 장점으로 활용했다.&lt;/p&gt;
 &lt;ol&gt;
@@ -759,11 +772,11 @@ https://help.dropbox.com/ko-kr/installs-integrations/sync-uploads/symlinks 사�
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;h1&gt;Github&lt;/h1&gt;
+&lt;h2&gt;Github&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/aivesoft/DuckSync&quot;&gt;https://github.com/aivesoft/DuckSync&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;Homepage&lt;/h3&gt;
+&lt;h4&gt;Homepage&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&quot;https://aivesoft.com/DuckSync&quot;&gt;https://aivesoft.com/DuckSync&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;Download (Mac)&lt;/h3&gt;
+&lt;h4&gt;Download (Mac)&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/aivesoft/DuckSync/releases/latest/download/DuckSync.dmg&quot;&gt;https://github.com/aivesoft/DuckSync/releases/latest/download/DuckSync.dmg&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;현재 맥에서만 테스트 하였고 윈도우나 리눅스에서는 확인해보지 않았다.&lt;/p&gt;
 &lt;p&gt;앱 자체는 매우 단순하고 사용법도 매우 간단하다.&lt;/p&gt;
