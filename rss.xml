@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[기술블로그]]></description><link>https://heyask.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 25 Sep 2022 20:59:18 GMT</lastBuildDate><item><title><![CDATA[엣지케이스(Edge Case), 코너케이스(Corner Case)]]></title><description><![CDATA[엣지케이스(Edge Case), 경계 케이스(Boundary Case…]]></description><link>https://heyask.github.io/2022-09-17-EdgeCase-CornerCase/</link><guid isPermaLink="false">https://heyask.github.io/2022-09-17-EdgeCase-CornerCase/</guid><pubDate>Sat, 17 Sep 2022 04:31:12 GMT</pubDate><content:encoded>&lt;h1&gt;엣지케이스(Edge Case), 경계 케이스(Boundary Case)&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[기술블로그]]></description><link>https://heyask.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 25 Sep 2022 21:03:40 GMT</lastBuildDate><item><title><![CDATA[엣지케이스(Edge Case), 코너케이스(Corner Case)]]></title><description><![CDATA[엣지케이스(Edge Case), 경계 케이스(Boundary Case…]]></description><link>https://heyask.github.io/2022-09-17-EdgeCase-CornerCase/</link><guid isPermaLink="false">https://heyask.github.io/2022-09-17-EdgeCase-CornerCase/</guid><pubDate>Sat, 17 Sep 2022 04:31:12 GMT</pubDate><content:encoded>&lt;h1&gt;엣지케이스(Edge Case), 경계 케이스(Boundary Case)&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;엣지 케이스는 극단적인 작동 매개변수에서만 발생하는 문제 또는 상황입니다. 예를 들어, 스테레오 스피커는 다른 극단적인 설정이나 조건이 없는 경우에도 최대 볼륨으로 재생할 때 오디오를 눈에 띄게 왜곡할 수 있습니다. 극단적인 경우는 예상할 수도 있고 예상하지 못할 수도 있습니다. — Wiki&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -648,8 +648,8 @@ dependencies {
     &lt;/span&gt;&lt;/p&gt;
 &lt;h1&gt;유니티 프로젝트 설정&lt;/h1&gt;
 &lt;p&gt;다음으로 유니티 프로젝트에서 해야할 작업들입니다.&lt;/p&gt;
-&lt;p&gt;프로젝트 아무곳에다가 UnityPluginTest.cs 파일을 생성합니다.&lt;/p&gt;
-&lt;p&gt;Assets/Plugins/Android/ 디렉토리에 아까 안드로이드 프로젝트에서 생성한 app-debug.aar 파일을 복사하여 붙여넣습니다.&lt;/p&gt;
+&lt;p&gt;프로젝트 아무곳에다가 &lt;code class=&quot;language-text&quot;&gt;UnityPluginTest.cs&lt;/code&gt; 파일을 생성합니다.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;Assets/Plugins/Android/&lt;/code&gt; 디렉토리에 아까 안드로이드 프로젝트에서 생성한 &lt;code class=&quot;language-text&quot;&gt;app-debug.aar&lt;/code&gt; 파일을 복사하여 붙여넣습니다.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
