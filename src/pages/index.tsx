@@ -1,22 +1,24 @@
 import * as React from "react";
-import { Link, graphql } from "gatsby";
+import { graphql } from "gatsby";
 
 import Bio from "../components/bio";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
+import Link from "../components/link";
+import { css } from "@emotion/react";
+import { useTheme } from "@emotion/react";
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`;
   const posts = data.allMarkdownRemark.nodes;
+  const theme = useTheme();
 
   if (posts.length === 0) {
     return (
       <Layout location={location} title={siteTitle}>
         <Bio />
         <p>
-          No blog posts found. Add markdown posts to "content/blog" (or the
-          directory you specified for the "gatsby-source-filesystem" plugin in
-          gatsby-config.js).
+          포스트가 없습니다.
         </p>
       </Layout>
     );
@@ -24,25 +26,38 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <Bio />
-      <ol style={{ listStyle: `none` }}>
+      <ol css={css`
+        list-style: none;
+        margin: 0;
+        padding: 30px 24px;
+      `}>
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug;
 
           return (
             <li key={post.fields.slug}>
               <article
-                className="post-list-item"
                 itemScope
-                itemType="http://schema.org/Article"
+                itemType="https://schema.org/Article"
               >
                 <header>
-                  <h2>
-                    <Link to={post.fields.slug} itemProp="url">
-                      <span itemProp="headline">{title}</span>
+                  <small css={css`
+                    color: ${theme.colors.default[10]};
+                  `}>{post.frontmatter.date}</small>
+                  <h2 css={css`
+                    margin: 0;
+                    margin-top: 6px;
+                    margin-bottom: 8px;
+                    font-size: 16pt;
+                    transition: transform 100ms;
+                    &:hover {
+                      transform: translateX(3px);
+                    }
+                  `}>
+                    <Link to={post.fields.slug}>
+                      {title}
                     </Link>
                   </h2>
-                  <small>{post.frontmatter.date}</small>
                 </header>
                 <section>
                   <p
@@ -50,6 +65,11 @@ const BlogIndex = ({ data, location }) => {
                       __html: post.frontmatter.description || post.excerpt
                     }}
                     itemProp="description"
+                    css={css`
+                      margin: 0;
+                      margin-bottom: 24px;
+                      color: ${theme.colors.default[10]}
+                    `}
                   />
                 </section>
               </article>
@@ -84,7 +104,7 @@ export const pageQuery = graphql`
                     slug
                 }
                 frontmatter {
-                    date(formatString: "MMMM DD, YYYY")
+                    date(formatString: "YYYY-MM-DD")
                     title
                     description
                 }

@@ -1,7 +1,9 @@
 import React, { createRef, useEffect } from "react";
+import { useTheme } from "@emotion/react";
 
-export default function Comment() {
+export default function Comment({ location }) {
   const containerRef = createRef<HTMLDivElement>();
+  const theme = useTheme();
 
   useEffect(() => {
     const utterances = document.createElement("script");
@@ -10,7 +12,7 @@ export default function Comment() {
       repo: "heyask/heyask.github.io",
       "issue-term": "title",
       label: "comment",
-      theme: "github-light",
+      theme: `github-${theme.key}`,
       crossOrigin: "anonymous",
       async: "true"
     };
@@ -18,7 +20,7 @@ export default function Comment() {
       utterances.setAttribute(key, value);
     });
     containerRef.current.appendChild(utterances);
-  }, []);
+  }, [location, theme]);
 
-  return <div id="comment" ref={containerRef} />;
+  return <div ref={containerRef} />;
 }

@@ -1,8 +1,11 @@
 import * as React from "react";
 import { Global, ThemeProvider, useTheme } from "@emotion/react";
+import { css } from "@emotion/react";
 import Header from "./header";
 import BaseLayout from "./base-layout";
 import { GlobalStyle } from "../styles/global";
+import Footer from "./footer";
+import Test from "./test";
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`;
@@ -10,18 +13,18 @@ const Layout = ({ location, title, children }) => {
   const theme = useTheme();
 
   return (
-    <BaseLayout>
-      <Global styles={GlobalStyle(theme)} />
-      <div className="global-wrapper" data-is-root-path={isRootPath}>
-        <Header location={location} title={title} />
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
+    <>
+      <div css={css`
+        background: ${theme.colors.default[0]};
+        min-height: 100vh;
+      `} data-is-root-path={isRootPath}>
+        <main css={css`
+          max-width: ${theme.breakpoints[3]}px;
+          margin: 60px auto;
+        `}>{children}</main>
+        <Footer />
       </div>
-    </BaseLayout>
+    </>
   );
 };
 

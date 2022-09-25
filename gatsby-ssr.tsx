@@ -4,15 +4,14 @@
  * See: https://www.gatsbyjs.com/docs/ssr-apis/
  */
 import React from "react";
-import { RecoilRoot, useRecoilState } from "recoil";
+import { RecoilRoot } from "recoil";
+import BaseLayout from "./src/components/base-layout";
 
+export const wrapPageElement = ({ element, props }) => {
+  return <BaseLayout {...props}>{element}</BaseLayout>;
+};
 
-export const onRenderBody = ({ setHtmlAttributes }) => {
-  setHtmlAttributes({ lang: `en` })
-}
-
-
-export const wrapRootElement = ({ element, props }) => {
+export const wrapRootElement = ({ element }) => {
   return (
     <RecoilRoot>
       {element}
