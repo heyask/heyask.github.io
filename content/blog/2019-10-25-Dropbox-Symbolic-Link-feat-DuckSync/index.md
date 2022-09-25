@@ -1,6 +1,6 @@
 ---
 title: "Dropbox가 Symbolic Link 지원을 종료하다. (feat. DuckSync)"
-description: "A S"
+description: "DuckSync"
 date: "2019-10-25T06:23:02.335Z"
 categories: []
 published: true
@@ -11,6 +11,7 @@ redirect_from:
 
 드롭박스가 더 이상 Symbolic Link를 지원하지 않는다고 한다.
 
+![image](./asset-1.png)
 [https://help.dropbox.com/ko-kr/installs-integrations/sync-uploads/symlinks](https://help.dropbox.com/ko-kr/installs-integrations/sync-uploads/symlinks)
 
 사실 드롭박스에서는 Symbolic Link라는 개념이 없어서 소프트링크가 존재하면 링크가 아니라 그냥 폴더로 인식한다고 한다. 따라서 드롭박스폴더 내에 실제 데이터를 담은 폴더가 있고 해당 폴더를 소프트링크로 생성하면 같은 데이터가 두개가 되고 용량을 두배로 잡아먹게 된다.
@@ -44,19 +45,18 @@ ln -s /path/to/original-directory /path/to/Dropbox/my-soft-link
 
 그래서 데스크톱용 동기화앱을 만들었다. 이름은 **DuckSync**(오리 동기화. 아무 의미 없다..)
 
-DuckSync
 
-**Github**
+![image](./asset-2.png)
 
-[**aivesoft/DuckSync**  
-_A simple file sync app based on watchman, rsync. It syncs all files from A(from) directory to B(to) directory in real…_github.com](https://github.com/aivesoft/DuckSync "https://github.com/aivesoft/DuckSync")[](https://github.com/aivesoft/DuckSync)
+# Github
 
-**Homepage**
+[https://github.com/aivesoft/DuckSync](https://github.com/aivesoft/DuckSync)
 
-[**🐥 DuckSync**  
-_A simple file sync app based on watchman, rsync. It syncs all files from A(from) directory to B(to) directory in real…_aivesoft.com](https://aivesoft.com/DuckSync "https://aivesoft.com/DuckSync")[](https://aivesoft.com/DuckSync)
+### Homepage
 
-**Download (Mac)**
+[https://aivesoft.com/DuckSync](https://aivesoft.com/DuckSync)
+
+### Download (Mac)
 
 [https://github.com/aivesoft/DuckSync/releases/latest/download/DuckSync.dmg](https://github.com/aivesoft/DuckSync/releases/latest/download/DuckSync.dmg)
 
