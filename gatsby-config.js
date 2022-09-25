@@ -1,4 +1,7 @@
 module.exports = {
+  flags: {
+    DEV_SSR: true
+  },
   siteMetadata: {
     title: `SunRiv`,
     author: {
@@ -13,6 +16,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-image`,
+    `gatsby-plugin-emotion`,
     {
       resolve: `gatsby-plugin-typescript`,
       options: {

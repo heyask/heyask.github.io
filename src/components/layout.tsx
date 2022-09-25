@@ -1,35 +1,27 @@
 import * as React from "react";
-import { Link } from "gatsby";
+import { Global, ThemeProvider, useTheme } from "@emotion/react";
+import Header from "./header";
+import BaseLayout from "./base-layout";
+import { GlobalStyle } from "../styles/global";
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`;
   const isRootPath = location.pathname === rootPath;
-  let header;
-
-  if (isRootPath) {
-    header = (
-      <h1 className="main-heading">
-        <Link to="/">{title}</Link>
-      </h1>
-    );
-  } else {
-    header = (
-      <Link className="header-link-home" to="/">
-        {title}
-      </Link>
-    );
-  }
+  const theme = useTheme();
 
   return (
-    <div className="global-wrapper" data-is-root-path={isRootPath}>
-      <header className="global-header">{header}</header>
-      <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
-      </footer>
-    </div>
+    <BaseLayout>
+      <Global styles={GlobalStyle(theme)} />
+      <div className="global-wrapper" data-is-root-path={isRootPath}>
+        <Header location={location} title={title} />
+        <main>{children}</main>
+        <footer>
+          © {new Date().getFullYear()}, Built with
+          {` `}
+          <a href="https://www.gatsbyjs.com">Gatsby</a>
+        </footer>
+      </div>
+    </BaseLayout>
   );
 };
 
