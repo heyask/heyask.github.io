@@ -107,9 +107,9 @@ dependencies {
 
 다음으로 유니티 프로젝트에서 해야할 작업들입니다.
 
-프로젝트 아무곳에다가 UnityPluginTest.cs 파일을 생성합니다.
+프로젝트 아무곳에다가 `UnityPluginTest.cs` 파일을 생성합니다.
 
-Assets/Plugins/Android/ 디렉토리에 아까 안드로이드 프로젝트에서 생성한 app-debug.aar 파일을 복사하여 붙여넣습니다.
+`Assets/Plugins/Android/` 디렉토리에 아까 안드로이드 프로젝트에서 생성한 `app-debug.aar` 파일을 복사하여 붙여넣습니다.
 
 ![image](./asset-8.png)
 

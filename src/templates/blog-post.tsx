@@ -44,6 +44,7 @@ const BlogPostTemplate = ({ data: { previous, next, site, markdownRemark: post }
             dangerouslySetInnerHTML={{ __html: post.html }}
             itemProp="articleBody"
             css={css`
+              word-break: break-all;
               h1, h2, h3, h4, h5, h6 {
                   font-weight: bold;
               }
