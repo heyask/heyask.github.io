@@ -24,7 +24,7 @@ export const common = {
 export const light: Theme = {
   key: "light",
   colors: {
-    primary: "hotpink",
+    primary: "#42a5f5",
     positive: "hotpink",
     negative: "hotpink",
     default: [

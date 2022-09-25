@@ -25,6 +25,7 @@ const BlogPostTemplate = ({ data: { previous, next, site, markdownRemark: post }
             padding: 120px 24px 30px 24px;
             text-align: center;
             font-size: 30pt;
+            color: ${theme.colors.default[25]};
           `}>
             {post.frontmatter.title}
           </h1>
@@ -34,15 +35,96 @@ const BlogPostTemplate = ({ data: { previous, next, site, markdownRemark: post }
            color: ${theme.colors.default[10]}
           `}>{post.frontmatter.date}</p>
         </header>
-        <section
-          dangerouslySetInnerHTML={{ __html: post.html }}
-          itemProp="articleBody"
-          css={css`
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 0 24px; 
-          `}
-        />
+        <div css={css`
+              max-width: 800px;
+              margin: 0 auto;
+              padding: 0 24px; 
+            `}>
+          <section
+            dangerouslySetInnerHTML={{ __html: post.html }}
+            itemProp="articleBody"
+            css={css`
+              h1, h2, h3, h4, h5, h6 {
+                  font-weight: bold;
+              }
+              h1, h2, h3, h4, h5, p {
+                  margin-bottom: 24px;
+                  padding: 0;
+              }
+              h1 {
+                  font-size: 48px;
+              }
+              h2 {
+                  font-size: 36px;
+                  margin: 24px 0 6px;
+              }
+              h3 {
+                  font-size: 24px;
+              }
+              h4 {
+                  font-size: 21px;
+              }
+              h5 {
+                  font-size: 18px;
+              }
+              p {
+                color: ${theme.colors.default[20]};
+              }
+              a {
+                  margin: 0;
+                  padding: 0;
+                  vertical-align: baseline;
+              }
+              ul, ol {
+                li {
+                  margin-bottom: 12px; 
+                }
+              }
+              pre {
+                  padding: 0px 24px;
+                  white-space: pre-wrap;
+              }
+              aside {
+                  display: block;
+                  float: right;
+              }
+              blockquote {
+                  margin: 24px 0;
+                  padding: 24px 32px;
+                  box-sizing: border-box;
+                  border-left: 5px solid ${theme.colors.primary};
+                  background: ${theme.colors.default[1]};
+                  p {
+                    color: ${theme.colors.default[16]};
+                    &:last-child {
+                      margin: 0;
+                    }
+                  }
+              }
+              hr {
+                height: 1px;
+                margin: 30px 0;
+                border: none;
+                background-color: ${theme.colors.default[1]};
+              }
+              table {
+                  border-collapse: collapse;
+                  margin: 1em 1em;
+                  border: 1px solid #CCC;
+              }
+              table thead {
+                  background-color: #EEE;
+              }
+              table thead td {
+                  color: #666;
+              }
+              table td {
+                  padding: 0.5em 1em;
+                  border: 1px solid #CCC;
+              }
+            `}
+          />
+        </div>
         <footer>
           <div css={css`
             display: flex;
@@ -82,7 +164,7 @@ const BlogPostTemplate = ({ data: { previous, next, site, markdownRemark: post }
                     `}>
                       {previous.frontmatter.title}
                     </Link>
-                    <span css={css`min-width: 10px;`}/>
+                    <span css={css`min-width: 10px;`} />
                   </>
                 )}
               </li>
@@ -98,7 +180,7 @@ const BlogPostTemplate = ({ data: { previous, next, site, markdownRemark: post }
               `}>
                 {next && (
                   <>
-                    <span css={css`min-width: 10px;`}/>
+                    <span css={css`min-width: 10px;`} />
                     <Link to={next.fields.slug} style={css`
                       overflow: hidden;
                       text-overflow: ellipsis;
