@@ -39,7 +39,7 @@
 <li>그런데 A폴더를 드롭박스 동기화 폴더에 이동시켜 넣자니 하드의 용량이 부족하다거나 기타 이유로 그렇게 하고 싶지 않다.</li>
 <li>그렇다면 소프트링크를 걸어주면 된다. 이렇게!</li>
 </ol>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">ln -s /path/to/original-directory /path/to/Dropbox/my-soft-link</code></pre></div>
+<div class="gatsby-highlight" data-language="shell"><pre class="language-shell"><code class="language-shell"><span class="token function">ln</span> <span class="token parameter variable">-s</span> /path/to/original-directory /path/to/Dropbox/my-soft-link</code></pre></div>
 <p>그런데 나는 왜 이렇게 하고 있을까? 결론부터 말하자면 용량 때문이다. 내 맥미니는 512GB SSD를 사용한다. 충분하다고 생각하는 사람도 있겠지만 나에게는 턱없이 부족한 용량이다. 데이터 백업용으로만 4TB 하드 2개를 외장으로 사용중이기 때문이다.</p>
 <p>그리고 혹시나 하드가 뻑이나서 데이터가 다 날아가버리는 사태를 방지하기 위해 2중 백업을 하고 있다. 그런데도 불안하다. 신뢰하던 하드가 뻑나서 데이터를 다 날려버린 경험이 있기 때문에..</p>
 <p>드롭박스 유료플랜의 가장 낮은 옵션인 Plus만 하더라도 2TB라는 용량을 제공한다. 나는 현재 2TB의 15%정도 밖에 사용하지 않고있다. 사실 드롭박스를 쓰는 이유가 주로 프로젝트 파일이 어떠한 이유로 날아가버리는것에 대비하기 위함이기 때문에 그렇게 큰 용량이 필요하지는 않기 때문이다. 구글 드라이브처럼 100GB, 200GB 옵션도 있으면 좋겠지만 드롭박스측에서 운영 비용상의 이유로 그렇게 하지 못한다고 한다. 버전 관리가 좋기로 유명한 갓드롭박스이니 괜찮다.</p>
