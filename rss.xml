@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[기술블로그]]></description><link>https://heyask.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 25 Sep 2022 21:03:40 GMT</lastBuildDate><item><title><![CDATA[엣지케이스(Edge Case), 코너케이스(Corner Case)]]></title><description><![CDATA[엣지케이스(Edge Case), 경계 케이스(Boundary Case…]]></description><link>https://heyask.github.io/2022-09-17-EdgeCase-CornerCase/</link><guid isPermaLink="false">https://heyask.github.io/2022-09-17-EdgeCase-CornerCase/</guid><pubDate>Sat, 17 Sep 2022 04:31:12 GMT</pubDate><content:encoded>&lt;h1&gt;엣지케이스(Edge Case), 경계 케이스(Boundary Case)&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[기술블로그]]></description><link>https://heyask.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 25 Sep 2022 21:51:34 GMT</lastBuildDate><item><title><![CDATA[엣지케이스(Edge Case), 코너케이스(Corner Case)]]></title><description><![CDATA[엣지케이스(Edge Case), 경계 케이스(Boundary Case…]]></description><link>https://heyask.github.io/2022-09-17-EdgeCase-CornerCase/</link><guid isPermaLink="false">https://heyask.github.io/2022-09-17-EdgeCase-CornerCase/</guid><pubDate>Sat, 17 Sep 2022 04:31:12 GMT</pubDate><content:encoded>&lt;h1&gt;엣지케이스(Edge Case), 경계 케이스(Boundary Case)&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;엣지 케이스는 극단적인 작동 매개변수에서만 발생하는 문제 또는 상황입니다. 예를 들어, 스테레오 스피커는 다른 극단적인 설정이나 조건이 없는 경우에도 최대 볼륨으로 재생할 때 오디오를 눈에 띄게 왜곡할 수 있습니다. 극단적인 경우는 예상할 수도 있고 예상하지 못할 수도 있습니다. — Wiki&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -374,12 +374,12 @@ Assets/Plugins/iOS/&lt;strong&gt;MyUnityPluginBridge&lt;/strong&gt;: Objective-C
 &lt;h2&gt;iOS Project&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/heyask/MyUnityPlugin-ios&quot;&gt;https://github.com/heyask/MyUnityPlugin-ios&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[유니티용 Plugin 만들기 : 안드로이드편 (AAR)]]></title><description><![CDATA[이 글은 아래 버전 기준으로 작성되었습니다. Unity: 2018.4.19f Android Studio: 3.6.3 JDK: OpenJDK “1.8.0_242” 유니티용 안드로이드 플러그인을 만드는 방법은 다양하게 있지만 여기서는 대표적인 AAR…]]></description><link>https://heyask.github.io/2020-05-06-Unity-plugin-Android-AAR/</link><guid isPermaLink="false">https://heyask.github.io/2020-05-06-Unity-plugin-Android-AAR/</guid><pubDate>Wed, 06 May 2020 08:30:59 GMT</pubDate><content:encoded>&lt;blockquote&gt;
 &lt;p&gt;이 글은 아래 버전 기준으로 작성되었습니다.&lt;/p&gt;
-&lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;Unity: 2018.4.19f&lt;/li&gt;
 &lt;li&gt;Android Studio: 3.6.3&lt;/li&gt;
 &lt;li&gt;JDK: OpenJDK “1.8.0_242”&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;유니티용 안드로이드 플러그인을 만드는 방법은 다양하게 있지만 여기서는 대표적인 AAR을 사용하는 방법으로 진행하겠습니다.&lt;/p&gt;
 &lt;h1&gt;설치&lt;/h1&gt;
 &lt;p&gt;아래 링크에서 유니티와 안드로이드 스튜디오를 다운로드 및 설치해주세요&lt;/p&gt;
@@ -452,7 +452,6 @@ Assets/Plugins/iOS/&lt;strong&gt;MyUnityPluginBridge&lt;/strong&gt;: Objective-C
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;hr&gt;
 &lt;h1&gt;안드로이드 프로젝트 설정&lt;/h1&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
@@ -487,8 +486,7 @@ Assets/Plugins/iOS/&lt;strong&gt;MyUnityPluginBridge&lt;/strong&gt;: Objective-C
     &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;com.unity3d.player.UnityPlayer&lt;/code&gt; 패키지 사용을 위해 Unity에 있는 &lt;code class=&quot;language-text&quot;&gt;classes.jar&lt;/code&gt;파일을 안드로이드 플러그인 프로젝트의 &lt;code class=&quot;language-text&quot;&gt;app/libs&lt;/code&gt; 폴더에 복사해줍니다&lt;/p&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;classes.jar&lt;/code&gt; 파일의 경로는 맥 기준으로 다음과 같습니다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;/Applications/Unity/Hub/Editor/2018.4.19f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Release/Classes/classes.jar&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;hr&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;/Applications/Unity/Hub/Editor/2018.4.19f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Release/Classes/classes.jar&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;app&lt;/code&gt; 모듈의 &lt;code class=&quot;language-text&quot;&gt;build.gradle&lt;/code&gt; 파일을 수정해줍니다.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;com.android.&lt;strong&gt;application&lt;/strong&gt; 을 com.android.&lt;strong&gt;library&lt;/strong&gt;로 수정합니다.&lt;/li&gt;
@@ -496,29 +494,29 @@ Assets/Plugins/iOS/&lt;strong&gt;MyUnityPluginBridge&lt;/strong&gt;: Objective-C
 &lt;li&gt;dependencies 에서 libs 폴더에있는 &lt;code class=&quot;language-text&quot;&gt;classes.jar&lt;/code&gt;파일 불러오는 부분을 &lt;code class=&quot;language-text&quot;&gt;implementation&lt;/code&gt; -&gt; &lt;code class=&quot;language-text&quot;&gt;compileOnly&lt;/code&gt;로 수정합니다.&lt;br&gt;
 이는 &lt;code class=&quot;language-text&quot;&gt;.aar&lt;/code&gt;파일로 빌드할때 &lt;code class=&quot;language-text&quot;&gt;app/libs&lt;/code&gt;폴더에 복사했던 &lt;code class=&quot;language-text&quot;&gt;unity-classes.jar&lt;/code&gt;파일을 제외하기 위함입니다. 이 파일이 포함되면 유니티에서 빌드할때 충돌이 나게 됩니다.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;// apply plugin: &apos;com.android.application&apos;
-apply plugin: &apos;com.android.library&apos;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;gradle&quot;&gt;&lt;pre class=&quot;language-gradle&quot;&gt;&lt;code class=&quot;language-gradle&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// apply plugin: &apos;com.android.application&apos;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;apply&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;plugin&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;com.android.library&apos;&lt;/span&gt;
 
-android {
-    ...
+android &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;...&lt;/span&gt;
 
-    defaultConfig { 
-        ...
+    defaultConfig &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; 
+        &lt;span class=&quot;token punctuation&quot;&gt;...&lt;/span&gt;
 
-        //applicationId &quot;com.example.unityplugintest&quot;
-        //versionCode 1
-        //versionName &quot;1.0&quot;
-    }
-}
+        &lt;span class=&quot;token comment&quot;&gt;//applicationId &quot;com.example.unityplugintest&quot;&lt;/span&gt;
+        &lt;span class=&quot;token comment&quot;&gt;//versionCode 1&lt;/span&gt;
+        &lt;span class=&quot;token comment&quot;&gt;//versionName &quot;1.0&quot;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 
-dependencies {
-    ...
+&lt;span class=&quot;token keyword&quot;&gt;dependencies&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;...&lt;/span&gt;
 
-    // implementation fileTree(dir: &apos;libs&apos;, include: [&apos;*.jar&apos;])
-    compileOnly fileTree(dir: &apos;libs&apos;, include: [&apos;*.jar&apos;])
+    &lt;span class=&quot;token comment&quot;&gt;// implementation fileTree(dir: &apos;libs&apos;, include: [&apos;*.jar&apos;])&lt;/span&gt;
+    compileOnly &lt;span class=&quot;token function&quot;&gt;fileTree&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;dir&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;libs&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; include&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;*.jar&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 
-    ...
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;...&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;AndroidManifest.xml&lt;/code&gt; 파일에서 &lt;code class=&quot;language-text&quot;&gt;application&lt;/code&gt;을 지웁니다.&lt;/p&gt;
 &lt;p&gt;충돌 예방 차원에서 &lt;code class=&quot;language-text&quot;&gt;res/drawable&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;res/mipmap&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;res/values&lt;/code&gt; 등등 &lt;code class=&quot;language-text&quot;&gt;res/..&lt;/code&gt; 하위 폴더를 다 지웁니다.&lt;/p&gt;
 &lt;p&gt;&lt;span
