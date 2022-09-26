@@ -44,7 +44,7 @@ const Header = ({ data }: any) => {
           <Link to="/" style={css`
           font-family: 'Nanum Gothic';
           font-weight: bold;
-          font-size: 16pt;
+          font-size: 20px;
           ${theme.mq[0]} {
             font-size: 16px;
           }
