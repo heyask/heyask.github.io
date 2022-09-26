@@ -1,8 +1,11 @@
 import { css, Theme } from "@emotion/react";
 
-export const GlobalStyle = () => (css`
+export const GlobalStyle = (theme: Theme) => (css`
 :root {
   font-family: "Nanum Gothic";
+}
+body {
+  background: ${theme.colors.default[0]};
 }
 a {
   text-decoration: none;

@@ -15,7 +15,7 @@ const BaseLayout = ({ children, ...props }) => {
 
   return (
     <ThemeProvider theme={theme == dark.key ? dark : light}>
-      <Global styles={GlobalStyle()} />
+      <Global styles={GlobalStyle(theme == dark.key ? dark : light)} />
       <Header {...props} />
       {children}
     </ThemeProvider>

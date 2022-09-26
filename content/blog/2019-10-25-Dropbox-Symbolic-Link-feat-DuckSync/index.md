@@ -12,7 +12,7 @@ redirect_from:
 드롭박스가 더 이상 Symbolic Link를 지원하지 않는다고 한다.
 
 ![image](./asset-1.png)
-[https://help.dropbox.com/ko-kr/installs-integrations/sync-uploads/symlinks](https://help.dropbox.com/ko-kr/installs-integrations/sync-uploads/symlinks)
+*[https://help.dropbox.com/ko-kr/installs-integrations/sync-uploads/symlinks](https://help.dropbox.com/ko-kr/installs-integrations/sync-uploads/symlinks)*
 
 사실 드롭박스에서는 Symbolic Link라는 개념이 없어서 소프트링크가 존재하면 링크가 아니라 그냥 폴더로 인식한다고 한다. 따라서 드롭박스폴더 내에 실제 데이터를 담은 폴더가 있고 해당 폴더를 소프트링크로 생성하면 같은 데이터가 두개가 되고 용량을 두배로 잡아먹게 된다.
 
@@ -23,7 +23,7 @@ redirect_from:
 3.  그런데 A폴더를 드롭박스 동기화 폴더에 이동시켜 넣자니 하드의 용량이 부족하다거나 기타 이유로 그렇게 하고 싶지 않다.
 4.  그렇다면 소프트링크를 걸어주면 된다. 이렇게!
 
-```
+```shell
 ln -s /path/to/original-directory /path/to/Dropbox/my-soft-link
 ```
 
@@ -48,15 +48,15 @@ ln -s /path/to/original-directory /path/to/Dropbox/my-soft-link
 
 ![image](./asset-2.png)
 
-# Github
+## Github
 
 [https://github.com/aivesoft/DuckSync](https://github.com/aivesoft/DuckSync)
 
-### Homepage
+#### Homepage
 
 [https://aivesoft.com/DuckSync](https://aivesoft.com/DuckSync)
 
-### Download (Mac)
+#### Download (Mac)
 
 [https://github.com/aivesoft/DuckSync/releases/latest/download/DuckSync.dmg](https://github.com/aivesoft/DuckSync/releases/latest/download/DuckSync.dmg)
 

@@ -10,25 +10,24 @@ redirect_from:
 ---
 
 > 이 글은 아래 버전 기준으로 작성되었습니다.
+> 
+> - Unity: 2018.4.19f  
+> - Android Studio: 3.6.3  
+> - JDK: OpenJDK "1.8.0_242"
 
--   Unity: 2018.4.19f
--   Android Studio: 3.6.3
--   JDK: OpenJDK “1.8.0_242”
-
-유니티용 안드로이드 플러그인을 만드는 방법은 다양하게 있지만 여기서는 대표적인 AAR을 사용하는 방법으로 진행하겠습니다.
+유니티용 안드로이드 플러그인을 만드는 방법은 다양하게 있지만 여기서는 대표적인 AAR(**A**ndroid **AR**chive)을 사용하는 방법으로 진행하겠습니다.
 
 
-# 설치
+## 설치
 
 아래 링크에서 유니티와 안드로이드 스튜디오를 다운로드 및 설치해주세요
 
-유니티: [https://unity3d.com/get-unity/update](https://unity3d.com/get-unity/update)
-
+유니티: [https://unity3d.com/get-unity/update](https://unity3d.com/get-unity/update)  
 안드로이드 스튜디오: [https://developer.android.com/studio](https://developer.android.com/studio)
 
 ---
 
-# 안드로이드 프로젝트 생성
+## 안드로이드 프로젝트 생성
 
 먼저 안드로이드 스튜디오에서 프로젝트를 하나 생성해줍니다.
 
@@ -40,9 +39,8 @@ Activity는 필요없으므로 No Activity를 선택하고
 
 ![image](./asset-2.png)
 
----
 
-# 안드로이드 프로젝트 설정
+## 안드로이드 프로젝트 설정
 
 ![image](./asset-3.png)
 
@@ -50,11 +48,10 @@ Activity는 필요없으므로 No Activity를 선택하고
 
 `classes.jar` 파일의 경로는 맥 기준으로 다음과 같습니다.
 
-```
+```shell
 /Applications/Unity/Hub/Editor/2018.4.19f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Release/Classes/classes.jar
 ```
 
----
 
 `app` 모듈의 `build.gradle` 파일을 수정해줍니다.
 
@@ -63,7 +60,7 @@ Activity는 필요없으므로 No Activity를 선택하고
 -   dependencies 에서 libs 폴더에있는 `classes.jar`파일 불러오는 부분을 `implementation` -> `compileOnly`로 수정합니다.  
     이는 `.aar`파일로 빌드할때 `app/libs`폴더에 복사했던 `unity-classes.jar`파일을 제외하기 위함입니다. 이 파일이 포함되면 유니티에서 빌드할때 충돌이 나게 됩니다.
 
-```
+```gradle
 // apply plugin: 'com.android.application'
 apply plugin: 'com.android.library'
 
@@ -103,7 +100,7 @@ dependencies {
 ![image](./asset-6.png)
 ![image](./asset-7.png)
 
-# 유니티 프로젝트 설정
+## 유니티 프로젝트 설정
 
 다음으로 유니티 프로젝트에서 해야할 작업들입니다.
 
@@ -115,13 +112,14 @@ dependencies {
 
 이제 빌드하면 apk 파일이 생성될텐데 이 파일을 AVD나 안드로이드폰에 설치하여 테스트를 진행합니다.
 
+---
 
-# Git
+## Git
 
-## Unity Project
+### Unity Project
 
 [https://github.com/heyask/MyUnityPlugin-unity](https://github.com/heyask/MyUnityPlugin-unity)
 
-## Android Project
+### Android Project
 
 [https://github.com/heyask/MyUnityPlugin-android](https://github.com/heyask/MyUnityPlugin-android)

@@ -1,8 +1,6 @@
 import React from "react";
 import "./src/styles/normalize.css";
 import "typeface-nanum-gothic";
-import "prismjs/themes/prism.css";
-// import "./src/styles/style.css";
 import { RecoilRoot } from "recoil";
 import BaseLayout from "./src/components/base-layout";
 

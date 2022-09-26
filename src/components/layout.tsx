@@ -6,6 +6,7 @@ import BaseLayout from "./base-layout";
 import { GlobalStyle } from "../styles/global";
 import Footer from "./footer";
 import Test from "./test";
+import { fadeIn } from "../styles/keyframes";
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`;
@@ -15,12 +16,12 @@ const Layout = ({ location, title, children }) => {
   return (
     <>
       <div css={css`
-        background: ${theme.colors.default[0]};
-        min-height: 100vh;
       `} data-is-root-path={isRootPath}>
         <main css={css`
           max-width: ${theme.breakpoints[3]}px;
+          min-height: 100vh;
           margin: 60px auto;
+          animation: ${fadeIn} 600ms;
         `}>{children}</main>
         <Footer />
       </div>

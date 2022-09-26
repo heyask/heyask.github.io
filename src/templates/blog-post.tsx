@@ -6,6 +6,8 @@ import Seo from "../components/seo";
 import Comment from "../components/comment";
 import { css, useTheme } from "@emotion/react";
 import Link from "../components/link";
+import "prismjs/themes/prism-okaidia.min.css";
+import { fadeIn } from "../styles/keyframes";
 
 const BlogPostTemplate = ({ data: { previous, next, site, markdownRemark: post }, location }) => {
   const siteTitle = site.siteMetadata?.title || `Title`;
@@ -14,7 +16,9 @@ const BlogPostTemplate = ({ data: { previous, next, site, markdownRemark: post }
   return (
     <Layout location={location} title={siteTitle}>
       <article
-        className={`blog-post ` + css`max-width: 760px; margin: 0 auto;`}
+        css={css`
+          max-width: 800px; margin: 0 auto;
+        `}
         itemScope
         itemType="https://schema.org/Article"
       >
@@ -24,15 +28,25 @@ const BlogPostTemplate = ({ data: { previous, next, site, markdownRemark: post }
             margin: 0 auto;
             padding: 120px 24px 30px 24px;
             text-align: center;
-            font-size: 30pt;
+            font-size: 36px;
+            font-weight: 900;
             color: ${theme.colors.default[25]};
+            ${theme.mq[0]} {
+              font-size: 32px;
+              padding: 50px 24px;
+              marign-bottom: 0;
+            }
           `}>
             {post.frontmatter.title}
           </h1>
           <p css={css`
            margin-bottom: 100px;
            text-align: center;
-           color: ${theme.colors.default[10]}
+           color: ${theme.colors.default[10]};
+           ${theme.mq[0]} {
+              margin-top: 0;
+              margin-bottom: 50px;
+            }
           `}>{post.frontmatter.date}</p>
         </header>
         <div css={css`
@@ -46,44 +60,92 @@ const BlogPostTemplate = ({ data: { previous, next, site, markdownRemark: post }
             css={css`
               word-break: break-all;
               h1, h2, h3, h4, h5, h6 {
-                  font-weight: bold;
-              }
-              h1, h2, h3, h4, h5, p {
-                  margin-bottom: 24px;
-                  padding: 0;
+                font-weight: 900;
+                color: ${theme.colors.default[20]};
               }
               h1 {
-                  font-size: 48px;
+                font-size: 30px;
+                line-height: 42px;
+                margin-top: 36px;
+                margin-bottom: 0px;
               }
               h2 {
-                  font-size: 36px;
-                  margin: 24px 0 6px;
+                font-size: 26px;
+                line-height: 36px;
+                margin-top: 32px;
+                margin-bottom: 0px;
               }
               h3 {
-                  font-size: 24px;
+                font-size: 22px;
+                line-height: 32px;
+                margin-top: 26px;
+                margin-bottom: 0px;
               }
               h4 {
-                  font-size: 21px;
+                font-size: 20px;
+                line-height: 30px;
+                margin-top: 20px;
+                margin-bottom: 0px;
               }
               h5 {
-                  font-size: 18px;
+                font-size: 18px;
+                line-height: 28px;
+              }
+              h6 {
+                font-size: 16px;
+                line-height: 26px;
+              }
+              img + em, span + em {
+                display: block;
+                width:100%;
+                text-align: center;
+                font-size: 14px;
+                color: ${theme.colors.default[10]};
               }
               p {
                 color: ${theme.colors.default[20]};
+                font-size: 16px;
+                line-height: 28px;
+                margin-bottom: 16px;
+                padding: 0;
               }
               a {
-                  margin: 0;
-                  padding: 0;
-                  vertical-align: baseline;
+                color: ${theme.colors.primary};
+                margin: 0;
+                padding: 0;
+                vertical-align: baseline;
+                &:visited {
+                  color: ${theme.colors.primary};
+                }
+                &:hover {
+                  color: ${theme.colors.primary};
+                }
+                &:active {
+                  color: ${theme.colors.primary};
+                }
               }
               ul, ol {
                 li {
-                  margin-bottom: 12px; 
+                  color: ${theme.colors.default[20]};
+                  font-size: 16px;
+                  line-height: 28px;
+                  margin-bottom: 12px;
                 }
               }
+              code {
+                background-color: ${theme.colors.default[2]} !important;
+                color: ${theme.colors.default[25]} !important;
+                text-shadow: none !important;
+                font-size: 13px !important;
+                padding: 4px 6px !important;
+              }
               pre {
-                  padding: 0px 24px;
-                  white-space: pre-wrap;
+                white-space: pre-wrap;
+                code {
+                  background: inherit !important;
+                  color: inherit !important;
+                  text-shadow: inherit !important;
+                }
               }
               aside {
                   display: block;
@@ -129,7 +191,6 @@ const BlogPostTemplate = ({ data: { previous, next, site, markdownRemark: post }
         <footer>
           <div css={css`
             display: flex;
-            margin: 64px 24px 48px 24px;
             max-width: 800px;
             flex-direction: column;
             margin: 0 auto;
@@ -143,7 +204,7 @@ const BlogPostTemplate = ({ data: { previous, next, site, markdownRemark: post }
               css={css`
                 display: flex;
                 list-style: none;
-                padding: 0;
+                padding: 0 24px;
               `}
             >
               <li css={css`
@@ -194,7 +255,11 @@ const BlogPostTemplate = ({ data: { previous, next, site, markdownRemark: post }
               </li>
             </ul>
           </nav>
-          <Comment location={location} />
+          <div css={css`
+            margin: 0 24px;
+          `}>
+            <Comment location={location} />
+          </div>
         </footer>
       </article>
     </Layout>
