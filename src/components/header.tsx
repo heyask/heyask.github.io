@@ -45,6 +45,9 @@ const Header = ({ data }: any) => {
           font-family: 'Nanum Gothic';
           font-weight: bold;
           font-size: 16pt;
+          ${theme.mq[0]} {
+            font-size: 16px;
+          }
         `}>
             {data.site?.siteMetadata?.title}
           </Link>
