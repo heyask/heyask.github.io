@@ -113,12 +113,7 @@ const BlogIndex = ({ data, location }) => {
                       }
                     `}>
                       <header>
-                        <div css={css`
-                          color: ${theme.colors.default[10]};
-                          ${theme.mq[0]} {
-                            text-align: right;                            
-                          }
-                        `}>
+                        <div css={css`color: ${theme.colors.default[10]};`}>
                           <small>{post.frontmatter.category} | {post.frontmatter.date}</small>
                         </div>
                         <h2 css={css`
