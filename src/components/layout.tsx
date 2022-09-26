@@ -19,7 +19,7 @@ const Layout = ({ location, title, children }) => {
       `} data-is-root-path={isRootPath}>
         <main css={css`
           max-width: ${theme.breakpoints[3]}px;
-          min-height: 100vh;
+          min-height: 80vh;
           margin: 60px auto;
           animation: ${fadeIn} 600ms;
         `}>{children}</main>

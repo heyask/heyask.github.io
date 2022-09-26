@@ -12,12 +12,11 @@ const Footer = () => {
 
   return (
     <footer css={css`
-        border-top: 1px solid ${theme.colors.default[1]};
-        padding: 50px 0px;
-        text-align: center;
-        background: ${theme.colors.default[0]};
-        color: ${theme.colors.default[10]}
-        `}>
+      font-size: 14px;
+      padding: 50px 0px;
+      text-align: center;
+      color: ${theme.colors.default[10]}
+    `}>
       © {new Date().getFullYear()}, Built with
       {` `}
       <Link to="https://www.gatsbyjs.com">Gatsby</Link>

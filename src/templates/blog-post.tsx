@@ -7,7 +7,6 @@ import Comment from "../components/comment";
 import { css, useTheme } from "@emotion/react";
 import Link from "../components/link";
 import "prismjs/themes/prism-okaidia.min.css";
-import { fadeIn } from "../styles/keyframes";
 
 const BlogPostTemplate = ({ data: { previous, next, site, markdownRemark: post }, location }) => {
   const siteTitle = site.siteMetadata?.title || `Title`;
@@ -193,13 +192,13 @@ const BlogPostTemplate = ({ data: { previous, next, site, markdownRemark: post }
             display: flex;
             max-width: 800px;
             flex-direction: column;
-            margin: 0 auto;
+            margin: 50px 24px 24px 24px;
             align-items: stretch;
             justify-content: center;
           `}>
             <Bio />
           </div>
-          <nav css={css`max-width: 800px; margin: 30px auto 50px;`}>
+          <nav css={css`max-width: 800px; margin-bottom: 24px;`}>
             <ul
               css={css`
                 display: flex;
@@ -219,17 +218,29 @@ const BlogPostTemplate = ({ data: { previous, next, site, markdownRemark: post }
               `}>
                 {previous && (
                   <>
-                    <span>← </span>
                     <Link to={previous.fields.slug} style={css`
+                      flex-grow: 1;
                       overflow: hidden;
                       text-overflow: ellipsis;
+                      border: 1px solid ${theme.colors.default[1]};
+                      padding: 12px;
+                      border-radius: 8px;
+                      &:hover {
+                        background: ${theme.colors.default[1]};
+                      }
                     `}>
+                      <span>← </span>
+                      <span css={css`
+                        flex-grow:1;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                      `}>{previous.frontmatter.title}</span>
                       {previous.frontmatter.title}
                     </Link>
-                    <span css={css`min-width: 10px;`} />
                   </>
                 )}
               </li>
+              <li css={css`min-width: 16px;`} />
               <li css={css`
                 display: flex;
                 align-items: center;
@@ -242,22 +253,30 @@ const BlogPostTemplate = ({ data: { previous, next, site, markdownRemark: post }
               `}>
                 {next && (
                   <>
-                    <span css={css`min-width: 10px;`} />
                     <Link to={next.fields.slug} style={css`
+                      flex-grow: 1;
+                      display: flex;
                       overflow: hidden;
-                      text-overflow: ellipsis;
+                      border: 1px solid ${theme.colors.default[1]};
+                      padding: 12px;
+                      border-radius: 8px;
+                      &:hover {
+                        background: ${theme.colors.default[1]};
+                      }
                     `}>
-                      {next.frontmatter.title}
+                      <span css={css`
+                        flex-grow:1;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                      `}>{next.frontmatter.title}</span>
+                      <span> →</span>
                     </Link>
-                    <span> →</span>
                   </>
                 )}
               </li>
             </ul>
           </nav>
-          <div css={css`
-            margin: 0 24px;
-          `}>
+          <div>
             <Comment location={location} />
           </div>
         </footer>

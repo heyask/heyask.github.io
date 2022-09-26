@@ -10,6 +10,8 @@ import { useStaticQuery, graphql } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import { css, useTheme } from "@emotion/react";
 import Link from "./link";
+import Icon from "@mdi/react";
+import { mdiGithub } from "@mdi/js";
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -37,9 +39,9 @@ const Bio = () => {
   return (
     <div css={css`
       display: flex;
-      margin: 64px 24px 48px 24px;
-      padding: 32px;
+      padding: 24px;
       border: 1px solid ${theme.colors.default[1]};
+      align-items: center;
     `}>
       <StaticImage
         layout="fixed"
@@ -51,17 +53,36 @@ const Bio = () => {
         alt="Profile picture"
         css={css`
           border-radius: 50%;
-          margin-right: 16px;
+          margin-right: 24px;
         `}
       />
       {author?.name && (
         <div>
-          <p css={css`margin-top: 4px; margin-bottom: 0px;`}>
-            <Link to={`/about`}><strong>{author.name}</strong></Link>
+          <p css={css`margin: 0;`}>
+            <small css={css`color: ${theme.colors.default[10]};`}>Written by </small><Link to={`/about`} style={css`
+              background: ${theme.colors.default[1]};
+              padding: 6px 16px 4px;
+              border-radius: 12px;
+              color: ${theme.colors.primary} !important;
+              &:hover {
+                background: ${theme.colors.default[2]};
+              }
+            `}><strong>{author.name}</strong></Link>
           </p>
-          <p css={css`color: ${theme.colors.default[10]}; margin-top: 10px; margin-bottom: 6px;`}>{author?.summary || null}</p>
+          <p css={css`color: ${theme.colors.default[16]}; margin-top: 8px; margin-bottom: 10px;`}>{author?.summary || null}</p>
           <Link to={`https://github.com/${social?.github || ``}`}>
-            <small>GitHub</small>
+            <span css={css`
+              display: flex; 
+              align-items: center; 
+              font-size: 14px;
+              background: ${theme.colors.default[1]};
+              color: ${theme.colors.default[16]};
+              padding: 4px 12px;
+              border-radius: 12px;
+              &:hover {
+                background: ${theme.colors.default[2]};
+              }
+            `}><Icon path={mdiGithub} size={0.8} color={theme.colors.default[16]} css={css`margin-right: 4px;`} /> GitHub</span>
           </Link>
         </div>
       )}
