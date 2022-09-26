@@ -79,8 +79,8 @@ const BlogIndex = ({ data, location }) => {
                       border-radius: 50px; 
                       cursor: pointer;
                       font-size: 14px;
-                      ${theme.mq} {
-                        margin-right: 8px;
+                      ${theme.mq[0]} {
+                        margin-right: 6px;
                       }
                     `}
               >{category ?? "전체"}</span>)}
