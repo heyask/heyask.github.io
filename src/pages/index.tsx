@@ -9,6 +9,7 @@ import { useTheme } from "@emotion/react";
 import { getRandomCatImage } from "../components/utils";
 import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image";
 import { useMemo, useState } from "react";
+import { wriggleRight } from "../styles/keyframes";
 
 const catImage = getRandomCatImage();
 
@@ -56,19 +57,34 @@ const BlogIndex = ({ data, location }) => {
           </h2>
           <p css={css`font-weight: 200; color: ${theme.colors.default[16]};`}>그릿을 해빗으로</p>
         </div>
-        <div css={css`margin-bottom: 24px;`}>
-          {[null, ...categories].map((category) =>
-            <span key={category} onClick={e => selectSelectedCategory(category)}
-                  css={css`
-                  background: ${category == selectedCategory ? theme.colors.primary : theme.colors.default[1]}; 
-                  color: ${category == selectedCategory ? 'white' : theme.colors.default[20]}; 
-                  padding: 8px 16px; 
-                  margin-right: 12px; 
-                  border-radius: 50px; 
-                  cursor: pointer;
-                  font-size: 14px;
-                  `}
-            >{category ?? "전체"}</span>)}
+        <div css={css`
+            margin-bottom: 16px;
+            overflow-x: scroll;
+            &::-webkit-scrollbar {
+              display: none;
+            }
+          `}>
+          <div css={css`
+            display: flex;
+            white-space: nowrap;
+            animation: ${wriggleRight} 2s;
+          `}>
+            {[null, ...categories].map((category) =>
+              <span key={category} onClick={e => selectSelectedCategory(category)}
+                    css={css`
+                      background: ${category == selectedCategory ? theme.colors.primary : theme.colors.default[1]}; 
+                      color: ${category == selectedCategory ? 'white' : theme.colors.default[20]}; 
+                      padding: 8px 16px; 
+                      margin-right: 12px; 
+                      border-radius: 50px; 
+                      cursor: pointer;
+                      font-size: 14px;
+                      ${theme.mq} {
+                        margin-right: 8px;
+                      }
+                    `}
+              >{category ?? "전체"}</span>)}
+          </div>
         </div>
         <ol css={css`
           list-style: none;

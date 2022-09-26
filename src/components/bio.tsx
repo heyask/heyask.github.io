@@ -52,6 +52,8 @@ const Bio = () => {
         quality={95}
         alt="Profile picture"
         css={css`
+          min-width: 80px;
+          min-height: 80px;
           border-radius: 50%;
           margin-right: 24px;
         `}
