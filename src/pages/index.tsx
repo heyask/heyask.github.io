@@ -11,14 +11,13 @@ import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image";
 import { useMemo, useState } from "react";
 import { wriggleRight } from "../styles/keyframes";
 
-const catImage = getRandomCatImage();
-
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`;
   const posts = data.allMarkdownRemark.nodes;
   const categories = useMemo<string[]>(() => [...new Set(posts.map((post) => post.frontmatter.category) as string[])], []);
   const [selectedCategory, selectSelectedCategory] = useState(null);
   const theme = useTheme();
+  const catImage = getRandomCatImage();
 
   if (posts.length === 0) {
     return (
@@ -73,7 +72,7 @@ const BlogIndex = ({ data, location }) => {
               <span key={category} onClick={e => selectSelectedCategory(category)}
                     css={css`
                       background: ${category == selectedCategory ? theme.colors.primary : theme.colors.default[1]}; 
-                      color: ${category == selectedCategory ? 'white' : theme.colors.default[20]}; 
+                      color: ${category == selectedCategory ? "white" : theme.colors.default[20]}; 
                       padding: 8px 16px; 
                       margin-right: 12px; 
                       border-radius: 50px; 
@@ -164,8 +163,7 @@ const BlogIndex = ({ data, location }) => {
                       margin: 24px;
                       ${theme.mq[0]} {
                         font-weight: 800;
-                        margin: 24px;
-                        margin-bottom: 0;
+                        margin: 0;
                       }
                     `}>
                       {image ?
@@ -189,7 +187,7 @@ const BlogIndex = ({ data, location }) => {
                         />
                         :
                         <img
-                          src={`/assets/images/cat0.jpg`}
+                          src={catImage}
                           width={150}
                           height={150}
                           alt="thumbnail"
