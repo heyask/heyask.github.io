@@ -58,10 +58,6 @@ const Header = ({ data }: any) => {
           </Link>
         </div>
         <div css={css`flex-grow: 1;`} />
-        <Link to={"/"} style={css`
-          padding: 10px;
-          margin-right: 10px;
-        `} a={css`padding: 5px;`}>홈</Link>
         <Link to={"/about"} style={css`
           padding: 10px;
         `}>소개</Link>
