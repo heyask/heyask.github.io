@@ -138,6 +138,7 @@ const BlogIndex = ({ data, location }) => {
                           transition: transform 100ms;
                           ${theme.mq[0]} {
                             font-weight: 800;
+                            font-size: 18px;
                           }
                         `}>
                           {title}
@@ -163,7 +164,8 @@ const BlogIndex = ({ data, location }) => {
                       margin: 24px;
                       ${theme.mq[0]} {
                         font-weight: 800;
-                        margin: 0;
+                        margin: 24px;
+                        margin-bottom: 0;
                       }
                     `}>
                       {image ?
