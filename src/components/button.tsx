@@ -3,7 +3,7 @@ import { css } from "@emotion/react";
 import { useTheme } from "@emotion/react";
 import Link from "./link";
 
-const Button = ({ className, to, children, onClick }: any) => {
+const Button = ({ style, to, children, onClick }: any) => {
   const theme = useTheme();
   return (
     <span css={css`
@@ -40,6 +40,7 @@ const Button = ({ className, to, children, onClick }: any) => {
         width: 100%;
         height: 100%;
       }
+      ${style}
     `} onClick={onClick}>
       {to ? <Link to={to}>{children}</Link> : <span>{children}</span>}
     </span>

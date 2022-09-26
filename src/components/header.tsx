@@ -77,6 +77,9 @@ const Header = ({ data }: any) => {
         <Button style={css`
           width: 50px;
           height: 50px;
+          ${theme.mq[0]} {
+            margin-left: 0;
+          }
         `} onClick={e => {
           setAppTheme(appTheme == light.key ? dark.key : light.key);
         }}>

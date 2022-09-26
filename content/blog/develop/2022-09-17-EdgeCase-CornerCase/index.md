@@ -2,11 +2,8 @@
 title: "엣지케이스(Edge Case), 코너케이스(Corner Case)"
 description: "소프트웨어"
 date: "2022-09-17T04:31:12.991Z"
-categories: []
+category: "develop"
 published: true
-canonical_link: https://medium.com/@sunriv/%EC%97%A3%EC%A7%80%EC%BC%80%EC%9D%B4%EC%8A%A4-edge-case-%EC%BD%94%EB%84%88%EC%BC%80%EC%9D%B4%EC%8A%A4-corner-case-772451666c62
-redirect_from:
-  - /엣지케이스-edge-case-코너케이스-corner-case-772451666c62
 ---
 
 ## 엣지케이스(Edge Case), 경계 케이스(Boundary Case)

@@ -46,7 +46,7 @@ const BlogPostTemplate = ({ data: { previous, next, site, markdownRemark: post }
               margin-top: 0;
               margin-bottom: 50px;
             }
-          `}>{post.frontmatter.date}</p>
+          `}>{post.frontmatter.category} | {post.frontmatter.date}</p>
         </header>
         <div css={css`
               max-width: 800px;
@@ -314,6 +314,7 @@ export const pageQuery = graphql`
                 title
                 date(formatString: "YYYY년 MM월 DD일")
                 description
+                category
             }
         }
         previous: markdownRemark(id: { eq: $previousPostId }) {

@@ -2,11 +2,9 @@
 title: "Dropbox가 Symbolic Link 지원을 종료하다. (feat. DuckSync)"
 description: "DuckSync"
 date: "2019-10-25T06:23:02.335Z"
-categories: []
+category: "projects"
+thumbnail: "./asset-1.png"
 published: true
-canonical_link: https://medium.com/@sunriv/dropbox%EA%B0%80-symbolic-link-%EC%A7%80%EC%9B%90%EC%9D%84-%EC%A2%85%EB%A3%8C%ED%95%98%EB%8B%A4-feat-ducksync-e136c34cf7ca
-redirect_from:
-  - /dropbox가-symbolic-link-지원을-종료하다-feat-ducksync-e136c34cf7ca
 ---
 
 드롭박스가 더 이상 Symbolic Link를 지원하지 않는다고 한다.

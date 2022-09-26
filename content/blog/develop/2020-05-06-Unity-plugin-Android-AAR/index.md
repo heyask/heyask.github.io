@@ -2,11 +2,9 @@
 title: "유니티용 Plugin 만들기 : 안드로이드편 (AAR)"
 description: "AAR을 사용하는 방법"
 date: "2020-05-06T08:30:59.141Z"
-categories: []
+category: "develop"
+thumbnail: "./asset-1.png"
 published: true
-canonical_link: https://medium.com/@sunriv/%EC%9C%A0%EB%8B%88%ED%8B%B0%EC%9A%A9-%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-plugin-%EB%A7%8C%EB%93%A4%EA%B8%B0-aar%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95-bb94f42cf75a
-redirect_from:
-  - /유니티용-안드로이드-plugin-만들기-aar을-사용하는-방법-bb94f42cf75a
 ---
 
 > 이 글은 아래 버전 기준으로 작성되었습니다.

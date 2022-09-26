@@ -2,11 +2,9 @@
 title: "유니티용 Plugin 만들기 : iOS편 (Swift)"
 description: "Swift로 유니티 Plugin 만들"
 date: "2020-05-13T07:11:13.979Z"
-categories: []
+category: "develop"
+thumbnail: "./asset-1.png"
 published: true
-canonical_link: https://medium.com/@sunriv/%EC%9C%A0%EB%8B%88%ED%8B%B0%EC%9A%A9-plugin-%EB%A7%8C%EB%93%A4%EA%B8%B0-ios%ED%8E%B8-swift-de97c8449012
-redirect_from:
-  - /유니티용-plugin-만들기-ios편-swift-de97c8449012
 ---
 
 > 이 글은 아래 버전 기준으로 작성되었습니다.

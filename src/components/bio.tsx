@@ -69,7 +69,7 @@ const Bio = () => {
               }
             `}><strong>{author.name}</strong></Link>
           </p>
-          <p css={css`color: ${theme.colors.default[16]}; margin-top: 8px; margin-bottom: 10px;`}>{author?.summary || null}</p>
+          <p css={css`color: ${theme.colors.default[16]}; margin-top: 8px; margin-bottom: 10px; font-size: 14px;`}>{author?.summary || null}</p>
           <Link to={`https://github.com/${social?.github || ``}`}>
             <span css={css`
               display: flex; 
