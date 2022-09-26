@@ -28,7 +28,8 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <ol css={css`
         list-style: none;
-        margin: 0;
+        max-width: ${theme.breakpoints[3]}px;
+        margin: 0 auto;
         padding: 30px 24px;
       `}>
         {posts.map(post => {

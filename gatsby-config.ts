@@ -3,7 +3,7 @@ module.exports = {
     DEV_SSR: true
   },
   siteMetadata: {
-    title: `💻 SunRiv's log`,
+    title: `📒 승현이의 라이브러리`,
     author: {
       name: `김승현`,
       summary: `그릿을 해빗으로`
