@@ -3,7 +3,7 @@ module.exports = {
     DEV_SSR: true
   },
   siteMetadata: {
-    title: `📒 SeungHyun's Library`,
+    title: `SeungHyun's Library`,
     author: {
       name: `김승현`,
       summary: `그릿을 해빗으로`

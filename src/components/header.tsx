@@ -6,6 +6,8 @@ import Link from "./link";
 import { Player } from "@lottiefiles/react-lottie-player";
 import { useEffect, useRef } from "react";
 import Button from "./button";
+import { mdiGithub } from "@mdi/js";
+import Icon from "@mdi/react";
 
 const sunAnim = require("../assets/anim/sun.json");
 
@@ -39,28 +41,42 @@ const Header = ({ data }: any) => {
         max-width: ${theme.breakpoints[3]}px;
         display: flex;
         align-items: center;
+        ${theme.mq[0]} {
+          padding: 0 12px;
+        }
       `}>
         <div>
           <Link to="/" style={css`
-          font-family: 'Nanum Gothic';
-          font-weight: bold;
-          font-size: 20px;
-          ${theme.mq[0]} {
-            font-size: 16px;
-          }
-        `}>
-            {data.site?.siteMetadata?.title}
+            font-family: 'Roboto Slab';
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            ${theme.mq[0]} {
+              font-size: 16px;
+            }
+          `}>
+            <span css={css`margin-right: 8px;`}>📒</span>
+            <span>{data.site?.siteMetadata?.title}</span>
           </Link>
         </div>
         <div css={css`flex-grow: 1;`} />
         <Link to={"/about"} style={css`
+          font-family: 'Poppins';
           padding: 10px;
-        `}>소개</Link>
+          ${theme.mq[0]} {
+            font-size: 14px;
+          }
+        `}>About</Link>
+        <Link to={"https://github.com/heyask"} style={css`
+          font-family: 'Poppins';
+          padding: 10px;
+          ${theme.mq[0]} {
+            font-size: 14px;
+          }
+        `}>Github</Link>
         <Button style={css`
           width: 50px;
           height: 50px;
-          padding: 10px;
-          margin: 5px 0;
         `} onClick={e => {
           setAppTheme(appTheme == light.key ? dark.key : light.key);
         }}>

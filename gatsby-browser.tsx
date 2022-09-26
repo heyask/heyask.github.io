@@ -1,6 +1,6 @@
-import React from "react";
+import * as React from "react";
 import "./src/styles/normalize.css";
-import "typeface-nanum-gothic";
+import "./src/styles/fonts.css";
 import { RecoilRoot } from "recoil";
 import BaseLayout from "./src/components/base-layout";
 

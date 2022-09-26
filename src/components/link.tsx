@@ -9,9 +9,9 @@ const Link = ({ to, style, children }: any) => {
     <GatsbyLink to={to} css={emotionCSS`
       display: inline-block;
       color: ${theme.colors.default[25]};
-      &:visited {
-        color: ${theme.colors.default[25]};
-      }
+      // &:visited {
+      //   color: ${theme.colors.default[25]};
+      // }
       &:hover {
         color: ${theme.colors.default[16]};
       }

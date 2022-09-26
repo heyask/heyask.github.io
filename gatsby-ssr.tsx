@@ -3,7 +3,7 @@
  *
  * See: https://www.gatsbyjs.com/docs/ssr-apis/
  */
-import React from "react";
+import * as React from "react";
 import { RecoilRoot } from "recoil";
 import BaseLayout from "./src/components/base-layout";
 

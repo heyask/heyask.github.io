@@ -26,58 +26,67 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <ol css={css`
+      <div css={css`
         list-style: none;
         max-width: ${theme.breakpoints[3]}px;
         margin: 0 auto;
         padding: 30px 24px;
+        ${theme.mq[0]} {
+          padding: 24px 24px;
+        }
       `}>
-        {posts.map(post => {
-          const title = post.frontmatter.title || post.fields.slug;
+        <ol css={css`
+          list-style: none;
+          margin: 0;
+          padding: 0;
+        `}>
+          {posts.map(post => {
+            const title = post.frontmatter.title || post.fields.slug;
 
-          return (
-            <li key={post.fields.slug}>
-              <article
-                itemScope
-                itemType="https://schema.org/Article"
-              >
-                <header>
-                  <small css={css`
+            return (
+              <li key={post.fields.slug}>
+                <article
+                  itemScope
+                  itemType="https://schema.org/Article"
+                  css={css`
+                  margin-bottom: 36px;
+                `}
+                >
+                  <header>
+                    <small css={css`
                     color: ${theme.colors.default[10]};
                   `}>{post.frontmatter.date}</small>
-                  <h2 css={css`
-                    margin: 0;
-                    margin-top: 6px;
-                    margin-bottom: 8px;
+                    <h2 css={css`
+                    margin: 6px 0 8px 0;
                     font-size: 16pt;
                     transition: transform 100ms;
                     &:hover {
                       transform: translateX(3px);
                     }
                   `}>
-                    <Link to={post.fields.slug}>
-                      {title}
-                    </Link>
-                  </h2>
-                </header>
-                <section>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: post.frontmatter.description || post.excerpt
-                    }}
-                    itemProp="description"
-                    css={css`
+                      <Link to={post.fields.slug}>
+                        {title}
+                      </Link>
+                    </h2>
+                  </header>
+                  <section>
+                    <p
+                      dangerouslySetInnerHTML={{
+                        __html: post.frontmatter.description || post.excerpt
+                      }}
+                      itemProp="description"
+                      css={css`
                       margin: 0;
-                      margin-bottom: 24px;
                       color: ${theme.colors.default[10]}
                     `}
-                  />
-                </section>
-              </article>
-            </li>
-          );
-        })}
-      </ol>
+                    />
+                  </section>
+                </article>
+              </li>
+            );
+          })}
+        </ol>
+      </div>
     </Layout>
   );
 };
