@@ -3,32 +3,24 @@ import { useTheme, css } from "@emotion/react";
 import { useRecoilState } from "recoil";
 import { light, dark, themeState } from "../styles/theme";
 import Link from "./link";
-import lottie, { AnimationItem } from "lottie-web";
-import { useEffect, useMemo, useRef } from "react";
+import { Player } from "@lottiefiles/react-lottie-player";
+import { useEffect, useRef } from "react";
 import Button from "./button";
+
+const sunAnim = require("../assets/anim/sun.json");
 
 const Header = ({ data }: any) => {
   const [appTheme, setAppTheme] = useRecoilState(themeState);
   const theme = useTheme();
-  const sun = useRef();
-  let sunAnim = useRef<any>();
+  const sun = useRef<Player>();
 
   useEffect(() => {
-    if (!sunAnim.current) {
-      sunAnim.current = lottie.loadAnimation({
-        container: sun.current,
-        renderer: "svg",
-        loop: false,
-        autoplay: false,
-        animationData: require("../assets/anim/sun.json")
-      });
+    if (sun.current) {
+      sun.current?.setPlayerDirection(theme.key == light.key ? -1 : 1);
+      sun.current?.play();
     }
-  }, []);
 
-  useEffect(() => {
-    sunAnim.current.setDirection(theme.key == light.key ? -1 : 1);
-    sunAnim.current.play();
-  }, [theme]);
+  }, [theme.key]);
 
 
   return (
@@ -69,12 +61,19 @@ const Header = ({ data }: any) => {
         `} onClick={e => {
           setAppTheme(appTheme == light.key ? dark.key : light.key);
         }}>
-          <span ref={sun} css={css`
+          <span
+            css={css`
             svg {
               filter: invert(${theme.key == "dark" ? 80 : 20}%);
               transition: filter 1s;
             }
-          `} />
+          `}>
+            <Player
+              ref={sun}
+              src={sunAnim}
+              keepLastFrame
+              style={{ height: "30px", width: "30px", color: "red" }} />
+          </span>
         </Button>
       </div>
     </div>
