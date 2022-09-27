@@ -21,7 +21,7 @@ published: false
 
 배열을 끝까지 돌았음에도 잎이 모든 위치에 보여지지 않았을때 체크 안함
 
-```
+```python
 def solution(X, A):
     appeared = set()
     

@@ -19,7 +19,7 @@ published: false
 
 #### 오답
 
-```
+```python
 def solution(X, Y, D):
     cnt = 0
     while X <= Y:

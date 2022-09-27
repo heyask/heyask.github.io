@@ -21,7 +21,7 @@ published: false
 
 #### 효율성 테스트 실패
 
-```
+```python
 def solution(A):
     differences = []
 
