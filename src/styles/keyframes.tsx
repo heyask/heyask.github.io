@@ -10,6 +10,6 @@ export const scaleUp = keyframes`
 `;
 export const wriggleRight = keyframes`
         0% { transform: translateX(0); }
-      50% { transform: translateX(-12px); }
+      50% { transform: translateX(12px); }
       100% { transform: translateX(0); }
 `;
