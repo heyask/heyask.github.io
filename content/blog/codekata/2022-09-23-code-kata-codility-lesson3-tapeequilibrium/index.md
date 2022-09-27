@@ -13,6 +13,24 @@ published: false
 
 ### 풀이
 
+```python
+def solution(A):
+    differences = []
+    sumA = sum(A[:1])
+    sumB = sum(A[1:])
+    diff = abs(sumA - sumB)
+    differences.append(diff)
+
+    for P in range(2, len(A)):
+        sumA += A[P-1]
+        sumB -= A[P-1]
+        diff = abs(sumA - sumB)
+        differences.append(diff)
+    
+    differences = sorted(differences)
+
+    return differences[0]
+```
 [https://app.codility.com/demo/results/trainingKHHKV5-N6Z/](https://app.codility.com/demo/results/trainingKHHKV5-N6Z/)
 
 루프 안에서 매번 배열을 자르고 합하는 과정은 퍼포먼스가 굉장히 나빠지므로 직전의 결과값을 활용하여 연산하는 방식을 사용하였다.

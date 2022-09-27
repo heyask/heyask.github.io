@@ -17,6 +17,26 @@ published: false
 
 ### 제출 코드
 
+```python
+import re
+
+def solution(N):
+    binaryStr = ""
+    maxBinaryGaps = 0
+
+    while N != 0:
+        rest = N % 2
+        N = (N - rest) // 2
+        binaryStr = str(rest) + binaryStr
+
+    p = re.compile('10+(?=1)')
+    m = p.findall(binaryStr)
+    
+    if len(m) > 0:
+        maxBinaryGaps = len(max(m, key=len)) - 1
+        
+    return maxBinaryGaps
+```
 [https://app.codility.com/demo/results/trainingWQSUM3-5S6/](https://app.codility.com/demo/results/trainingWQSUM3-5S6/)
 
 정수 N을 2로 나누었을때의 나머지를 `binaryStr` 에 이어붙이면서 문자열로 된 이진수를 구했다. 그리고 정규식을 통해 매칭되는 패턴을 모두 찾아서 배열에 넣었고, 가장 긴 길이를 가진 아이템을 `max()` 함수로 찾았다.

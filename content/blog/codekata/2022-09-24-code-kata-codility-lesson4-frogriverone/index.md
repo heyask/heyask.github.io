@@ -13,6 +13,17 @@ published: false
 
 ### 풀이
 
+```python
+def solution(X, A):
+    appeared = set()
+    
+    for i in range(len(A)):
+        appeared.add(A[i])
+        if(len(appeared) == X):
+            return i
+
+    return -1
+```
 [https://app.codility.com/demo/results/training2NMCVQ-CKS/](https://app.codility.com/demo/results/training2NMCVQ-CKS/)
 
 먼저 중복을 제외하기 위해 Set을 하나 선언해주고, 배열을 순회하면서 Set에 넣는다. Set의 길이가 `X`와 같아지면 모든 위치에서 한번 이상 위치했다는 뜻이므로 그때의 배열 인덱스를 리턴해주면 된다.

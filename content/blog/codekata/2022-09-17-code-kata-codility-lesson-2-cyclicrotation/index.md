@@ -17,6 +17,15 @@ N개의 원소를 가진 배열의 원소들을 한칸씩 뒤로 K번 이동시�
 
 ### 제출 코드
 
+```python
+def solution(A, K):
+    if len(A) == 0:
+        return A
+        
+    for i in range(K):
+        A.insert(0, A.pop())
+    return A
+```
 [https://app.codility.com/demo/results/training62NM5N-Y64/](https://app.codility.com/demo/results/training62NM5N-Y64/)
 
 마지막 아이템을 `pop()` 하고 맨 처음으로 넣는걸 K번 반복한다. 배열의 길이가 0인 경우도 있으니 잘 체크한다.

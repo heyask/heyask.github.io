@@ -13,6 +13,13 @@ published: false
 
 ### 풀이
 
+```python
+import math
+
+def solution(X, Y, D):
+    cnt = math.ceil((Y - X) / D)
+    return cnt
+```
 [https://app.codility.com/demo/results/trainingZUDP5R-TCY/](https://app.codility.com/demo/results/trainingZUDP5R-TCY/)
 
 주어진 값들의 범위가 `[1…1,000,000,000]`이기 때문에 for문을 돌리면 효율성 테스트에 실패할게 뻔했다. 따라서 계산을 통해 구했다.

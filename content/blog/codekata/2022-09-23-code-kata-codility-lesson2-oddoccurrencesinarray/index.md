@@ -15,6 +15,17 @@ published: false
 
 ### 풀이
 
+```python
+def solution(A):
+    if len(A) == 1: 
+        return A[0]
+
+    A = sorted(A)
+
+    for i in range(0, len(A), 2):
+        if (i + 1) == len(A) or A[i] != A[i + 1]:
+            return A[i]
+```
 [https://app.codility.com/demo/results/training2V8WF7-FPQ/](https://app.codility.com/demo/results/training2V8WF7-FPQ/)
 
 오름차순으로 정렬 후, loop를 2 step씩 돌면서 현재 아이템과 다음 아이템이 같은지 비교한다.

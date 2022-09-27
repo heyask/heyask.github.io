@@ -13,6 +13,19 @@ published: false
 
 ### 풀이
 
+```python
+def solution(A):
+    A = sorted(A)
+    
+    if A[0] != 1:
+        return 0
+
+    for i in range(1, len(A)):
+        if A[i - 1] + 1 != A[i]:
+            return 0
+    
+    return 1
+```
 [https://app.codility.com/demo/results/trainingS7RSU4-RFY/](https://app.codility.com/demo/results/trainingS7RSU4-RFY/)
 
 오름차순 정렬 후 A\[i-1\]+1이 A\[i\]와 동일한지 비교한다.
