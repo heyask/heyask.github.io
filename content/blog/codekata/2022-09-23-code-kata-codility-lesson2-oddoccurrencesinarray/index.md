@@ -1,8 +1,8 @@
 ---
-title: "[Code Kata] 코딜리티 Codility Lesson2 — OddOccurrencesInArray"
-description: "https://app.codility.com/programmers/lessons/2-arrays/odd_occurrences_in_array/"
+title: "[Code Kata] Codility Lesson2 — OddOccurrencesInArray"
+description: "배열 A에는 같은 값을 가지는 숫자들이 pair된 상태, 즉 짝수개 존재한다. 하지만 그중 하나의 아이템은 pair되지 않은 값을 가지고 있다. 그 아이템의 값을 찾는 문제다."
 date: "2022-09-23T10:43:47.126Z"
-categories: "codekata"
+category: "codekata"
 published: false
 ---
 
@@ -27,9 +27,9 @@ published: false
 
 ### 오답
 
-#### out of range
+#### out of range
 
-```
+```python
 def solution(A):
     if len(A) == 1: 
         return A[0]
@@ -43,11 +43,11 @@ def solution(A):
 
 [https://app.codility.com/demo/results/trainingAN7S3E-H4R/](https://app.codility.com/demo/results/trainingAN7S3E-H4R/)
 
-`A[i] != A[i+1]` 조건이 먼저 오게되어 out of range 오류가 발생했다.
+`A[i] != A[i+1]` 조건이 먼저 오게되어 out of range 오류가 발생했다.
 
 #### 효율성 실패
 
-```
+```python
 def solution(A):
     if len(A) == 1:
         return A[0]

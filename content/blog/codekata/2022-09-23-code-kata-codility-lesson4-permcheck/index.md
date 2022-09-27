@@ -1,8 +1,8 @@
 ---
-title: "[Code Kata] 코딜리티 Codility Lesson4 — PermCheck"
+title: "[Code Kata] Codility Lesson4 — PermCheck"
 description: "주어진 배열 A가 순열인지 아닌지 판단하는 문제이다."
 date: "2022-09-23T14:21:15.128Z"
-categories: "codekata"
+category: "codekata"
 published: false
 ---
 

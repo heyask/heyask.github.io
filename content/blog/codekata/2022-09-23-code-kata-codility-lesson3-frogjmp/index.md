@@ -1,8 +1,8 @@
 ---
-title: "[Code Kata] 코딜리티 Codility Lesson3 — FrogJmp"
+title: "[Code Kata] Codility Lesson3 — FrogJmp"
 description: "X위치에 개구리가 있고 D거리만큼 점프할 수 있다. Y위치 이상까지 도달하는데 걸리는 횟수를 계산하는 문제"
 date: "2022-09-23T11:33:49.398Z"
-categories: "codekata"
+category: "codekata"
 published: false
 ---
 

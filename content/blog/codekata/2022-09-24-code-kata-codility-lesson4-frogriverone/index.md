@@ -1,8 +1,8 @@
 ---
-title: "[Code Kata] 코딜리티 Codility Lesson4 — FrogRiverOne"
+title: "[Code Kata] Codility Lesson4 — FrogRiverOne"
 description: "개구리가 강을 건너려고 한다. 잎이 하나 떨어지고 있는데 배열 A[K]는 이 잎이 K초에 어디(정수)에 위치하는지를 나타낸다. X는 정수\b\b이고, 잎이 1부터 X 까지 모든 위치에 한번 이상 위치했을 때부터 건널 수 있다. 그 때가 몇 초인지를 찾는…"
 date: "2022-09-24T10:26:59.965Z"
-categories: "codekata"
+category: "codekata"
 published: false
 ---
 

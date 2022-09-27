@@ -1,8 +1,8 @@
 ---
-title: "[Code Kata] 코딜리티 Codility Lesson 1 — Binary Gap"
-description: "https://app.codility.com/demo/results/trainingWQSUM3-5S6/"
+title: "[Code Kata] 코딜리티 Codility Lesson 1 — Binary Gap"
+description: "주어진 양의 정수 N을 이진수로 표현했을 때, 1과 1 사이 0이 존재하는 패턴 중 가장 긴 0을 가진 패턴에서 0의 갯수를 찾는 문제다."
 date: "2022-09-17T05:14:29.936Z"
-categories: "codekata"
+category: "codekata"
 published: false
 ---
 

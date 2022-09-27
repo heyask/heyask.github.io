@@ -1,15 +1,15 @@
 ---
-title: "[Code Kata] 코딜리티 Codility Lesson3 — TapeEquilibrium"
-description: "N길이를 가지는 배열의 P 인덱스를 기준으로 A[0], … , A[P-1]의 합과 A[P], ... ,A[N-1] 의 합의 차이를 모두 구했을 때, 가장 작은 차이 값이 얼마인지를 구하는 문제"
+title: "[Code Kata] Codility Lesson3 — TapeEquilibrium"
+description: "N길이를 가지는 배열의 P 인덱스를 기준으로 A[0],…, A[P-1]의 합과 A[P],...,A[N-1] 의 합의 차이를 모두 구했을 때, 가장 작은 차이 값이 얼마인지를 구하는 문제"
 date: "2022-09-23T12:11:29.620Z"
-categories: "codekata"
+category: "codekata"
 published: false
 ---
 
 ![image](./asset-1.png)
 [https://app.codility.com/programmers/lessons/3-time\_complexity/tape\_equilibrium/](https://app.codility.com/programmers/lessons/3-time_complexity/tape_equilibrium/)
 
-`N`길이를 가지는 배열의 `P` 인덱스(0 < P < N)를 기준으로 `A[0], … , A[P-1]`의 합과 `A[P], ... ,A[N-1]` 의 합의 차이를 모두 구했을 때, 가장 작은 차이 값이 얼마인지를 구하는 문제
+`N`길이를 가지는 배열의 `P` 인덱스(0 < P < N)를 기준으로 `A[0], … , A[P-1]`의 합과 `A[P], ... ,A[N-1]` 의 합의 차이를 모두 구했을 때, 가장 작은 차이 값이 얼마인지를 구하는 문제
 
 ### 풀이
 
@@ -19,7 +19,7 @@ published: false
 
 ### 오답
 
-#### 효율성 테스트 실패
+#### 효율성 테스트 실패
 
 ```
 def solution(A):
