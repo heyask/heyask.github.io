@@ -1,6 +1,6 @@
 ---
 title: "유니티용 Plugin 만들기 : 안드로이드편 (AAR)"
-description: "유니티용 안드로이드 플러그인을 만드는 방법은 다양하게 있지만 여기서는 대표적인 AAR(**A**ndroid **AR**chive)을 사용하는 방법으로 진행하겠습니다. 아래 링크에서 유니티와 안드로이드 스튜디오를 다운로드 및 설치해주세요. 먼저 안드로이드 스튜디오에서 프로젝트를 하나 생성해줍니다. Activity는 필요없으므로 No Activity를 선택하고 프로젝트 이름과 Package Name, 언어 등을 설정해주세요."
+description: "유니티용 안드로이드 플러그인을 만드는 방법은 다양하게 있지만 여기서는 대표적인 AAR(Android ARchive)을 사용하는 방법으로 진행하겠습니다. 아래 링크에서 유니티와 안드로이드 스튜디오를 다운로드 및 설치해주세요. 먼저 안드로이드 스튜디오에서 프로젝트를 하나 생성해줍니다. Activity는 필요없으므로 No Activity를 선택하고 프로젝트 이름과 Package Name, 언어 등을 설정해주세요."
 date: "2020-05-06T08:30:59.141Z"
 category: "develop"
 thumbnail: "./asset-1.png"
