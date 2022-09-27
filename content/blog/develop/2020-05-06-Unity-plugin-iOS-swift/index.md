@@ -3,7 +3,7 @@ title: "유니티용 Plugin 만들기 : iOS편 (Swift)"
 description: "유니티용 iOS 플러그인은 기본적으로 Objective-C만 지원이 됩니다. 하지만 브릿지를 통해 인터페이스만 Objective-C로 작성하고 Swift로 실구현내용을 작성하는 방식을 통해 유니티 플러그인을 만들 수 있습니다. 유니티가 설치되어있지 않으면 먼저 설치해줍니다."
 date: "2020-05-13T07:11:13.979Z"
 category: "develop"
-thumbnail: "./asset-1.png"
+thumbnail: "./thumbnail.png"
 published: true
 ---
 

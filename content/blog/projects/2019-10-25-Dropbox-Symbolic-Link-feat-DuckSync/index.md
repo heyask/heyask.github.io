@@ -3,7 +3,7 @@ title: "Dropbox가 Symbolic Link 지원을 종료하다. (feat. DuckSync)"
 description: "드롭박스가 더 이상 Symbolic Link를 지원하지 않는다고 한다. 사실 드롭박스에서는 Symbolic Link라는 개념이 없어서 소프트링크가 존재하면 링크가 아니라 그냥 폴더로 인식한다고 한다. 따라서 드롭박스폴더 내에 실제 데이터를 담은 폴더가 있고 해당 폴더를 소프트링크로 생성하면 같은 데이터가 두개가 되고 용량을 두배로 잡아먹게 된다. 장점이 될 수 도있고 단점이 될 수 도 있는데, 나는 이것을 아래와 같이 장점으로 활용했다."
 date: "2019-10-25T06:23:02.335Z"
 category: "projects"
-thumbnail: "./asset-1.png"
+thumbnail: "./thumbnail.png"
 published: true
 ---
 
