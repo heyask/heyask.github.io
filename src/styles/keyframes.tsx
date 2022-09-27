@@ -13,3 +13,9 @@ export const wriggleRight = keyframes`
       50% { transform: translateX(12px); }
       100% { transform: translateX(0); }
 `;
+export const jump = keyframes`
+        0% { transform: translateY(0); }
+      10% { transform: translateY(-2px); }
+      20% { transform: translateY(0); }
+      100% { transform: translateY(0); }
+`;

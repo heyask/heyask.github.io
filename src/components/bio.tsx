@@ -12,6 +12,7 @@ import { css, useTheme } from "@emotion/react";
 import Link from "./link";
 import Icon from "@mdi/react";
 import { mdiGithub } from "@mdi/js";
+import { jump } from "../styles/keyframes";
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -64,11 +65,12 @@ const Bio = () => {
             <small css={css`color: ${theme.colors.default[10]};`}>Written by </small><Link to={`/about`} style={css`
               background: ${theme.colors.default[1]};
               padding: 6px 16px 4px;
-              border-radius: 12px;
+              border-radius: 16px;
               color: ${theme.colors.primary} !important;
               &:hover {
                 background: ${theme.colors.default[2]};
               }
+              animation: ${jump} 2s ease-in infinite;
             `}><strong>{author.name}</strong></Link>
           </p>
           <p css={css`color: ${theme.colors.default[16]}; margin-top: 8px; margin-bottom: 10px; font-size: 14px;`}>{author?.summary || null}</p>
@@ -80,7 +82,7 @@ const Bio = () => {
               background: ${theme.colors.default[1]};
               color: ${theme.colors.default[16]};
               padding: 4px 12px;
-              border-radius: 12px;
+              border-radius: 16px;
               &:hover {
                 background: ${theme.colors.default[2]};
               }
