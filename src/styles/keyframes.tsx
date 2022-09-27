@@ -13,6 +13,13 @@ export const wriggleRight = keyframes`
       50% { transform: translateX(12px); }
       100% { transform: translateX(0); }
 `;
+export const wriggle = keyframes`
+        0% { transform: rotate(0deg); }
+      25% { transform: rotate(10deg); }
+      50% { transform: rotate(-10deg); }
+      75% { transform: rotate(10deg); }
+      100% { transform: translateX(0deg); }
+`;
 export const jump = keyframes`
         0% { transform: translateY(0); }
       10% { transform: translateY(-2px); }

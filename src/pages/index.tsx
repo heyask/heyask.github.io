@@ -9,7 +9,7 @@ import { useTheme } from "@emotion/react";
 import { getRandomCatImage } from "../components/utils";
 import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image";
 import { useMemo, useState } from "react";
-import { wriggleRight } from "../styles/keyframes";
+import { wriggle, wriggleRight } from "../styles/keyframes";
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`;
@@ -50,7 +50,9 @@ const BlogIndex = ({ data, location }) => {
             padding: 30px 60px;
             margin: 30px auto 50px auto;
           `}>
-          <p>✍️</p>
+          <p css={css`
+            animation: ${wriggle} 2s infinite; 
+          `}>✍️</p>
           <h2 css={css`color: ${theme.colors.default[25]};`}>
             개발자 김승현
           </h2>
