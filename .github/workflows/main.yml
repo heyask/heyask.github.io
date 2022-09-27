@@ -1,0 +1,14 @@
+name: "blog deploy"
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+      - name: Deploy
+        run: npm run deploy
