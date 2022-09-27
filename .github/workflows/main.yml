@@ -14,11 +14,8 @@ jobs:
         run: npm ci
       - name: Install Gatsby CLI
         run: npm install -g gatsby-cli gh-pages
-      - name: Setup git config
-        run: |
-          git config user.name "${{ secrets.USERNAME }}"
-          git config user.email "${{ secrets.EMAIL }}"
       - name: Deploy
-        run: npm run deploy
+        run:  |
+          npm run deploy
         env:
-          GITHUB_TOKEN: ${{ secrets.PAT }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
