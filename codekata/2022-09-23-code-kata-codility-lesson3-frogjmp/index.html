@@ -25,6 +25,11 @@
 <a href="https://app.codility.com/programmers/lessons/3-time_complexity/frog_jmp/">https://app.codility.com/programmers/lessons/3-time_complexity/frog_jmp/</a></p>
 <p><code class="language-text">X</code>위치에 개구리가 있고 <code class="language-text">D</code>거리만큼 점프할 수 있다. <code class="language-text">Y</code>위치 이상까지 도달하는데 걸리는 횟수를 계산하는 문제</p>
 <h3>풀이</h3>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">import</span> math
+
+<span class="token keyword">def</span> <span class="token function">solution</span><span class="token punctuation">(</span>X<span class="token punctuation">,</span> Y<span class="token punctuation">,</span> D<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    cnt <span class="token operator">=</span> math<span class="token punctuation">.</span>ceil<span class="token punctuation">(</span><span class="token punctuation">(</span>Y <span class="token operator">-</span> X<span class="token punctuation">)</span> <span class="token operator">/</span> D<span class="token punctuation">)</span>
+    <span class="token keyword">return</span> cnt</code></pre></div>
 <p><a href="https://app.codility.com/demo/results/trainingZUDP5R-TCY/">https://app.codility.com/demo/results/trainingZUDP5R-TCY/</a></p>
 <p>주어진 값들의 범위가 <code class="language-text">[1…1,000,000,000]</code>이기 때문에 for문을 돌리면 효율성 테스트에 실패할게 뻔했다. 따라서 계산을 통해 구했다.</p>
 <h4>오답</h4>

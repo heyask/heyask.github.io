@@ -25,6 +25,17 @@
 <a href="https://app.codility.com/programmers/lessons/4-counting_elements/perm_check/">https://app.codility.com/programmers/lessons/4-counting_elements/perm_check/</a></p>
 <p>주어진 배열 A가 순열인지 아닌지 판단하는 문제이다.</p>
 <h3>풀이</h3>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">solution</span><span class="token punctuation">(</span>A<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    A <span class="token operator">=</span> <span class="token builtin">sorted</span><span class="token punctuation">(</span>A<span class="token punctuation">)</span>
+    
+    <span class="token keyword">if</span> A<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">!=</span> <span class="token number">1</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token number">0</span>
+
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token builtin">len</span><span class="token punctuation">(</span>A<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> A<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">!=</span> A<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> <span class="token number">0</span>
+    
+    <span class="token keyword">return</span> <span class="token number">1</span></code></pre></div>
 <p><a href="https://app.codility.com/demo/results/trainingS7RSU4-RFY/">https://app.codility.com/demo/results/trainingS7RSU4-RFY/</a></p>
 <p>오름차순 정렬 후 A[i-1]+1이 A[i]와 동일한지 비교한다.</p>
 <h3>리뷰</h3>

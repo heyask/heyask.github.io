@@ -25,6 +25,19 @@
 <a href="https://app.codility.com/programmers/lessons/3-time_complexity/perm_missing_elem/">https://app.codility.com/programmers/lessons/3-time_complexity/perm_missing_elem/</a></p>
 <p>1부터 N+1까지의 정수를 가지는 배열이 있는데 중간에 빠져있는 정수를 찾는 문제</p>
 <h3>풀이</h3>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">solution</span><span class="token punctuation">(</span>A<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    A <span class="token operator">=</span> <span class="token builtin">sorted</span><span class="token punctuation">(</span>A<span class="token punctuation">)</span>
+
+    <span class="token keyword">if</span> <span class="token builtin">len</span><span class="token punctuation">(</span>A<span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span> <span class="token keyword">or</span> A<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">!=</span> <span class="token number">1</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token number">1</span>
+    <span class="token keyword">if</span> <span class="token builtin">len</span><span class="token punctuation">(</span>A<span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">2</span> <span class="token keyword">and</span> A<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">!=</span> <span class="token number">2</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token number">2</span>
+
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token builtin">len</span><span class="token punctuation">(</span>A<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> A<span class="token punctuation">[</span>i<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">!=</span> A<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> A<span class="token punctuation">[</span>i<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token number">1</span>
+
+    <span class="token keyword">return</span> A<span class="token punctuation">[</span><span class="token builtin">len</span><span class="token punctuation">(</span>A<span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token number">1</span></code></pre></div>
 <p><a href="https://app.codility.com/demo/results/trainingDXP2NW-CNP/">https://app.codility.com/demo/results/trainingDXP2NW-CNP/</a></p>
 <p>오름차순 정렬 후 for문을 통해 순차적으로 체크했다. 배열 길이가 100,000 이었고 O(N)의 시간복잡도를 가졌기 때문에 효율성 테스트도 통과할것이라고 생각했다.</p>
 <h3>리뷰</h3>

@@ -25,6 +25,22 @@
 <a href="https://app.codility.com/programmers/lessons/3-time_complexity/tape_equilibrium/">https://app.codility.com/programmers/lessons/3-time_complexity/tape_equilibrium/</a></p>
 <p><code class="language-text">N</code>길이를 가지는 배열의 <code class="language-text">P</code> 인덱스(0 &#x3C; P &#x3C; N)를 기준으로 <code class="language-text">A[0], … , A[P-1]</code>의 합과 <code class="language-text">A[P], ... ,A[N-1]</code> 의 합의 차이를 모두 구했을 때, 가장 작은 차이 값이 얼마인지를 구하는 문제</p>
 <h3>풀이</h3>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">solution</span><span class="token punctuation">(</span>A<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    differences <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    sumA <span class="token operator">=</span> <span class="token builtin">sum</span><span class="token punctuation">(</span>A<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    sumB <span class="token operator">=</span> <span class="token builtin">sum</span><span class="token punctuation">(</span>A<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    diff <span class="token operator">=</span> <span class="token builtin">abs</span><span class="token punctuation">(</span>sumA <span class="token operator">-</span> sumB<span class="token punctuation">)</span>
+    differences<span class="token punctuation">.</span>append<span class="token punctuation">(</span>diff<span class="token punctuation">)</span>
+
+    <span class="token keyword">for</span> P <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token builtin">len</span><span class="token punctuation">(</span>A<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        sumA <span class="token operator">+=</span> A<span class="token punctuation">[</span>P<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span>
+        sumB <span class="token operator">-=</span> A<span class="token punctuation">[</span>P<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span>
+        diff <span class="token operator">=</span> <span class="token builtin">abs</span><span class="token punctuation">(</span>sumA <span class="token operator">-</span> sumB<span class="token punctuation">)</span>
+        differences<span class="token punctuation">.</span>append<span class="token punctuation">(</span>diff<span class="token punctuation">)</span>
+    
+    differences <span class="token operator">=</span> <span class="token builtin">sorted</span><span class="token punctuation">(</span>differences<span class="token punctuation">)</span>
+
+    <span class="token keyword">return</span> differences<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span></code></pre></div>
 <p><a href="https://app.codility.com/demo/results/trainingKHHKV5-N6Z/">https://app.codility.com/demo/results/trainingKHHKV5-N6Z/</a></p>
 <p>루프 안에서 매번 배열을 자르고 합하는 과정은 퍼포먼스가 굉장히 나빠지므로 직전의 결과값을 활용하여 연산하는 방식을 사용하였다.</p>
 <h3>오답</h3>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[기술블로그]]></description><link>https://heyask.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 27 Sep 2022 08:20:13 GMT</lastBuildDate><item><title><![CDATA[[Code Kata] Codility Lesson4 — FrogRiverOne]]></title><description><![CDATA[https://app.codility.com/programmers/lessons/4-counting_elements/frog_river_one…]]></description><link>https://heyask.github.io/codekata/2022-09-24-code-kata-codility-lesson4-frogriverone/</link><guid isPermaLink="false">https://heyask.github.io/codekata/2022-09-24-code-kata-codility-lesson4-frogriverone/</guid><pubDate>Sat, 24 Sep 2022 10:26:59 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[기술블로그]]></description><link>https://heyask.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 27 Sep 2022 12:34:03 GMT</lastBuildDate><item><title><![CDATA[[Code Kata] Codility Lesson4 — FrogRiverOne]]></title><description><![CDATA[https://app.codility.com/programmers/lessons/4-counting_elements/frog_river_one…]]></description><link>https://heyask.github.io/codekata/2022-09-24-code-kata-codility-lesson4-frogriverone/</link><guid isPermaLink="false">https://heyask.github.io/codekata/2022-09-24-code-kata-codility-lesson4-frogriverone/</guid><pubDate>Sat, 24 Sep 2022 10:26:59 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -24,6 +24,15 @@
 &lt;a href=&quot;https://app.codility.com/programmers/lessons/4-counting_elements/frog_river_one/&quot;&gt;https://app.codility.com/programmers/lessons/4-counting_elements/frog_river_one/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;개구리가 강을 건너려고 한다. 잎이 하나 떨어지고 있는데 배열 &lt;code class=&quot;language-text&quot;&gt;A[K]&lt;/code&gt;는 이 잎이 &lt;code class=&quot;language-text&quot;&gt;K&lt;/code&gt;초에 어디(정수)에 위치하는지를 나타낸다. &lt;code class=&quot;language-text&quot;&gt;X&lt;/code&gt;는 정수이고, 잎이 &lt;code class=&quot;language-text&quot;&gt;1&lt;/code&gt;부터 &lt;code class=&quot;language-text&quot;&gt;X&lt;/code&gt; 까지 모든 위치에 한번 이상 위치했을 때부터 건널 수 있다. 그 때가 몇 초인지를 찾는 문제다&lt;/p&gt;
 &lt;h3&gt;풀이&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;X&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; A&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    appeared &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    
+    &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; i &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;A&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        appeared&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;add&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;A&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;appeared&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; X&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; i
+
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;a href=&quot;https://app.codility.com/demo/results/training2NMCVQ-CKS/&quot;&gt;https://app.codility.com/demo/results/training2NMCVQ-CKS/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;먼저 중복을 제외하기 위해 Set을 하나 선언해주고, 배열을 순회하면서 Set에 넣는다. Set의 길이가 &lt;code class=&quot;language-text&quot;&gt;X&lt;/code&gt;와 같아지면 모든 위치에서 한번 이상 위치했다는 뜻이므로 그때의 배열 인덱스를 리턴해주면 된다.&lt;/p&gt;
 &lt;h3&gt;오답&lt;/h3&gt;
@@ -64,6 +73,17 @@ _A small frog wants to get to the other side of a river. The frog is initially l
 &lt;a href=&quot;https://app.codility.com/programmers/lessons/4-counting_elements/perm_check/&quot;&gt;https://app.codility.com/programmers/lessons/4-counting_elements/perm_check/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;주어진 배열 A가 순열인지 아닌지 판단하는 문제이다.&lt;/p&gt;
 &lt;h3&gt;풀이&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;A&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    A &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;sorted&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;A&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; A&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; i &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;A&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; A&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;!=&lt;/span&gt; A&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;
+    
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;a href=&quot;https://app.codility.com/demo/results/trainingS7RSU4-RFY/&quot;&gt;https://app.codility.com/demo/results/trainingS7RSU4-RFY/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;오름차순 정렬 후 A[i-1]+1이 A[i]와 동일한지 비교한다.&lt;/p&gt;
 &lt;h3&gt;리뷰&lt;/h3&gt;
@@ -93,6 +113,22 @@ _A small frog wants to get to the other side of a river. The frog is initially l
 &lt;a href=&quot;https://app.codility.com/programmers/lessons/3-time_complexity/tape_equilibrium/&quot;&gt;https://app.codility.com/programmers/lessons/3-time_complexity/tape_equilibrium/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;N&lt;/code&gt;길이를 가지는 배열의 &lt;code class=&quot;language-text&quot;&gt;P&lt;/code&gt; 인덱스(0 &amp;#x3C; P &amp;#x3C; N)를 기준으로 &lt;code class=&quot;language-text&quot;&gt;A[0], … , A[P-1]&lt;/code&gt;의 합과 &lt;code class=&quot;language-text&quot;&gt;A[P], ... ,A[N-1]&lt;/code&gt; 의 합의 차이를 모두 구했을 때, 가장 작은 차이 값이 얼마인지를 구하는 문제&lt;/p&gt;
 &lt;h3&gt;풀이&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;A&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    differences &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+    sumA &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;A&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    sumB &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;A&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    diff &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;abs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;sumA &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; sumB&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    differences&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;append&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;diff&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; P &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;A&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        sumA &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; A&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;P&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+        sumB &lt;span class=&quot;token operator&quot;&gt;-=&lt;/span&gt; A&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;P&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+        diff &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;abs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;sumA &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; sumB&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        differences&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;append&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;diff&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    
+    differences &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;sorted&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;differences&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; differences&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;a href=&quot;https://app.codility.com/demo/results/trainingKHHKV5-N6Z/&quot;&gt;https://app.codility.com/demo/results/trainingKHHKV5-N6Z/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;루프 안에서 매번 배열을 자르고 합하는 과정은 퍼포먼스가 굉장히 나빠지므로 직전의 결과값을 활용하여 연산하는 방식을 사용하였다.&lt;/p&gt;
 &lt;h3&gt;오답&lt;/h3&gt;
@@ -135,6 +171,19 @@ _A small frog wants to get to the other side of a river. The frog is initially l
 &lt;a href=&quot;https://app.codility.com/programmers/lessons/3-time_complexity/perm_missing_elem/&quot;&gt;https://app.codility.com/programmers/lessons/3-time_complexity/perm_missing_elem/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;1부터 N+1까지의 정수를 가지는 배열이 있는데 중간에 빠져있는 정수를 찾는 문제&lt;/p&gt;
 &lt;h3&gt;풀이&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;A&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    A &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;sorted&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;A&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;A&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;or&lt;/span&gt; A&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;A&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;and&lt;/span&gt; A&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; i &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;A&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; A&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;!=&lt;/span&gt; A&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; A&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; A&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;A&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;a href=&quot;https://app.codility.com/demo/results/trainingDXP2NW-CNP/&quot;&gt;https://app.codility.com/demo/results/trainingDXP2NW-CNP/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;오름차순 정렬 후 for문을 통해 순차적으로 체크했다. 배열 길이가 100,000 이었고 O(N)의 시간복잡도를 가졌기 때문에 효율성 테스트도 통과할것이라고 생각했다.&lt;/p&gt;
 &lt;h3&gt;리뷰&lt;/h3&gt;
@@ -164,6 +213,11 @@ _A small frog wants to get to the other side of a river. The frog is initially l
 &lt;a href=&quot;https://app.codility.com/programmers/lessons/3-time_complexity/frog_jmp/&quot;&gt;https://app.codility.com/programmers/lessons/3-time_complexity/frog_jmp/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;X&lt;/code&gt;위치에 개구리가 있고 &lt;code class=&quot;language-text&quot;&gt;D&lt;/code&gt;거리만큼 점프할 수 있다. &lt;code class=&quot;language-text&quot;&gt;Y&lt;/code&gt;위치 이상까지 도달하는데 걸리는 횟수를 계산하는 문제&lt;/p&gt;
 &lt;h3&gt;풀이&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; math
+
+&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;X&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; Y&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; D&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    cnt &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; math&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;ceil&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;Y &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; X&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt; D&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; cnt&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;a href=&quot;https://app.codility.com/demo/results/trainingZUDP5R-TCY/&quot;&gt;https://app.codility.com/demo/results/trainingZUDP5R-TCY/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;주어진 값들의 범위가 &lt;code class=&quot;language-text&quot;&gt;[1…1,000,000,000]&lt;/code&gt;이기 때문에 for문을 돌리면 효율성 테스트에 실패할게 뻔했다. 따라서 계산을 통해 구했다.&lt;/p&gt;
 &lt;h4&gt;오답&lt;/h4&gt;
@@ -182,17 +236,18 @@ _A small frog wants to get to the other side of a river. The frog is initially l
     &gt;
       &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 136.0759493670886%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAbCAIAAADzvTiPAAAACXBIWXMAAAsTAAALEwEAmpwYAAACmklEQVQ4y5WU65KjIBCFff8nnCQDatSIXBoQvAfdkk4yM5nspvb7gUDRaTh90knbtvROmqbnoqCUEkLSNM3ynBCSZVmapmVZ4gFKaZZllNK+7xNjDCGkLMs8UpZlURTFucjznFLKGMMJjucIIeRyuWzblgzDAABcCNDaWqu1NsZIKcdx3N6RhBAwwHtvjLHWOufayLzM1+t127Z1XXH8zh68rmvDG2PMMAxCCKWUc84YU9e17/w8z//KvK6rlNJ7P01TuIbtf0jw07atEEJKCQBKKSGF1hoAtNZKKQDA+78OvlwuH4eP4/GYpikh5HA4YG3yPD+dToSSEMJfgxljx9ORUpLH2hJCbrUpzlhYKeXv9yfXiHdOKWWi1MYYFHxX3t+UB4AXwW3bMsaklJzzt7V9LhVuuQhme6nNa7W996ittVZKZa0FACEE6iylVEo1vFF7EZQxBjeNMQCQgIbT6ZRlWZ7nn5+fhBBK6eFwQIdaa/u+93e6rsMRScZxxN8DABNxzunIsizvvY1hbdvi5Z1zePlxHB/e/s3d283u7WkapRAAsGc2hjHWdd00Te+93bbtMAzXZQlrwFQvLfUc3HWdiEgphRCc8/gKy2rGGNt9Hjc553V98d7/CHbONU0jhKiqinOOc611PC/wT4qzvu+frpMsyzIMg9Yaw5qmUWqv7SOn1pox1jTNC3viR0pZRqqqwkbFalYWZZqmdV3H7pZxzlHkH4Jt2yaEIIR8RLIs8971w+4Na+3DFcaYJ+feMgNAwxi+mXPOGNPm1gbQjygkFvUreBxHbCBINK3S0bry3luwnz7OKKXQf7vaRVFw3pRVpZRalmWe5yUSJ7cFbk5IXKzrmoTotbCGEMeH+8LXJNxX4bs9Qwh/AFzFBD+t8RXcAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 136.0759493670886%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAbCAIAAADzvTiPAAAACXBIWXMAAAsTAAALEwEAmpwYAAACkklEQVQ4y5VU25abMAzM//9h4oWFgPH9bmNiQugBJTlpdttt54EjG48syRodpmlijBFCKKWcc6UUIQRjLKWklGKMhRCMMWMMHHh+tdaHEMLxdKrr+uPjAyFU76iq6nV5Op2qfXMzqgohVFXVPM+HlBLGmD3AORdCUEqFEFJKY4zWWkophNBaqx2cc2vtuq6HUopzTuznQgha6xij1jrnvP6Ew7quWmvn3DRNSimtddjBGEtjGsdxXdfbd7iTGWNKqZyztdY5l3NOKWmtSynzPP9wc0op51xKWZbl9R+4f978DRl2lVLVjrZtz+czQqjv+/OOZsc0Ta/ufiNLIeq6bpqm31HXNaW06zpYdl0H5G/C3shSws1N08A7t21b13XXdU3TtG3bdV1K6Z08TZNzLsZorQX3y7JAkmDAzteK3MnGGHj6EMI8z0/OP73zuq4558vlklIKIVyv19cKQwhvxb+TrbUIobZtoU4Y48/Pz9PpNAwDpaTrOkrp+XwmhAzDwBijlPZ9L4QghBxyzlJKrTUEzxiTUkIKP4d9uVyEEOAVVKGUAhn+2N5bziCJUooxxjk3jmOMERr27/yNzDkHGTnnvPfAMcaUUqB4fyQvy2KtDSGM41h2zDuu1yvYz+9XX1vBnsOF7JBSKqUwxn3f8x0YDxhjQoj3/jdyjJEQIoSA99i87BOLPwCFZIx9be97k4QQYBJwwaHmnHOYgeCo7/sY45uw7qpijCGEjscj2sYegt7o+76qqmEYnvJ6zxnI1lqQEejJez8+EGNMKcUYQwjGmFdt3cNOKXnv4YT3XhvtvbcPOOegBeBdrjtut9s2epumGYatnpAhTFwwoBDeezCe+hNClFK20Qu+rbUpxfV/8Avw0wLfsztFxAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;image&quot;
         title=&quot;image&quot;
-        src=&quot;/static/41077287b9d30b08d54855024b3903a8/f058b/asset-1.png&quot;
-        srcset=&quot;/static/41077287b9d30b08d54855024b3903a8/c26ae/asset-1.png 158w,
-/static/41077287b9d30b08d54855024b3903a8/6bdcf/asset-1.png 315w,
-/static/41077287b9d30b08d54855024b3903a8/f058b/asset-1.png 630w,
-/static/41077287b9d30b08d54855024b3903a8/5a190/asset-1.png 800w&quot;
+        src=&quot;/static/a8bb58ebd135c1488b0d55b9d70bfaa9/f058b/asset-1.png&quot;
+        srcset=&quot;/static/a8bb58ebd135c1488b0d55b9d70bfaa9/c26ae/asset-1.png 158w,
+/static/a8bb58ebd135c1488b0d55b9d70bfaa9/6bdcf/asset-1.png 315w,
+/static/a8bb58ebd135c1488b0d55b9d70bfaa9/f058b/asset-1.png 630w,
+/static/a8bb58ebd135c1488b0d55b9d70bfaa9/40601/asset-1.png 945w,
+/static/a8bb58ebd135c1488b0d55b9d70bfaa9/e996b/asset-1.png 1050w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -203,6 +258,15 @@ _A small frog wants to get to the other side of a river. The frog is initially l
 &lt;p&gt;배열 A에는 같은 값을 가지는 숫자들이 pair된 상태, 즉 짝수개 존재한다. 하지만 그중 하나의 아이템은 pair되지 않은 값을 가지고 있다. 그 아이템의 값을 찾는 문제다.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3&gt;풀이&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;A&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;A&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; A&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+
+    A &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;sorted&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;A&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; i &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;A&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;i &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;A&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;or&lt;/span&gt; A&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;!=&lt;/span&gt; A&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; A&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;a href=&quot;https://app.codility.com/demo/results/training2V8WF7-FPQ/&quot;&gt;https://app.codility.com/demo/results/training2V8WF7-FPQ/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;오름차순으로 정렬 후, loop를 2 step씩 돌면서 현재 아이템과 다음 아이템이 같은지 비교한다.&lt;/p&gt;
 &lt;ol&gt;
@@ -247,17 +311,18 @@ https://app.codility.com/programmers/lessons/2-arrays/cyclic_rotation/ N개의 �
     &gt;
       &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 162.0253164556962%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAgCAIAAACdAM/hAAAACXBIWXMAAAsTAAALEwEAmpwYAAACp0lEQVQ4y51Vi46jIBT1//+wUxS1U+V9QeTh+OgGmHY2kzTb7ok2BHvgPs+tnPOgDYCWUnnvb++gijHO8xxCcG6eJjPZSWutAKy1WutpmgBg+gvGGJN/1nWtCCEIoev1ej6fEUJt23ZdV9f15XJpcNO2bV3XGONL32OM27ZN+02DEFqWpbpePz8+Ps7nM844nU4Iob7vT6cTbnGDm67ryold1zVN0/c9IeM0TclsY4wQAkBJKRnnjDFKqZRCCMEYAwCllBA8fWWMc04pDSHs+34cRyWlRAg1DWasfOX534kp8xn34yQAcMYE58MwUEqdc4lMCKGUTpO5vYnKWlviKaXc9/098u1227at5AAA7DTFGF8lA8AwDCMZKaPJJSHGcaSU8rtvlFLG2DAMQoiyLlFIeQaAFmNCCSFk3dZ937eM4zi2O8rm/je27TtVlCbqMAyg4G2fY4zee+ec8y6E4L33wb9KLsxlWYpFx3G8GPZKKVXyzBgbx5Hkhcx4hKr4NY4jAPy+eV1X55LBMcb0Zi98SE/ZXNf1qdnOOSGE1hoAjDGlGaWUWmtjjJTyWZ9Xx3Esy1Jaep5n7326P2PJCCE8vdlMpiS9uEcIKe32arSdc9bau564t/McY8xVlTK07/u6rcdxvFTb9I6RjISQUr1bLsB/kKWUSqnbf+Hb7JLPsnhdgH+XZ+mnN/r5x+dxIGQUQnDOjUmqdGQ8JRuT8iyEeF1AfsjbuoYQQCeJnd1cSvKBMjSstb9oxaLk89fXFyGkyQMBY9w0zefn5/V6RQg9poRSCnLxa50sLb5UIYQkoBpAQxpVuSt4VnljTOKAKn0ihJBScs5l2oQYY5pVdV2XmdS2bR4ATZ4h4Jx72F9K2FprjJnn2RiTyEU3tm9V29YsdC8G7A8TpzNa9C/O8QAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 162.0253164556962%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAgCAIAAACdAM/hAAAACXBIWXMAAAsTAAALEwEAmpwYAAACoklEQVQ4y5WVh3KjMBCGef9HTGxHoIa6hEAI0W5gL1wy1+xvGIb2ayuryvuAMaWUNw2RUu+vUC3LOk0FjlLmdd2uY9u2f99WMXZCCK0155wQ0ratUooQopTinAshKKVt2wohOOdSSjgzxlJKlZTy/f29ruv7444Qent7Qx8fCKHb7YYQut/vTdMghOq6JoQ8Hg9K6cfHo67rUkqltW6ahhDCOWeMNSdSSowx55xSCtYYPyCUEkJCCMuyHDHHGJumAQ8xpO6EUsoYE0IwxjDGjLG2bSmlsLRzLsZYee9BE2PMOaeUxnHMOY8n1wVcw9u+74dhmKapstYyxpRSUsp1XV8t1ZJzjjF2XTeO4zRNEM9T4m3bSinxxDlnrb1WubwFhyGE/Mm6rke2b7cbxpgQ4pzz3ssTa60QQillTtq2tdZet1rrI+a+76WUWmulVM75tZjHcbTWgjWt9QyU+WzGg22DxlyvM3CI932fzrbOOS/LUuYyz/M0TS9YttaGEGKMVw2HYehP4CFkdBiGb+JhGNyJ994YAwv1fe+9h+fWWudcCAG66psY3L7MfrUGtsGRP7sNYvgIXE0pdV0XP/Heg7eQrW/ilNJRQCmNMerEe78sC6R6Oflb21bTNHVd50+stcbYcRyfrfO+79ffA6ZeaBJwG0oFWfXexxjnef6/OIRgjIEkhxCOVJ/HU2Ko877v2xdeizml1Pd9KWU6eVZcSum6YxJAhWHQwM/8f7H3HiYeFNkY45yD+J/Ntvc+pbS/yBHzsixa62OsY4JqhBDCJ4QQhBAhBGN8/K2fGYEZ9EsMI0YIAU0Kkxm2GPWJ0RpmkBACklqF4Ck9tihCiBBCStm27eEFpfAdbFRaayklGLhWr7ru50YHL2DruJr0a81/r/8PsZoyUO5BBjAAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;image&quot;
         title=&quot;image&quot;
-        src=&quot;/static/9f894eaddccbd6f71fe49c7fadd9ad6d/f058b/asset-1.png&quot;
-        srcset=&quot;/static/9f894eaddccbd6f71fe49c7fadd9ad6d/c26ae/asset-1.png 158w,
-/static/9f894eaddccbd6f71fe49c7fadd9ad6d/6bdcf/asset-1.png 315w,
-/static/9f894eaddccbd6f71fe49c7fadd9ad6d/f058b/asset-1.png 630w,
-/static/9f894eaddccbd6f71fe49c7fadd9ad6d/5a190/asset-1.png 800w&quot;
+        src=&quot;/static/2498223dc8dc380942c361f684e97fd2/f058b/asset-1.png&quot;
+        srcset=&quot;/static/2498223dc8dc380942c361f684e97fd2/c26ae/asset-1.png 158w,
+/static/2498223dc8dc380942c361f684e97fd2/6bdcf/asset-1.png 315w,
+/static/2498223dc8dc380942c361f684e97fd2/f058b/asset-1.png 630w,
+/static/2498223dc8dc380942c361f684e97fd2/40601/asset-1.png 945w,
+/static/2498223dc8dc380942c361f684e97fd2/97bfd/asset-1.png 1078w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -268,6 +333,13 @@ https://app.codility.com/programmers/lessons/2-arrays/cyclic_rotation/ N개의 �
 &lt;p&gt;N개의 원소를 가진 배열의 원소들을 한칸씩 뒤로 K번 이동시켰을 때 결과를 리턴하는 문제다. &lt;code class=&quot;language-text&quot;&gt;N-1&lt;/code&gt;번째 아이템 즉, 마지막 아이템의 경우 맨 앞으로 온다. 그래서 문제 이름이 CyclicRotation이다.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3&gt;제출 코드&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;A&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; K&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;A&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; A
+        
+    &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; i &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;K&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        A&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;insert&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; A&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;pop&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; A&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;a href=&quot;https://app.codility.com/demo/results/training62NM5N-Y64/&quot;&gt;https://app.codility.com/demo/results/training62NM5N-Y64/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;마지막 아이템을 &lt;code class=&quot;language-text&quot;&gt;pop()&lt;/code&gt; 하고 맨 처음으로 넣는걸 K번 반복한다. 배열의 길이가 0인 경우도 있으니 잘 체크한다.&lt;/p&gt;
 &lt;hr&gt;
@@ -280,17 +352,18 @@ https://app.codility.com/programmers/lessons/1-iterations/binary_gap/ 주어진 
     &gt;
       &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 94.9367088607595%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAIAAAAf7rriAAAACXBIWXMAAAsTAAALEwEAmpwYAAACTUlEQVQ4y5WT646kIBCF+/1f0G4UEERuihdaaITW2SAzk81uNtn5fhAklFTVqXM7juP1eoUQriV8/ITbvu9CKCk1F1IpfZ7nD4LP83wf7+M43hcppbBnYoyfa4zf+5RSjDHse0rp/Pi4bdt2v6gv7vc7AKCu68fjgRBqmubxRVVVTdPc7/embqy1+eUY47quxph1XZdlmTJmuZimaZ7n58WyLMaYeZ6XZVnXxVobY7w55wAAhBBKadM0GGOEEGwghLCuawAAxphz3rZtuQMhRAgRQrz3N+89QohSKoTo+x5jzBjruq7ve0opxlgIwRhrW9z3fcc6Qsg0Tc654zhuz+ezKtwrjDCltO/7UjCEEABQVVXbtgAASilCCAAAITTG5OAQAudcCKGUGrQedKZ8cs4ZY8/n8ziO0ud0EWMsit5er5cQYhgGpVTY85CklL5l+773T51TSsuyzPO82nXbtv+fkyyV995a65ybL6y13nvn3LZt1madnHNFyHVd7XX0fr9zsHMOY9x1HaWUENJ1uZ+UEMZY0aaIpJTy3hfNQwifNYcQSm8450pKY4zWWiklhJAXnHOttTGmzMw4jMaYfd9Lw3wZDEKIEKKk0Pd9Eb9pGohg27YIIYwxhA3GqG1bznlKKc92Cc43MFZKGTPO8zwMgzFmHMfhQiklpSx7eSV4nmdOexzHaZo451JK51z4wnt/GWwP4VU69Ge3U0rFGLnmq1St9TiOWutyIqVkjK2Xjc7fyMHlH8654ptCdtaUPbRt2ziOSinn3N8v/wI7DCpFp4WTPAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 95.56962025316456%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAIAAAAf7rriAAAACXBIWXMAAAsTAAALEwEAmpwYAAACL0lEQVQ4y5WT6Y6sIBCF+/2f0BUBFZAWaWwFxO0GajqZ3C2Z7wdRUkXBOVWP8zyd8977tPj7Jzy2beNcCiE5HwY5Xvf1g+Truo7zOM/zSIR991sihC1E4CNthH3fQwh+2/Z9v+77sa5rURRZllVVVZZllmVlVZVVVRQFQgjVdVEUeZ7HNctqhPI8r6pqnudYOYRgjFFKGWNer9eUeCWmadJavxPGGPh9vV7GmHmeQwixclmWlNK2beu6xhg3TRNLIgR3wRgzxgghNIEQapqGEOKce1hrm6Zp25ZzzhjDGPd933UdY4xSSgjhnPddRwhhjHV9RynVWltrz/N8vN/vLJHnOca4bVvGGDy4rmtQAWNcFAWULcsSIaSUuq4rWiWE4IJLKZ8JKaUQQkrJOe+6blkW8ALUBsGvKzr6cM4xxp7P5zAM27bd9w0Rx3F8j/unz/u+G2O01vM8r+v6n+jfk/d9d85BGjj0fr+dc+u6Lh+steDWPM/g3HEcNzRJg6PaoG3btiTR9z3YQwimlA7DAEfA0V9v9t6DNjw29zBNk0wIIYYE41ERpRQ0j1LjNE2gThQMGoNQCvKCW2B+XdcIIQjAGNd1DR+MseM4HsuyYIwRQoSQpmmklEoprTVUG8fx+XyO4wh3GRNCiC+fvfdwJc65EMJau31wzqW5Ct57UOgvasNgMMZit/DYLeM4xtemnWEY+r6HMbq+EZPhDPBJfdBawwwty6KUklJaa/+s/AvlzivrNC0+DQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;image&quot;
         title=&quot;image&quot;
-        src=&quot;/static/7845380e1a5bd03c960d2776139e1686/f058b/asset-1.png&quot;
-        srcset=&quot;/static/7845380e1a5bd03c960d2776139e1686/c26ae/asset-1.png 158w,
-/static/7845380e1a5bd03c960d2776139e1686/6bdcf/asset-1.png 315w,
-/static/7845380e1a5bd03c960d2776139e1686/f058b/asset-1.png 630w,
-/static/7845380e1a5bd03c960d2776139e1686/5a190/asset-1.png 800w&quot;
+        src=&quot;/static/62c3799042cc0d51f3ce2985a9dd503e/f058b/asset-1.png&quot;
+        srcset=&quot;/static/62c3799042cc0d51f3ce2985a9dd503e/c26ae/asset-1.png 158w,
+/static/62c3799042cc0d51f3ce2985a9dd503e/6bdcf/asset-1.png 315w,
+/static/62c3799042cc0d51f3ce2985a9dd503e/f058b/asset-1.png 630w,
+/static/62c3799042cc0d51f3ce2985a9dd503e/40601/asset-1.png 945w,
+/static/62c3799042cc0d51f3ce2985a9dd503e/f43e4/asset-1.png 1120w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -301,6 +374,24 @@ https://app.codility.com/programmers/lessons/1-iterations/binary_gap/ 주어진 
 &lt;p&gt;주어진 양의 정수 N을 이진수로 표현했을 때, 1과 1 사이 0이 존재하는 패턴 중 가장 긴 0을 가진 패턴에서 0의 갯수를 찾는 문제다.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3&gt;제출 코드&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; re
+
+&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;N&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    binaryStr &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&quot;&lt;/span&gt;
+    maxBinaryGaps &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; N &lt;span class=&quot;token operator&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        rest &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; N &lt;span class=&quot;token operator&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;
+        N &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;N &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; rest&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;
+        binaryStr &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;rest&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; binaryStr
+
+    p &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; re&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;compile&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;10+(?=1)&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    m &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; p&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;findall&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;binaryStr&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;m&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        maxBinaryGaps &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;m&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; key&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
+        
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; maxBinaryGaps&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;a href=&quot;https://app.codility.com/demo/results/trainingWQSUM3-5S6/&quot;&gt;https://app.codility.com/demo/results/trainingWQSUM3-5S6/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;정수 N을 2로 나누었을때의 나머지를 &lt;code class=&quot;language-text&quot;&gt;binaryStr&lt;/code&gt; 에 이어붙이면서 문자열로 된 이진수를 구했다. 그리고 정규식을 통해 매칭되는 패턴을 모두 찾아서 배열에 넣었고, 가장 긴 길이를 가진 아이템을 &lt;code class=&quot;language-text&quot;&gt;max()&lt;/code&gt; 함수로 찾았다.&lt;/p&gt;
 &lt;hr&gt;
@@ -415,24 +506,26 @@ Xcode: 맥 앱스토어에서 설치할 수 있습니다. &lt;a href=&quot;https
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/4a0469106f768f121c7b4d4a3369f5f6/5a190/asset-2.png&quot;
+    href=&quot;/static/f867bfecd1035c6eea3a00b663074088/985a9/asset-2.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 70.88607594936708%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsTAAALEwEAmpwYAAACEklEQVQ4y42T22rbQBCG9Qg1bupEu9qzDt6VZR3iEgebQsCOk6b3bVNaehPnPSLIKwel1pTdOIKa1u7Fxw+7w8fMHryqrPT8YvZ4sVg+nE7e12V1WpfFuJ7P5/X1x0/1anVVL5aX9eXlql5umU7P6zwv6qKo6tn8Q728unlYrK4fz85nxpOh+WFGYxhlYzBpBkJwGI6nUE3OoCxLyIsCtDEQJ4nDmBTSNIUwioBzAVmWQ1FOYJznEMfJT48y/jmMEgij5CmKhw0hpOEqbqSKG0JZI1XUUCYcmNCGctEIqRrKmKvVWluetNagpPzqMS6/RPEQ4kRv4kS3lPGWUtoyLtqAUIdUYYeQysG5aCklrTGmTdN0Y4wBpdQ3j3GxI2TAGAch1ZbQJZcKcEAgIBQQDlxSSuGwkDIniHUGKow6mYVx8YKQwDjvhMaYfUICRI6AjG6AcglcqK5b25nt0iYhpBNmWfZvoS0c6hTyagpCSpAO5VIICXGkIBrNgCdTIAGCNB21ZVlu7M1LKf8+MsYYSIABIfQHdj2wEAYIU9flf4zMwPf9TrArfcF3vAoPXUqLEGoxxi53seuve4Tsfza/rJQytkEIbTDGe7E1hBArsuf3vBXeepSJW/tTrNRCKO1G3oetsSPbH2JlNqWU372jo3dscHxyPzg+ubP0+2/Xvd6bda/XO0i/31/7vn+35X4wGPDfWY9m/NdsF8YAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 70.88607594936708%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsTAAALEwEAmpwYAAACFklEQVQ4y42TS2sbMRSF/QOMycTQhTXW4+oxD409mYkbN6VOQzJJmpRQaCh025Yu+qOqRemfzDTWLRrHIdDYzeLjCHQ46FxJvf16drg4Wfw+ac5+zl4euKred3Vdu6Ojt+7y6r07P3/nTk8b1zRn7rQ563Q+P3TlXuX2qtq9WRy75uLKNReXv2YHr8oeqOxHbie4RnCOWfka69kcp9MpTssSkzRFpTVqrTHLcsxzi0pp5ELgZBI8VadK6c89zsUXbVI0SXZrkqyllLZSmRaUbrmQrZAr5aBaykXLBLRKm5aHNWOttba1Nr/N8xylhI89LuQ3k2SYpPkySXPPGPeMB4QfU+7jMfVSGQ9SeW0SL0B2cC48Y8xba31RFEtrLUopb54K7KpIpRCURqkNgtQIUmE8pjimrFNKGTLG8BmBDEEZNHaGUmkUIFGAQiEVMgHIAyCRc/EQaK3dEkhj5KZCWd+gAECpTBccWJ8wQNnqhEVR+LIsNweOKUVrcyzLKXLOEQBQCLECANPEoJkeI08PkY4JFpOJr6pqWRRF8D4OzB4qE0IwjuMtkM7zn8r/BgZ9ivXe9ktJsrv7QE8I8XEcbyV4Nj2br/cz/BPmyBhfEkKWcRxvJXgYY2F2gbtHgfDdrH5KR3hfhIw21l0zGo3WlTvCTwGAT72dnYhEu8MPUbR7He0OrweDwXW/338WwTscDh+IoujFXyJdZVYINx00AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;image&quot;
         title=&quot;image&quot;
-        src=&quot;/static/4a0469106f768f121c7b4d4a3369f5f6/f058b/asset-2.png&quot;
-        srcset=&quot;/static/4a0469106f768f121c7b4d4a3369f5f6/c26ae/asset-2.png 158w,
-/static/4a0469106f768f121c7b4d4a3369f5f6/6bdcf/asset-2.png 315w,
-/static/4a0469106f768f121c7b4d4a3369f5f6/f058b/asset-2.png 630w,
-/static/4a0469106f768f121c7b4d4a3369f5f6/5a190/asset-2.png 800w&quot;
+        src=&quot;/static/f867bfecd1035c6eea3a00b663074088/f058b/asset-2.png&quot;
+        srcset=&quot;/static/f867bfecd1035c6eea3a00b663074088/c26ae/asset-2.png 158w,
+/static/f867bfecd1035c6eea3a00b663074088/6bdcf/asset-2.png 315w,
+/static/f867bfecd1035c6eea3a00b663074088/f058b/asset-2.png 630w,
+/static/f867bfecd1035c6eea3a00b663074088/40601/asset-2.png 945w,
+/static/f867bfecd1035c6eea3a00b663074088/78612/asset-2.png 1260w,
+/static/f867bfecd1035c6eea3a00b663074088/985a9/asset-2.png 1512w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -446,24 +539,26 @@ Xcode: 맥 앱스토어에서 설치할 수 있습니다. &lt;a href=&quot;https
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/bee05dcb3d5d36b7f7770d7568e5b893/5a190/asset-3.png&quot;
+    href=&quot;/static/ae4f33eeece32f331dc84a103d0c34dd/985a9/asset-3.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 70.88607594936708%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsTAAALEwEAmpwYAAACK0lEQVQ4y5WT21LbMBBA/QtJSgNxLF9lWytfZeOmIQYmU8KlvPStLZ12+kL4DzzDLzNuo+3IgZShUNqHMxp7V2d2Ja1WiALq+exmfrS4LnerJhdlI4qyqfcPmrP3583xyWlztDjesDg+ad5O95osE00uiqauD5rF6fn10cnZzWQ645pL+TcepxgnKfIoQcelCAAohEBRFJimKXLOMYqiDerb9320HQ/jJMdMVJhmOfoB+66Zlv2R+iFSP7z1A9YS0249z2sZY20QBG3IWMsgakPgaxi0ANBSSluDWF2MQXTLIELXpZ81y3Y/+QHDIIRVEII0LUdS6ksAkFmWyuneTC7OP8jp4bsOMZ1LBpGklEpi2hJ4LHmUrIDH6Hr+F82yncdCpNTv2q6qCuu6xsODfZy8qbDaLTHLCwTgXQ4xbfwvIWMM8zzH2WyGk8kEy7LENN+9E9KNEHj8knB9MffS+zUMQwzDAAHYRsijRMZJ9ryQmFZXgarM87xu4298zLMEuZijw6ZIiIE8SmUuypV6Ia5Ln65wbJioxPqY/AEhFhqmi7rhdDkPW/aea3mkrzcr8WPWYqPjXy9F6mMix4bZrY9R/+9jLz2bn0pqWs5KH5PV2DD/isohpr0Cnqjz+3HX8oVmWs6FmhQlVag2Rrrx5Pk9ROUYxEI1IUp2Nylfta2t19Zwe+dquL1zqRgMtpa9Xn/Z6w+Wvd4zdLH+sj94tdwZ6ZejNVfD4bb9C4G7b8cccjoPAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 70.88607594936708%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsTAAALEwEAmpwYAAACDklEQVQ4y42TyY7TQBCG8wCTkAVxifel7V5st+3sI4cstqIMipBASFwBceCh8AHxkmMmXaidZIREljl86kP/+tRV1dVIk8E0W2W/V3nxczAclXGSlmk6LOfzRbl9eFcWxaZcrYtynRfP53g8KSMelzxOyyxblPnmocw321+D0SRqWA7+QWgAJwzTBowJcM5rGGOAsQ8E4wNEQsB1UZ1lAYcwSoEFEdgO+twwDPOLi3xAHn5EHq403axcF1UY48r3/YoyVjGeVCTkFQ54hVlYUUrrjMwSGkgeMWFg2c6HhmHa35CHwfPJ3vOJ0HRTIIQEIURwzsV9lol8uxP3i7WYLXKRTJcCYyxcF9VZQkNBWbiX1Vm28/GcEBBCdWnj8QRWyyUs3s5hNp3AeDSCOB7Wd7JkmSU0eKmQgO/7EEYRTGczGElZkkAQpf8JCQ2OQveS0ANKaS3FGNfiE3JA8u4kpCwUYRRffqGqGcBYAHEcg2VZ4DgO2I5zOG0HkiQGmhZg4hlomianK3ic7ikLwbLOCHXDgr6ivQAVZPZmySehoupXkZmT8NJQno5C0Vc0oaj6VWRGZs8Jvx6Ff+QrdcPa9xVtr6j6VWRGZqWMsvDpn5Kt7+iwKTVycrI/N3vYV4/fhtUrW2+K5XxqtNudfqfbe9/pdHedbnfXar3a3TWbu7tm6wbNOtvrvX6m3em++QsoGm4JSkndJgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;image&quot;
         title=&quot;image&quot;
-        src=&quot;/static/bee05dcb3d5d36b7f7770d7568e5b893/f058b/asset-3.png&quot;
-        srcset=&quot;/static/bee05dcb3d5d36b7f7770d7568e5b893/c26ae/asset-3.png 158w,
-/static/bee05dcb3d5d36b7f7770d7568e5b893/6bdcf/asset-3.png 315w,
-/static/bee05dcb3d5d36b7f7770d7568e5b893/f058b/asset-3.png 630w,
-/static/bee05dcb3d5d36b7f7770d7568e5b893/5a190/asset-3.png 800w&quot;
+        src=&quot;/static/ae4f33eeece32f331dc84a103d0c34dd/f058b/asset-3.png&quot;
+        srcset=&quot;/static/ae4f33eeece32f331dc84a103d0c34dd/c26ae/asset-3.png 158w,
+/static/ae4f33eeece32f331dc84a103d0c34dd/6bdcf/asset-3.png 315w,
+/static/ae4f33eeece32f331dc84a103d0c34dd/f058b/asset-3.png 630w,
+/static/ae4f33eeece32f331dc84a103d0c34dd/40601/asset-3.png 945w,
+/static/ae4f33eeece32f331dc84a103d0c34dd/78612/asset-3.png 1260w,
+/static/ae4f33eeece32f331dc84a103d0c34dd/985a9/asset-3.png 1512w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -477,24 +572,26 @@ Xcode: 맥 앱스토어에서 설치할 수 있습니다. &lt;a href=&quot;https
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/5dcf8fe7372dde7270936f27e7c5f51d/5a190/asset-4.png&quot;
+    href=&quot;/static/5780817a2f2870bc5d5331f7c68fa1d3/985a9/asset-4.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 70.88607594936708%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsTAAALEwEAmpwYAAACZElEQVQ4y32Ta1PaQBSG+QtALUouu5tNdnMH5A4hShEV6rROtZ22dtrpF/F/mBn/skNL3k4i2rFFPjxzkpwzz+45my2E9ZY7jOK7o6Pj21arkzRb7aTb6ydvJtPk5HSWzM/eJZcfPyUfLi6T2fxt8u79eXI0PU4GwyivjUZxcjw7u52ezu96g8grGJb3w/NrCMI6HNeH6wUYDqOcbm+Adm+Io+kpDscTDKMYUXyI+GCcPzuuBz+oob7fQa3egJDOzwKh7LMlbFjCvreEvTQtsRyPx8swDJdBWFsSauRohC0Nbj29U8bz6Lh+xn22Gc6trwXK+BchHUjbXQnppELYaRzHaRAEqZROSqiRMsZz6AZcL0g9P1xlnXFTfCtQZjwJLemklpAYjUZoNpuwPR/Cdtd4sKQN6Xj5aExLgjKOrUIh3ZQZHJxz2FIiqoU4GUWYHcSY9HsYNloIhQQ3TZicgTKWC10veEnopNy0EIQhar6PaT3E+fgQF5Mx5oMujjsRWpaAGwSQfh+M23A9Pw3C+mahtN1sLmi32+j3+5BCgOk6DELAKYVJCRr1GjqdLmQwgM4EPD9IG/utleeH2aH8L9QJQ1XRoGokj4pGnqERBlXToShV6IQ+a9nctENCDSiqnpNJVZU8xDWPOUUlyBbfeihrYaqoeqpqJI//kn1/zOmEbf1tfmdSQo2VouorVSNbyWp0wlauF2bz+7Vu+apAqHGV3ZRMmvE4w7+tbSar0XT6dF3XN+V7YWfnNa3s7t1UdveuM8rlnUWxWFoUS+VFsfgCea60KJVfLfaqynX1gZtKZZf9AXK/cklvfYjUAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 70.88607594936708%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsTAAALEwEAmpwYAAACV0lEQVQ4y4WT3U7bMBiGewHAaJkmoGkd58d24iRNm/7QNF3aAStFKwwQAu1sm3awi1oOpt0kGc07OVQbCNQdPNIn59Ujv3ZcCcLecJSkvw6Pjn9E3X7W7fWzeDTO3s9OSj6cfcxubj9l19c32enph+zi8iqbncyzNJ1mKp+M0+x4dpodzeY/u/2DVsWwnO+uDCA9H8KRcF0PSTJGHI/Q7Q3Q6R3g7eQQ8WiMg+EIwzh5mOMEXDiQXgtBGMHzWzAtdlvRdfrZZgKMO3c2EznjIp9Op3kYhrkr/ZzoRt4kNG809ZwaVjkr1LpCZVzp3zmuB8O0Lis6Nb8y7oALd2kzUXDhFEmSFJ7nFTbjBdGNghpWiU7NFf9mV/qF9IKlK30lvHomZFwgTVNEUQRHemrnYMIp6zHGwR23PBrLFqCGhbVCLtyCUhM6pRCWhUk7xGKS4nw6wXwUYxL10eEcNmOwTAJKjVLoSn8ltJ8KGXcKy2YI2210WwEOOyHOJiku3k0wj4eY9kboMg4/CCCCMagpIKVfBK32yztUQp2aGAwG5S2blgVCCAjRoesKgk4Uod/vg/sJCGXq7yjCdrSUXgDDeCRk/KFyk1Ds7tWxt6+hrjWhNcgT1Jr6tr+/C0Lo+spKSHTjRdFzMYHKrruU+5WwqGvNQmuQtaiMyr4k/LIS/la7JLqxrGvNpdYga1EZlVUy6QX3jyob39jDSylRZ1jXGmXttdQbZdaVnqqN8qUY1nVle7tar9Z2zqvV2qJaqy22tl4tNjY3FxubW/9hs8zu7Lz+y3a19uYPrydxAnAqVpEAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;image&quot;
         title=&quot;image&quot;
-        src=&quot;/static/5dcf8fe7372dde7270936f27e7c5f51d/f058b/asset-4.png&quot;
-        srcset=&quot;/static/5dcf8fe7372dde7270936f27e7c5f51d/c26ae/asset-4.png 158w,
-/static/5dcf8fe7372dde7270936f27e7c5f51d/6bdcf/asset-4.png 315w,
-/static/5dcf8fe7372dde7270936f27e7c5f51d/f058b/asset-4.png 630w,
-/static/5dcf8fe7372dde7270936f27e7c5f51d/5a190/asset-4.png 800w&quot;
+        src=&quot;/static/5780817a2f2870bc5d5331f7c68fa1d3/f058b/asset-4.png&quot;
+        srcset=&quot;/static/5780817a2f2870bc5d5331f7c68fa1d3/c26ae/asset-4.png 158w,
+/static/5780817a2f2870bc5d5331f7c68fa1d3/6bdcf/asset-4.png 315w,
+/static/5780817a2f2870bc5d5331f7c68fa1d3/f058b/asset-4.png 630w,
+/static/5780817a2f2870bc5d5331f7c68fa1d3/40601/asset-4.png 945w,
+/static/5780817a2f2870bc5d5331f7c68fa1d3/78612/asset-4.png 1260w,
+/static/5780817a2f2870bc5d5331f7c68fa1d3/985a9/asset-4.png 1512w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -509,24 +606,26 @@ Xcode: 맥 앱스토어에서 설치할 수 있습니다. &lt;a href=&quot;https
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/d363e9dba839e408b01c9a1a238d51ad/5a190/asset-5.png&quot;
+    href=&quot;/static/bd33ab1a2ccf0462801397758b3c4545/985a9/asset-5.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 70.88607594936708%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsTAAALEwEAmpwYAAACG0lEQVQ4y5WTW2/TMBSA8xOoyuiWi5M0N1+yxHHa0muKinrZqHgGhkC8rPsfi7S/PAXqg5ytFRRYx8Mny87xl3N8bC0XOZ3Mxnez+eK20+2VmchLkXfKSTEtL9+ty+XqopwvlnsWy1U5GI5KzrMyy/JyPJmWi4v17Xx1edcfjpnmBewrO0/hPEmBxQm0PR8opSCEAJHnkKZqPYa45ryGMQZhGILrtiFJOGSiCynnEEX4m2Y77ocgxBCE+D6MSIWQXfm+XxFCqiiKKoxxRQiuKMEVVvMoqiilVRAElWVZFaNUze9VEr7nfdIc1/sYRgQiTLcRptK2HRkEgaSUSs65HA5Hcrl+L4vZXA6LNzLvTyWhcR2DEJKMMRnH8VZl7fv+Z81x24dCCIKgLrvX7cKkKGD6dgGvRwX0hhNIOwOglNUxCCH4LyEhBDjnMC0mMOj3odsRkPIOUBr/JmSMHRM+NGYn3YExBowjoJTshXEcyyRJ/i1EyK5FWZapgHrjr2Q8ASZm0CYDQJahui6FEFt1CzzP+3uGpmnWfzcM4w+QZYGFXDBM+/kl67peb1biQx7Ees1zmyINw5CmadbjIWp99+3YtfmhpLbjbA3D2Jqm+SQqBiGkROr8vj8KrzTbaV+pl6KkCmTb+5KfQsWoklUDlUyNnud90U5OXjmt07Ob1unZtaLZfLlpNF5sGo3GUZrN5kbX9etHblqtlvsTsDJudZjd1joAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 70.88607594936708%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsTAAALEwEAmpwYAAACCElEQVQ4y42T2Y7aMBSGeQCEJiD1Aoc4OKvjhCxQAsMilqRoqGilVpV621a96EPVF1VfctLBp7JniKaaKcPFJ2f5z5f42G4Ms9F0sVn83hTlz9HrMU+zIR8OR3y5XPGb/Vtelm/4ZlvwbVHWY55PeJykPEkzPl+seLHb82J382s0nsQNYtMfAYvghNknQCmFJEkUYRiq+yAI/sFxHDDNPkTRAAZxqkbbdj43TLP/xXF9cD1663q0MgxcOY5TUUor3/crxlgVRaEioFQhn8mMYRjqmrHgVn7EssiHhtm3vrkeBc8Pjp4fCANj4bquCIJAJEkiZvOFKPfvxHK7E9erQmTTtaCUCsdxBMZYMBaKMAyPjDGwLOvjc0JwXVdNK89zWG+2sN6WMJ0vYTJbQDKa1lM2DAMYY5cIHVXk+z4MBgOYza4hH48hS1OI4uyJkDH28h/KgCyUCyLFJyj11buTMAxDEcfx/4W9ngpBmqZACAHbtmssy4IsS4ANC+j7UzB6CKIoEmmaHmUNIeSxkCohxiYg1AWE0At0AWN8bsonIVYFuq6fRWZOwucXxaN3D0KBEBK6rp9FZu63zVPh14ce/pF9xNg8IoSOuq6fRWYwxrJ3krtHQvLdvT8pCsPAF/Ww2617WO8IQsinxtWVhrR2572mtQ9au3NotVqHZrN5ETLb6XRqNE179Rddvmyx47dPGQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;image&quot;
         title=&quot;image&quot;
-        src=&quot;/static/d363e9dba839e408b01c9a1a238d51ad/f058b/asset-5.png&quot;
-        srcset=&quot;/static/d363e9dba839e408b01c9a1a238d51ad/c26ae/asset-5.png 158w,
-/static/d363e9dba839e408b01c9a1a238d51ad/6bdcf/asset-5.png 315w,
-/static/d363e9dba839e408b01c9a1a238d51ad/f058b/asset-5.png 630w,
-/static/d363e9dba839e408b01c9a1a238d51ad/5a190/asset-5.png 800w&quot;
+        src=&quot;/static/bd33ab1a2ccf0462801397758b3c4545/f058b/asset-5.png&quot;
+        srcset=&quot;/static/bd33ab1a2ccf0462801397758b3c4545/c26ae/asset-5.png 158w,
+/static/bd33ab1a2ccf0462801397758b3c4545/6bdcf/asset-5.png 315w,
+/static/bd33ab1a2ccf0462801397758b3c4545/f058b/asset-5.png 630w,
+/static/bd33ab1a2ccf0462801397758b3c4545/40601/asset-5.png 945w,
+/static/bd33ab1a2ccf0462801397758b3c4545/78612/asset-5.png 1260w,
+/static/bd33ab1a2ccf0462801397758b3c4545/985a9/asset-5.png 1512w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -540,24 +639,26 @@ Xcode: 맥 앱스토어에서 설치할 수 있습니다. &lt;a href=&quot;https
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/e59c6c71e78218d3d7ccff9c967583c3/5a190/asset-6.png&quot;
+    href=&quot;/static/adcaeec426703cd9c00ed883a7b9c472/985a9/asset-6.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 70.88607594936708%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsTAAALEwEAmpwYAAACa0lEQVQ4y4WT207bQBRF8wmNUhqIzVxie2zP2CaQG0lsQxICBHpBhVZtqVr1BfgPLPHLyG28qzGXqi1NH5a25XNmSefYU4laHTmK05u9vf3rTqeXtTvdrN8fZJPpLNs/OMzmx6+ys3fvs7enZ9l8fpy9fnOS7c32s+EoLnvjZCfbn7+8nh0e3WwPY1VpOuqrCjYQRi34MoBUAUajuGQwjNEfppjODrA7niJOdpCku0h3JhjFKXxfIggjbG51sdFqwXW9bxXK+AdHeHCEd+sIL7dtJx+Px3kUhvlmp58LT+aU8nydsFzXGbfuaNo5oTSXUuZKylspJWzL+lRh3PooXB+uJxfC9Qsh3CJNkyIMw/KZUF5wbpUw1iyYzgcYL5RSRRAEC6UUbNv+XGG8+Sh0XL9whECSJGi32/BVCOErCF/epefDk6pcjS08MMaxVChcWXDehGVZ8FwXw40IB0mC+U6KvcE2hpsdKOHqg7AtDs5YKVRK/UvoF5ZtI4wiREGASSvCyXgXp9MJjobbmPUSRI4LFYZwgwG4JaCULKIoelroerJgnKPb7WIwGMAVDjghaFIKizFYjKLV2kCv14MbDkGZjSBQxdbW1iIIAj3Z30JCKRqNBkzTRMMwYJjmbxBCyprRWAUh68tH1kJKGQwtMozyoKnzAdN4rBmGltPlH+VeWBiGUZimWeaf6PcPNULI0t/mh5ZSxhaGYSxM01yK7iGEaJHe3/d74XmFsua5vilaqnnY4a/Rnkb36H3qG6JlOi3L+lJZWXnB6qtrV/XVtQtNrfb8slp9dlmtVv9LrVa7bDQaF/dc1et1/hOEDHEwVvYkSwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 70.88607594936708%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsTAAALEwEAmpwYAAACWklEQVQ4y42TXW/TMBSG+wOmaVkF6poQ2/mwkzhtk7YLNEmXdl9dh0o1prGJO0Bc8KPIBeJPLqx5UbLypW0VF49k2a8fnXMsN7rB/ihJs+9HxydfB8MoHw6jPE7G+ensLD85neXni2V+ffM+v3p3nc/PX+cXF5f57GyeH2TTfDDcz9Nxlh/PzvPj2fzbMHrVaxiW+8WTXUi/A8eVcD2JJE0RxwmiUUWKg8kh4mRcM4rHSNIDjOIUQjj1vV7QR6fThWXZNw1K2QebO+DCvbW5U3Auiul0WgRBUHTDYWFzUeiEFS90Wli2KAg11pgFIbSQ0qu49TwPpmm8bVBmfuLChXC8lc2dUginTNOk9P1Oadu81AkrmWHVUGauuV8zxkopZen7/kpKCdM0Lx8IORfIsgyDwQCu9CEcd40HWwgI14PrSli2A8YMbBQKxyurEGMMtmUhCwO8mWRYTieYJzEOBxGkELC5DcskYIzWQinl40Iu3NKybARhiKDXw1E/xHIywcXhBGfxCCf7CXwu0Ol24XTHMEwOX8qy1+s9JfRKShleRhHiOIZpWSC6DkIIKKWglKA/6COKIvBOCkJN+L4swzBc+b4PwzD+CLlw65Z1naDVamFvbw+qqkLTtH+o9qqzdusZCNE3t1wJCaGPih6Ktbrypx9FuHf3QlKqqlpqmraRKlNlHxN+XFf4o6qSELpSVXWladpGqgwhpJpdxd1fQuMzv/8pNdUMVbVdt72Jdrv9q+Wa6qcYhnHV2NlRVGW3uVSU3YWy21xsb28vtra2/osq22w2f6MoyvOfs5Zv2mIFPa8AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;image&quot;
         title=&quot;image&quot;
-        src=&quot;/static/e59c6c71e78218d3d7ccff9c967583c3/f058b/asset-6.png&quot;
-        srcset=&quot;/static/e59c6c71e78218d3d7ccff9c967583c3/c26ae/asset-6.png 158w,
-/static/e59c6c71e78218d3d7ccff9c967583c3/6bdcf/asset-6.png 315w,
-/static/e59c6c71e78218d3d7ccff9c967583c3/f058b/asset-6.png 630w,
-/static/e59c6c71e78218d3d7ccff9c967583c3/5a190/asset-6.png 800w&quot;
+        src=&quot;/static/adcaeec426703cd9c00ed883a7b9c472/f058b/asset-6.png&quot;
+        srcset=&quot;/static/adcaeec426703cd9c00ed883a7b9c472/c26ae/asset-6.png 158w,
+/static/adcaeec426703cd9c00ed883a7b9c472/6bdcf/asset-6.png 315w,
+/static/adcaeec426703cd9c00ed883a7b9c472/f058b/asset-6.png 630w,
+/static/adcaeec426703cd9c00ed883a7b9c472/40601/asset-6.png 945w,
+/static/adcaeec426703cd9c00ed883a7b9c472/78612/asset-6.png 1260w,
+/static/adcaeec426703cd9c00ed883a7b9c472/985a9/asset-6.png 1512w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -615,24 +716,26 @@ Xcode: 맥 앱스토어에서 설치할 수 있습니다. &lt;a href=&quot;https
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/8c31352254644d61e8ad8176deb0d4bd/5a190/asset-8.png&quot;
+    href=&quot;/static/d706bb235d62876c6fa512ebf420dd3a/985a9/asset-8.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 70.88607594936708%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC40lEQVQ4y32T+W7bOBDG9QhptkdkUTx0USQl+YgcX4mV2IntNm2TuEFRNw4K9VUqoK9cGBVnIXobYIvd/vEDR0Px0wznkzXNQnk+7X1/vSi+fbq9rD7cf6w2nx+ru9t19e7dTXV396Far++rm9t1df32fbVaXVdFcVHl+Ul1fNyvJpOzavH67bfFm/ffh5MzZanBzZfh8hF6sy2k00fIJyvIT0bQH4yh18shSduGIOTAYwkRF8C5MGsYcej2cmh3ckiyDoRclBb2ok9Xyzdwdf3xR2cw38ks36kk2zEv3FHmG4KQ7yIuTIwJ2yGXGFxMdyeD0W69vv8xv1xCII4/W06rtTkdT2C1XNV5nmsRc91ud7Tnh/rIdnQQcp2kbZ1mHS1Vov0g0g7CBhdTnbW7erFc1dPiAiIeby0lvM3y8hSO+8NaJZnGhMEr2wHkEgijGDw/NDR5Qj2gzAdMPLPfxKPRRF/M5vVoMoVI5VuL83CzWl7BtJjVzdealxyEzQGXUPAjAVlvDAEXQFgALvEAUx8clxrB4nymx5OzOu8Pgavu1ooCtlnMCxiNz2opE91U8UuQEAaBF0DocxA8NjFxMRCXAEbYVJ33h7o4n9eD0SnIbLi1GPM2QgiIhap5LJ8EW4hAkQi46vWg30yTeTCSCsZSwVBKGFIKHqEgkkynWbeWKoUgCLcWpd4m3NvgSRAhDEcIwymjMPMYcMKAYwIxJiAaEcpAYQyUMJAq1UqlRtAPoq1Fmbcx3orlvypEmELUDIX5YDftNcNo7tcl0EJ4n/slmGR/FHyyhcElGrnEWARjqt1/nhHCjSP0b4IP+5ajGMJI/GzaJtSrWwjXDsI1cskTzm+5JsaENVZr+Lm/w+jBYp7/0PxaadaBrN3dew5TM+WW45r2/4tmz8UUhExAqsSsvh8+WnbLwUKqr1IlZZKkJXJxadt2+fz5i/Lg4Fl58Ozwfzk8/Ks8slulvefry1dH5G8UNnW0F1LvOgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 70.88607594936708%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC90lEQVQ4y3WT3W7bRhCF+QC26zS1HUvcXZLL5T9FkZIsy5Ioy5ZixTScxDLQJEDRH/WmD1VeFH3JEOaeYilB7UV6cTA7y+VHzpxZbZKEozwf/r26u/3z+f2q/Pj8Y/np85fy8fFDWTw8lo/vPzZS69Xqvlwu78rJJC97/UGZZf3yajwp54u7crEq/updjBItGn34Y3z/C3q3PyOc/oR0uECSDZD1h0jTHjw/hO+HMC0btnAbCcfbSrhIswG66QBRnIDbzieNWfzX28VbLO+fvmYXeRUlvSrNepXFRcUMq4mO61d+EFbcdpo9nbCqrdOKMrO6HI2rp6f115vFCtxNnjRGyWY6mWKxWNZplkkhhAzDUBoml+ctXdrClVGcyDhOpB+EkttCtnXaiFBDpllfLpZ3dT6bwxbOWutEYvPwbo7L0bTuJF1JmImz8zYIZXC9ABYX4LYAoQaYYcEweRMJYU0bxpNcXs9v69E4h/CSteZ7zubd6i3y2U0dd7pSHdYJRVunaOkUpu0gTEcwhQtqcujMAjE4WsSAYdnIZ9dyms/q4WgKJ0jXmutYm+v8Cmnvova8QFJmNjCdMHhcIHE9xI6Prucj4DZsQiEIA1cfMzkGwys5mc7qi8sxvLC71gzT2vh+gDDq1H4Q7YHq78aBh6s0Rcf14JsW+lGMfhgjDSIkzIBgJrywI+NOV70Ly+IKyDeO68Nx/dpx/aZkBTwnDHNh44abcCmDTyh8ShFQhoAZCAiFZVgIwlgGYVwHYaz6/S/Q9YLa9YI9UJUslCGGiTZhjRHb/rJG6gzdAVV1W6C9BSo3XS942QH3Y9FSkTCpE6Za0Twju1zXaZN/A2j9tpv+F+F4NWVm3WqTuq3TWidsL5X/d0+tmWHVChZGnZd9ydwWvyfdDN20hzTrq+sDZpjNnKmy/k+tNoEyUJmhYFtT7Gft9PSsZQvnwRZO4bhecfbmTXFyclIcHx8XBweHxcHh0bd1cFgcHX1XfP/6h+L1TsevXp3+A4lhdHN3Q7yBAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;image&quot;
         title=&quot;image&quot;
-        src=&quot;/static/8c31352254644d61e8ad8176deb0d4bd/f058b/asset-8.png&quot;
-        srcset=&quot;/static/8c31352254644d61e8ad8176deb0d4bd/c26ae/asset-8.png 158w,
-/static/8c31352254644d61e8ad8176deb0d4bd/6bdcf/asset-8.png 315w,
-/static/8c31352254644d61e8ad8176deb0d4bd/f058b/asset-8.png 630w,
-/static/8c31352254644d61e8ad8176deb0d4bd/5a190/asset-8.png 800w&quot;
+        src=&quot;/static/d706bb235d62876c6fa512ebf420dd3a/f058b/asset-8.png&quot;
+        srcset=&quot;/static/d706bb235d62876c6fa512ebf420dd3a/c26ae/asset-8.png 158w,
+/static/d706bb235d62876c6fa512ebf420dd3a/6bdcf/asset-8.png 315w,
+/static/d706bb235d62876c6fa512ebf420dd3a/f058b/asset-8.png 630w,
+/static/d706bb235d62876c6fa512ebf420dd3a/40601/asset-8.png 945w,
+/static/d706bb235d62876c6fa512ebf420dd3a/78612/asset-8.png 1260w,
+/static/d706bb235d62876c6fa512ebf420dd3a/985a9/asset-8.png 1512w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -648,24 +751,26 @@ Xcode: 맥 앱스토어에서 설치할 수 있습니다. &lt;a href=&quot;https
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/d5a995de9078a21ac36cf13bed661a39/5a190/asset-9.png&quot;
+    href=&quot;/static/97e5776fba872f37a1dd74e61ffd3489/1e093/asset-9.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 59.49367088607595%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAAAsTAAALEwEAmpwYAAABIUlEQVQoz42RyU7DMBBA80O1Z7w7tuM4zuJShR5aEJw48/8/wNIiJaXQPs3JM28Wuarrukylz31tLSKybzhjKpbdy3szv6npFdMR05F1T6tIh0oIMfSDc04rjT8AAtlsfGge9/vYNLW1WqtzZhGVlHIapz5n7z0uIITY2pWyDd5rrTnjAIBrKoZorTXGaKWWCUop53y7m9u21UobY6y1nPOVDAsuZEQ8HJ9zl0MIzjm17n6W8RqU0tTlh4ed1loIcbXsT5kQEmKbuqyUklKeWtw9mZCvjyjb3HUxRu/9xcE31gYAKdU4jjHGpmlijM65Zf1/MqXUaFNK6VLqc5/aVnBxe/LpEQDmeR6GwVrrnLv3ZgDgQvgQjDGMMcHF74M/5Q8O8JZXRRHv2gAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 59.49367088607595%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAAAsTAAALEwEAmpwYAAABIUlEQVQoz42S3U7DMAyF90JrHLtp3CRdk7RpOlYxTTAkuOWG938CtE6g0U2oR76xjj7/yZuaecx5SIM1FqUkxDmkatLh/as7fer8IeNZxjN2b4vYSClTSo1zzCwR5SwA2G63ttkdjyfftsaYi3unDSLmnPuud87dGkVRcG3SkJ21rBkRYdYfGACMMdbamutbA4RAKsenKfhQKaW1ZmYiWsICxH1VEJf09PIaY3TWOuu01suxF8yvRCFaH6fp+bow4c891sBFUTStT8NYVRURKaUWM//bWQiiss9j3/fe+13TKKXWwXDdGZBoHMcYYwjBe++sWwsLIbTW+/0+hNDN/INrP2ABUKJEnKYppcTMxtiyLEHCOhjJuqbmy3vQrPsP+wapQJapj3R1OwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;image&quot;
         title=&quot;image&quot;
-        src=&quot;/static/d5a995de9078a21ac36cf13bed661a39/f058b/asset-9.png&quot;
-        srcset=&quot;/static/d5a995de9078a21ac36cf13bed661a39/c26ae/asset-9.png 158w,
-/static/d5a995de9078a21ac36cf13bed661a39/6bdcf/asset-9.png 315w,
-/static/d5a995de9078a21ac36cf13bed661a39/f058b/asset-9.png 630w,
-/static/d5a995de9078a21ac36cf13bed661a39/5a190/asset-9.png 800w&quot;
+        src=&quot;/static/97e5776fba872f37a1dd74e61ffd3489/f058b/asset-9.png&quot;
+        srcset=&quot;/static/97e5776fba872f37a1dd74e61ffd3489/c26ae/asset-9.png 158w,
+/static/97e5776fba872f37a1dd74e61ffd3489/6bdcf/asset-9.png 315w,
+/static/97e5776fba872f37a1dd74e61ffd3489/f058b/asset-9.png 630w,
+/static/97e5776fba872f37a1dd74e61ffd3489/40601/asset-9.png 945w,
+/static/97e5776fba872f37a1dd74e61ffd3489/78612/asset-9.png 1260w,
+/static/97e5776fba872f37a1dd74e61ffd3489/1e093/asset-9.png 1376w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -707,24 +812,25 @@ Xcode: 맥 앱스토어에서 설치할 수 있습니다. &lt;a href=&quot;https
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/c813b35e1a5e0b79f5eebfec27d90bc9/5a190/asset-1.png&quot;
+    href=&quot;/static/e49f571dca9b5fce681fd8d348626219/ad997/asset-1.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 77.21518987341771%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsTAAALEwEAmpwYAAADyklEQVQ4y3WS309bZRjHXxcTlgHKGbTQwTSutJRSWnrOed9zTs+vUhARGaOVDrBxIIwVGKSNU2vLMmLmssRMjZuLXmgyFxMTb/RCEy/MLpZ4od4scRrNlNrMLRjI/oB5Tr7mHHHBC5/kk/f5vu+Tb55885LMngP1L66d+rZ4tnxv7dXy3XKlvFkulzcrlYpLqVTaLBaLLk7v3Dnvu7hbqVTulUql71RVbSCPEMKZq9N/DK4+j6NHMkhn0shms8hk0piensbIyAg0VYVhGNB1/X/RVPWOz+fjSHNLS5OuGxummYSuG3/phmE7GIZpJ82kbZrJ/+ikq02XHW3phglV06uuYWN9HUcVvWoOPA29f9iWEwYkRUOcSujmRfQIIhKqDp5J6IzG0BWLQ6AS4iJDINqHYLTPdrRApVqLx8sRT/OjnMASVUUzwRTVpnIC8TjDUC6HpU8/Ru7CefC8iP50GouffIRj774NkUrQhoexcPUDzH34ni1pBiiTa/u9bRzxtDS5hkzRwOSE7WwX6ulDZe00nLp1awORaB8Wl066entrGzyVkJvOYafsVGoAPGW19vaDHPG2+jhBZFVKBYhUsGWZojscRnntjDv9yw/XXcP8juGfW1tgTMbA+AR+3/4RN2/fsJmRgijSmq/jIEfa9hKOV8eq8eQipP55W+xfREybwtDQME6trGB28jB4kSGVGkRhtYAT8wuQmYyoamIsreHJMd3uU3SIlNW8bT6OtLU/zPFif5VOnIS6fsGmC2WIyih6DB3eyQwen3jWyQcxJYEuScYTjCEuKaCGifrJLB6bmLDVhOrE8I/h4DPjnN/vr555fd3N48vrX0OM9MCfzYBcPod9r70MicponH8OHZfO49z338Ccm0XyqWFc/PkGLl77ypalhJvhgfYOjgg8z4UjsWqlchp3arftK1euQogJ6BodQeMrK/AuHHMz805l0FouInn5TYTGD2N8ZBS/3vwJX3z2+YNv4xqSh/Y0aUbyt2RqEDFevC8wyaKSYlEqWRJPLUlglshkSxKZxeKiFY3ELEGgFk8lqyvcY4UjvfdFJjuGGx5vK0c8Hi8nUGmLyQkoqg45oYFKCsRd7NZ6MoWEZkCSFcjGEOTUEUiK6sxsN7d495OGhsa6zkDwqD8QXD7UGcg7+APBfGcg6J7/9q7uDObjvJCP9MbyoVAoH+xl+W5xIB8MhZdD3d2TdXv31RFNN0l2Kkdm5vNkZu6Ey9zC0gNe2NXPHl8kb7z1DqmsnyWFQoEsr79PipeukeXCS2Rm7jg51NVL/gZbOPtxbMKosgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 77.21518987341771%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsTAAALEwEAmpwYAAADzElEQVQ4y3WSX0xbVRzHuyGO0XbzwQc1YQN6y2RAS++fc869595CWyh/CmWzpS1qtGFIFqWgcUOcLo5oMGYxJCb64N5MRDTzQWgMNMYXn9ZEsz8mBOeUxhHjgzbGuIft3n7NLWDcgyf55OR3/nzOOb/zcwBwrHx4KfHJZx+/lM/np1ZXV3MrKyu5vd5meXk5t7S0lMvn87lCoZBbX1//L1OFQmFmbW1tYnFx0elwOBz7E9PZG8nXnsdz2XGMnzqFiYkJjI+PY3JyEtlsFolEAslkEqlUCplMBul0+j7ssVQqdVfTNI8tfKArPXwlkh3FUP/g3dhQzIzH42YsFjNHTp4w+wcGTM65aRiGqQeDpm7393PPMAxwzn9vaWkRbGENlVnR0ILQ9KDJVF4hTK1QqlZ0hVU4YRVudFU0rld0wioGVSv2GhudqBWDqJaqclBVKwveXaFE9aIRHoAe6jOp1gXKDAS4gaaBPjT39oCqHKLK0dAbRkNPCCJhVY702HHYCjANCmHlRo+wIxRlVmSaAcI0U6EqfH4JyWez+PrXX3D56rewx/riI/jq9hbyNzdghCIwQmF8eWsTa1s/WrFEEqIklx9vb98VKqxob5IpM6mqoc0XwOnTL8Bu5t937IOQSI5ir4V7oghHevdC68mxp+ALiOUOn39PqBYVpoMx3VRVAx0BgrGnn8HmD5v4pvARCFEwODyC7zc28N21awiHI+jQuvHBpxdx6fJFS+4bgizJZaH1+K5QGym2R8/BFz9ntsfOozMyDYVq1adpwW7IhIHKFF12WhQKUZRBeRCSoSGgM0vWdMiElpuqOTz6WI2vraPYP5bB2fzn5vh774ISivZIBK7ZKTw8Nw2FaTjW24PmTBKDMznweBwiVfHIG7NoPT9r8e4QRJmUPS3HBMc786/XNHm8xZfPzFZTtn17GxpR4R0agGPxAvYvvApCGB7KjqH2/QXM37yOyNwZcJXj1l9/4sbWT1Y02o9OUS63Hm/beXJAUq4kRtN4a+Hte7mZFy1CmOU3glZT8qQlnBi2ZMKs1kjYanpixGpMJyxvOGRxVbfevDBvzZ19xVS5Yd/wj3/rkOvBq6FILySFVn+U7NQVmERAJVItG6rsxKpEwAiDTFW0dvjR5her8zJhd5o9grcq9HWKX3SK8m+SQn+WFFIKSEqVTnmHvdgvKSUjFC7xYFdJIaREjGiJRjNbMuPbskKuNxxpbLSF+9zuQ48eOnzY63a7PS63W3C5/p8DdXVCXd1Bod7pEpwHDwj1D+7zOJ31gtPlOlpbW1v7D0GEAit6iuN6AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;image&quot;
         title=&quot;image&quot;
-        src=&quot;/static/c813b35e1a5e0b79f5eebfec27d90bc9/f058b/asset-1.png&quot;
-        srcset=&quot;/static/c813b35e1a5e0b79f5eebfec27d90bc9/c26ae/asset-1.png 158w,
-/static/c813b35e1a5e0b79f5eebfec27d90bc9/6bdcf/asset-1.png 315w,
-/static/c813b35e1a5e0b79f5eebfec27d90bc9/f058b/asset-1.png 630w,
-/static/c813b35e1a5e0b79f5eebfec27d90bc9/5a190/asset-1.png 800w&quot;
+        src=&quot;/static/e49f571dca9b5fce681fd8d348626219/f058b/asset-1.png&quot;
+        srcset=&quot;/static/e49f571dca9b5fce681fd8d348626219/c26ae/asset-1.png 158w,
+/static/e49f571dca9b5fce681fd8d348626219/6bdcf/asset-1.png 315w,
+/static/e49f571dca9b5fce681fd8d348626219/f058b/asset-1.png 630w,
+/static/e49f571dca9b5fce681fd8d348626219/40601/asset-1.png 945w,
+/static/e49f571dca9b5fce681fd8d348626219/ad997/asset-1.png 1012w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -739,24 +845,25 @@ Xcode: 맥 앱스토어에서 설치할 수 있습니다. &lt;a href=&quot;https
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/bef3499731f99e7e44f2256d9186b3cb/5a190/asset-2.png&quot;
+    href=&quot;/static/e72b745c39cd41e3244a1b88c719cc2b/ad997/asset-2.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 77.21518987341771%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsTAAALEwEAmpwYAAACjklEQVQ4y32SW08TQRTHR154oDHUtNX6SimgiZfuZXZ3dmb2UlpKuQQwgIYHJeoKkaReknWXFxNNjA8afdD4QfwS+h2EkChpouEDKJtjZrrcGsrDP+fszM5v/ufMQfN9lweebj771noV7W2+iHejOGpHUdyOoqgdx3E7DMN2q9WSErlYE3vHtBvH8V4Yht8JIRl0HqGss3HnZ/XxCtyanoWl5WWYmZmBhYUFmJ+bA0opMMakRN5LNiG/isViFuVyuUFK+RbjDtiU/aOMJ5SxVDyxKUuITRNKWS/tU8aB2HT7kgDmCxezFVXfVnUDVN1I0pjKBMergs0d0A1LCpvkhHSTyDOKhncEC+Xyhayi4W0Nm6BhU26K/ABabzShOT0L3PXBZg4YxO5WIv4XwIIA5o8BhUNCOTDHA0KZBHLXA8evAnO9DtDqAlo9gKmzRBwSpVDuSGBtogH1xqQs3fXHwR+vyxbgFGza9GyHls2kQxFVHYPj+dJV58Kj/opcx6bo6yEwfxpQ/CyaLw9iE7hfA9erAq9Ogltrgl+fAq8+BQb1QLM46MRNNGyd/igCaBIqH0BERTfAcifAqc0C9RvA3aq8gDo+mDYHFRNQDdLboeihHIV0PIRLUa5NuXwkES2bpmVj0ETpupECjZ18oSAdDioa/pE6/Kvqxv5ZUjR8Isozmg6Kqm0VLhUPHf7uOOzM4JG6v035wgejJdzLapwmaLT+Jztw7gIayGT6S8Mji6Xh8vrQcDkonaGhUjm4WVGCa9dvBIqmB2NXrgblkbFgtMLXRyt0qQ+hfoRNghZvr6DVh+vo3oM1tNql42t37z9Cb999QC9fv0EfP31BT56HaG2jhVrvv6LV6DPKIIT+AzWYw8m9nJjTAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 77.21518987341771%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsTAAALEwEAmpwYAAACnElEQVQ4y32SzU8TQRTAq6DlY3s0US8auuWqZXd2vna62+3aUqANpKb0ZEqqHAzVePaP4K5nkXirlAD9D+Bk9A/QHjx4UG4eoMszb1op8uHhl5d5mfnNe28mBgCxj2/eVt5/ePdqu7291mq1mu12u7m1taXZ2dlpbm5uNjc2NnS+0+k09/b2zrLW6XRe7u7uPl1fX5+MxWKx65UX9S+PXz+HxpMVeLa6CvV6HRqNhmZ5eRkqlYqmWq1CrVbTubNgrlqtHgkhkigc9Wrl/dxKFRZm544Wl5Z6xWKxVyqVNK7r9pRSp+D6HMdKKZBS/pyenjZROEIs54ARBoSynu3QE4fyE+IwjVSZEyakhgv3Aky4ERMSKBeHZmognCHOgU05EMp7tsPBIhRsh2nCfAEKxTkQbgaocIFJBUy6Q4QbEarPHE4lzb7Qsp0DTNoO6zlM9A9zqYVeNqeFGJWXBYcLoEKiSEOFjAZnh8KZM0I342shRodyyOYeQaE4D34uBD8ItVhm/EGFCrirIsLEvxVeJcQcClCKa+X5kPGzIFW/g0GlF1s+K8SNXKphy34AXLqAM7apBJsKsJkEonHB4SoimNPC1EUhRqwQZ4kPpHKzEOQXwM+XISjMQzhbgrBYBuGFQIQHjvQjlF8pxOq8bKDbwgp5JoAgXwIvVwAf2w9CfSE+COn/hEsfZX+QPMYNFqERRsRhPOJCRly4EZcqwpmd29NDsUXor+G3IfQT6f/DS/n7JxFc4ziQ0z1Mz/b3VNJMaeGDtNVKW+RH2iJf0xbpXsXDGburvGzXzfhdPwi7TLhdyybfSLb83fYXP9+9fes+Cq8ZRuKOYSRShpFIGkbC/B9jY2Oam/G4OT4xYU4aRnIiPmpOxkfu3YyP3/gDIMLIYmkeC8gAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;image&quot;
         title=&quot;image&quot;
-        src=&quot;/static/bef3499731f99e7e44f2256d9186b3cb/f058b/asset-2.png&quot;
-        srcset=&quot;/static/bef3499731f99e7e44f2256d9186b3cb/c26ae/asset-2.png 158w,
-/static/bef3499731f99e7e44f2256d9186b3cb/6bdcf/asset-2.png 315w,
-/static/bef3499731f99e7e44f2256d9186b3cb/f058b/asset-2.png 630w,
-/static/bef3499731f99e7e44f2256d9186b3cb/5a190/asset-2.png 800w&quot;
+        src=&quot;/static/e72b745c39cd41e3244a1b88c719cc2b/f058b/asset-2.png&quot;
+        srcset=&quot;/static/e72b745c39cd41e3244a1b88c719cc2b/c26ae/asset-2.png 158w,
+/static/e72b745c39cd41e3244a1b88c719cc2b/6bdcf/asset-2.png 315w,
+/static/e72b745c39cd41e3244a1b88c719cc2b/f058b/asset-2.png 630w,
+/static/e72b745c39cd41e3244a1b88c719cc2b/40601/asset-2.png 945w,
+/static/e72b745c39cd41e3244a1b88c719cc2b/ad997/asset-2.png 1012w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -771,24 +878,26 @@ Xcode: 맥 앱스토어에서 설치할 수 있습니다. &lt;a href=&quot;https
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/dcecd0c656484dc26cbaa8164802d3fa/5a190/asset-3.png&quot;
+    href=&quot;/static/1dd98cfb731fd84e34b1e80b57f03bde/cf0be/asset-3.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 55.69620253164557%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACDUlEQVQoz42R627TMBiGcy3k4CSNc/YpSduNjalj3Ma2wg5t0zawDiHEbUz+DXe4CU/5kN1qQ2ggfjz6/EnWo/e1rdnldLJYr77P5u3d5dVMXlxey3m7ku2qk3o/O38vz6cf5On5VJ6eTeXF1bWcL5eyXa3lbNHK68VCzlfdXdvd/Og+3ry1xoeHXw4mExjt70M1HAKva6hHezDafw1UMCCMQV6UkGY5xEkKSZqZs0afzZ4TyImAqhl+s1gzXL85OYGDyfG9GO+pvKoUznKVpKka4IHykKscx1GObW/nE8+7bb+69zwXsqL4ZKUF6Y6O38HB0bEivOmzUgBOtinykoLv++AHPnjIA897kd51XaXv5SXZWFlRdoxXwESlCBM95QKSLIdBhE1FhJCRIR8Zgeu6fxUWhG6sgrCupBxKylVJeU+YgCTNIQhDwBhDEASA/F1CLTZJXSPeYYRaHkXRxuJV3TFRA+XbhFqY5oVJGAShEWup/yf+E73vB0rfHUR4YzWjcVcPxyDqoWKi1sJ+l7RPkrTHOO7DcNAHQdgHYfg8f8MPgp/6eXjVbCwu6rWuXBD2UFL+qCFMmIkQenRdx+A4L+M6zqNt2w+6CaH8Rlf+THmlK4Ouu3tPg66BkL/96X+gPw7HCYi6+WoRxklVN5uqbtqipMsIJ0scp8soTpcDHP8XcZK2lIlbwjj9BZYLRQu6abODAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 55.69620253164557%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACE0lEQVQoz42S2W7TQBSG/SZIjZfx2ONlPJ7FdlJKBEEVrYS4KQ0haTZ3UV8EcoN4HJAvueCJKHHmoHEjhIRauPj0z1yc/6zWYjGrl3X9fXax+DJ5P2smk1mzXF81q8ubZjqbN+fjSTOeTJuz83fN2dtxM5nOmovlqlks1810vuiYry6/ztfX365ubl9Z/eHw87PRCAZHR6CqCnihQJV9UFUJGc8gpRSiKIYwJICDEAJDuNff/xhITEEUxa2l+oMPo5NTGL48/iEHT1uqipYkaZvSrA0j0rqe2zqO09q23TqO3b07tfc49ta2e3eu60LGxdqiTGyej47haPhiy0SpU6YgjBJIUgpJmoHneeAhBCbgAbRJghCCXMjaoizfcKmAC7XNhdTmHSUphIRAFCeAkDF0wUPeo4Ymac5lbTEuN4xLYFxuGZc6F6ozwkHQmWKMuwo7U8/t1HGcP9H3Y3AgDMPaKsr+xiyBy2LLpeoMk4wBiWLwMQYfB3t9EO1j3JrlkDiprbJ/uCmqAaii2gpVGkPNhNI5lzqKY00IMQEaIV8j/29839ee57VxSk1RtSVV+dG0nOXijnG5M+RC7TLGd47j7Oxeb2fb9mO0vYODn76PQaiitopq8Km7u/u2zSzBtJ3loru7f7TbjQTjAFKaQTU4vLHilGKasTcZ4ydhFJ96CJ8ifw8O/ouARCcpZa9xQJ78AmlOQIRQvOenAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;image&quot;
         title=&quot;image&quot;
-        src=&quot;/static/dcecd0c656484dc26cbaa8164802d3fa/f058b/asset-3.png&quot;
-        srcset=&quot;/static/dcecd0c656484dc26cbaa8164802d3fa/c26ae/asset-3.png 158w,
-/static/dcecd0c656484dc26cbaa8164802d3fa/6bdcf/asset-3.png 315w,
-/static/dcecd0c656484dc26cbaa8164802d3fa/f058b/asset-3.png 630w,
-/static/dcecd0c656484dc26cbaa8164802d3fa/5a190/asset-3.png 800w&quot;
+        src=&quot;/static/1dd98cfb731fd84e34b1e80b57f03bde/f058b/asset-3.png&quot;
+        srcset=&quot;/static/1dd98cfb731fd84e34b1e80b57f03bde/c26ae/asset-3.png 158w,
+/static/1dd98cfb731fd84e34b1e80b57f03bde/6bdcf/asset-3.png 315w,
+/static/1dd98cfb731fd84e34b1e80b57f03bde/f058b/asset-3.png 630w,
+/static/1dd98cfb731fd84e34b1e80b57f03bde/40601/asset-3.png 945w,
+/static/1dd98cfb731fd84e34b1e80b57f03bde/78612/asset-3.png 1260w,
+/static/1dd98cfb731fd84e34b1e80b57f03bde/cf0be/asset-3.png 1994w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -862,6 +971,37 @@ android &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;유니티 프로젝트의 C#스크립트에서 Call 할 수 있는 메소드들이 정의된 &lt;code class=&quot;language-text&quot;&gt;UnityPluginTestClass.java&lt;/code&gt; 파일을 안드로이드 프로젝트에 생성합니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;cs&quot;&gt;&lt;pre class=&quot;language-cs&quot;&gt;&lt;code class=&quot;language-cs&quot;&gt;package com&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;example&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;unityplugintest&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+import android&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;content&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;Context&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+import android&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;os&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;Build&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+import android&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;widget&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;Toast&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+import com&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;unity3d&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;player&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;UnityPlayer&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;UnityPluginTestClass&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;UnityPluginTestClass&lt;/span&gt; m_instance&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Context&lt;/span&gt; context&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;token return-type class-name&quot;&gt;UnityPluginTestClass&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;instance&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;m_instance &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            m_instance &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token constructor-invocation class-name&quot;&gt;UnityPluginTestClass&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; m_instance&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;token return-type class-name&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;setContext&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Context&lt;/span&gt; context&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;context &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; context&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;token return-type class-name&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;ShowToast&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt; toastStr&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        Toast&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;makeText&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;context&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; toastStr&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; Toast&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;LENGTH_LONG&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;token return-type class-name&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;AndroidVersionCheck&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt; objName&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt; objMethod&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        UnityPlayer&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;UnitySendMessage&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;objName&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; objMethod&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;My Android Version: &quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; Build&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;VERSION&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;RELEASE&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;우측상단의 Gradle을 클릭하여 &lt;code class=&quot;language-text&quot;&gt;[projectname]/Tasks/build/assemble&lt;/code&gt;을 더블클릭하여 실행하면 &lt;code class=&quot;language-text&quot;&gt;app/build/outputs/aar/app-debug.aar&lt;/code&gt;파일이 만들어집니다.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
@@ -900,24 +1040,26 @@ android &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/642410fe3510ddf9115bde10f7d335e7/5a190/asset-6.png&quot;
+    href=&quot;/static/3a504be5268ce970ae6ad323c62c3863/2c0d3/asset-6.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 17.72151898734177%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAIAAAABPYjBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAjUlEQVQI13XMSRKCMBBA0dyFRErEjN2dCUKIULrR+x/HhZYbyl9v/Vl7vNr9mUoLU6VUMM4Qpqms9baXdaOQh1EOozo6XySzgA4JKOBHiA6glHnftloXoxXvupMQR4JzBhTRJ/TxB5BSijknY0zf9+JPnHOW58XHHGKm8F0AeQdoHVgH2rirVEdSaW3sG/BrLoIYOZUSAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 18.354430379746837%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAIAAAABPYjBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAkUlEQVQI123Lyw6CMBCF4T4LUKIoLbUz05lyKxcxLozv/zYGVyZ48i3Pr9bne368ZJi5SxgHkB657cc5LduYVgzxfDHV1R6dqlrdPHhAoADEGHYeYJrStt3TlIwxuihKrY90katvI78AqY0xilhry3K//V2eZarrR44dS0ssSIzEgAGQPIAHaJyrjT0ytmmc+wDrVC5zFTTIRAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;image&quot;
         title=&quot;image&quot;
-        src=&quot;/static/642410fe3510ddf9115bde10f7d335e7/f058b/asset-6.png&quot;
-        srcset=&quot;/static/642410fe3510ddf9115bde10f7d335e7/c26ae/asset-6.png 158w,
-/static/642410fe3510ddf9115bde10f7d335e7/6bdcf/asset-6.png 315w,
-/static/642410fe3510ddf9115bde10f7d335e7/f058b/asset-6.png 630w,
-/static/642410fe3510ddf9115bde10f7d335e7/5a190/asset-6.png 800w&quot;
+        src=&quot;/static/3a504be5268ce970ae6ad323c62c3863/f058b/asset-6.png&quot;
+        srcset=&quot;/static/3a504be5268ce970ae6ad323c62c3863/c26ae/asset-6.png 158w,
+/static/3a504be5268ce970ae6ad323c62c3863/6bdcf/asset-6.png 315w,
+/static/3a504be5268ce970ae6ad323c62c3863/f058b/asset-6.png 630w,
+/static/3a504be5268ce970ae6ad323c62c3863/40601/asset-6.png 945w,
+/static/3a504be5268ce970ae6ad323c62c3863/78612/asset-6.png 1260w,
+/static/3a504be5268ce970ae6ad323c62c3863/2c0d3/asset-6.png 1849w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -959,6 +1101,78 @@ android &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
 &lt;h2&gt;유니티 프로젝트 설정&lt;/h2&gt;
 &lt;p&gt;다음으로 유니티 프로젝트에서 해야할 작업들입니다.&lt;/p&gt;
 &lt;p&gt;프로젝트 아무곳에다가 &lt;code class=&quot;language-text&quot;&gt;UnityPluginTest.cs&lt;/code&gt; 파일을 생성합니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;cs&quot;&gt;&lt;pre class=&quot;language-cs&quot;&gt;&lt;code class=&quot;language-cs&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;token namespace&quot;&gt;System&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;Collections&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;token namespace&quot;&gt;System&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;Collections&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;Generic&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;token namespace&quot;&gt;UnityEngine&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;UnityPluginTest&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token type-list&quot;&gt;&lt;span class=&quot;token class-name&quot;&gt;MonoBehaviour&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;AndroidJavaObject&lt;/span&gt; activityContext &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;AndroidJavaClass&lt;/span&gt; javaClass &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;AndroidJavaObject&lt;/span&gt; javaClassInstance &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;token return-type class-name&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;Awake&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+
+        &lt;span class=&quot;token comment&quot;&gt;//일단 아까 plugin의 context를 설정해주기 위해&lt;/span&gt;
+        &lt;span class=&quot;token comment&quot;&gt;//유니티 자체의 UnityPlayerActivity를 가져옵시다.&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;AndroidJavaClass&lt;/span&gt; activityClass &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token constructor-invocation class-name&quot;&gt;AndroidJavaClass&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;com.unity3d.player.UnityPlayer&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            activityContext &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; activityClass&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token generic-method&quot;&gt;&lt;span class=&quot;token function&quot;&gt;GetStatic&lt;/span&gt;&lt;span class=&quot;token generic class-name&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;AndroidJavaObject&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;currentActivity&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+            
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+        &lt;span class=&quot;token comment&quot;&gt;//클래스를 불러와줍니다.&lt;/span&gt;
+        &lt;span class=&quot;token comment&quot;&gt;//패키지명 + 클래스명입니다.&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;javaClass &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token constructor-invocation class-name&quot;&gt;AndroidJavaClass&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;com.example.unityplugintest.UnityPluginTestClass&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;javaClass &lt;span class=&quot;token operator&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;token comment&quot;&gt;//아까 싱글톤으로 사용하자고 만들었던 static instance를 불러와줍니다.&lt;/span&gt;
+                javaClassInstance &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; javaClass&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token generic-method&quot;&gt;&lt;span class=&quot;token function&quot;&gt;CallStatic&lt;/span&gt;&lt;span class=&quot;token generic class-name&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;AndroidJavaObject&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;instance&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+                &lt;span class=&quot;token comment&quot;&gt;//Context를 설정해줍니다.&lt;/span&gt;
+                javaClassInstance&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;Call&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;setContext&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; activityContext&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token return-type class-name&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;CallShowToast&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token comment&quot;&gt;//Toast는 안드로이드의 UiThread를 사용하기때문에 &lt;/span&gt;
+        &lt;span class=&quot;token comment&quot;&gt;//UnityPlayerActivity UiThread를 호출하고, 다시 ShowToast를 호출합니다.&lt;/span&gt;
+
+        &lt;span class=&quot;token comment&quot;&gt;//UiThread에서 호출하지 않으면 Looper.prepare()어쩌고 에러가 뜨는데..&lt;/span&gt;
+        &lt;span class=&quot;token comment&quot;&gt;//제대로 이해하지 못했습니다.. 누가 설명좀해줘요.&lt;/span&gt;
+        activityContext&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;Call&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;runOnUiThread&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token constructor-invocation class-name&quot;&gt;AndroidJavaRunnable&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            javaClassInstance&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;Call&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;ShowToast&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Hello world!!&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token return-type class-name&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;CallAndroidVersionCheck&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+
+        &lt;span class=&quot;token comment&quot;&gt;//아까 JavaClass에서 인수로 받아 넣던&lt;/span&gt;
+        &lt;span class=&quot;token comment&quot;&gt;//objName과 objMethod의 정체입니다.&lt;/span&gt;
+        &lt;span class=&quot;token comment&quot;&gt;//objName은 Scene내의 GameObject의 이름입니다 (ex)gameobject.transform.name)&lt;/span&gt;
+        &lt;span class=&quot;token comment&quot;&gt;//objMethod는 GameObject에 SendMessage할 메소드명입니다.&lt;/span&gt;
+        &lt;span class=&quot;token class-name&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;/span&gt; tmpObj &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token constructor-invocation class-name&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;object&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        tmpObj&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;AndroidManager&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        tmpObj&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;AndroidLog&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+        &lt;span class=&quot;token comment&quot;&gt;//불러봅시다.&lt;/span&gt;
+        javaClassInstance&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;Call&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;AndroidVersionCheck&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; tmpObj&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+
+    &lt;span class=&quot;token comment&quot;&gt;// tmpObj[1] = &quot;AndroidLog&quot;;&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;// 요기서 설정한 메소드명입니다.&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token return-type class-name&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;AndroidLog&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;string&lt;/span&gt;&lt;/span&gt; str&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        Debug&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;Log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;str&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;Assets/Plugins/Android/&lt;/code&gt; 디렉토리에 아까 안드로이드 프로젝트에서 생성한 &lt;code class=&quot;language-text&quot;&gt;app-debug.aar&lt;/code&gt; 파일을 복사하여 붙여넣습니다.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
@@ -966,24 +1180,26 @@ android &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/91d3b556b5a564ade5a49e6237cbcab9/5a190/asset-8.png&quot;
+    href=&quot;/static/de4f987574c099e1dc70734b5dbb6b39/29114/asset-8.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 29.746835443037973%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAIAAABM9SnKAAAACXBIWXMAAAsTAAALEwEAmpwYAAABTklEQVQY01XNW0vCYADG8X21DpiaWYKHTNO2yZY2rag8K9GGlQUV1LryfMK94Q66+e61NaSuuusq+gB9j6go8M9z++PBqH0ulr2Npq4j8SJ9WMbjHJFgyV3ue3un9NHlfUXoCFofiKI4UDVNURRVVXVd17Qx5sDZQKbnO6ha/Uk7cWENlRb9x3Pewvx60RJkl4kyXwFA1AQgPgCAEJJleTgcwjGEEGJn1XHv5bM2+cjddO9G71eDt3Lv9bw+LdVMtj4ttZ4lFZkG6gv9drv9+4n+wvKFvCSKnW4nxjC5Qj6dzZ5wbKvR4Hk+mU6nMhkBgMnkcfQThHAG+91rNL4ZCW04LAsex5J3xep32UMeV9C96nPafE5bp9V8Mk1d1w3DQAjNYDwYiJLhbTKMhwIMRTIUmaBJJrLFUMQORTAU0Ww0RqoqSZKiKLIsQwj/8RdOXM06+CACqQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 29.746835443037973%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAIAAABM9SnKAAAACXBIWXMAAAsTAAALEwEAmpwYAAABU0lEQVQY013NTUvCYADAcT9ZhRJZ5rK5Oc18hehggfmSuqQpSlY6dAkJVthhqVtqm24+2/NsK+jaoUsfoG8ShnTof//xt2WKbLZ8m2HaKbqWOW8d56+ShXq6yCbpepJuZEs3Pf5lOAajiSRJ0mw2UxRFVVUIIQDA5gyVyeTj7lHHQZysByt2f2mVoFfw/BpJ2ylmK1rr9EbCGAjiZDIeQ4gkSVIVVdd0XYe2ygPsou+2/HXK9i+Fzyr/wdy/5ziQ4+Z0x2DuLFmFrybsDwY8/zSfz/XfIIQIIVuj2TKtN1lR04Wza659wba4TlcFGj8QmFq92mjK06lpGPJ0kaYtjgihJQ4HyFTiMHEQc284KMzpx5z7xHY86Iv68QC2GcTdojA0LUvTNMMw/rZLTGCuEOkJEjtezBWm8IjfGw94w6QnQuERyhvb8z2LomlaAAAI4T/8AwqxznLaYaBTAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;image&quot;
         title=&quot;image&quot;
-        src=&quot;/static/91d3b556b5a564ade5a49e6237cbcab9/f058b/asset-8.png&quot;
-        srcset=&quot;/static/91d3b556b5a564ade5a49e6237cbcab9/c26ae/asset-8.png 158w,
-/static/91d3b556b5a564ade5a49e6237cbcab9/6bdcf/asset-8.png 315w,
-/static/91d3b556b5a564ade5a49e6237cbcab9/f058b/asset-8.png 630w,
-/static/91d3b556b5a564ade5a49e6237cbcab9/5a190/asset-8.png 800w&quot;
+        src=&quot;/static/de4f987574c099e1dc70734b5dbb6b39/f058b/asset-8.png&quot;
+        srcset=&quot;/static/de4f987574c099e1dc70734b5dbb6b39/c26ae/asset-8.png 158w,
+/static/de4f987574c099e1dc70734b5dbb6b39/6bdcf/asset-8.png 315w,
+/static/de4f987574c099e1dc70734b5dbb6b39/f058b/asset-8.png 630w,
+/static/de4f987574c099e1dc70734b5dbb6b39/40601/asset-8.png 945w,
+/static/de4f987574c099e1dc70734b5dbb6b39/78612/asset-8.png 1260w,
+/static/de4f987574c099e1dc70734b5dbb6b39/29114/asset-8.png 1920w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -1055,24 +1271,25 @@ https://help.dropbox.com/ko-kr/installs-integrations/sync-uploads/symlinks 사�
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/9f64498b1e9293dbe5f40ce687ca9557/5a190/asset-2.png&quot;
+    href=&quot;/static/37199cd853b5261e6aad476e8b4e264a/ad997/asset-2.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 78.48101265822784%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB4klEQVQ4y92TT2sTQRjGpxdBEPwMHupBgohm0WwTxCbgQdo9eCgiSEEQwUPASy5+BC+7oLFpFEnBEDzEsLM1COKH8Sjd7G7SzL/MvPJuNmlTk0P15gs/5tnnmXkYll2ye+3mpYdb9oN8Ke/ctvLbpQ3LKdqWU8oo2nmnsllyKpvFVJ/48z3b2bpl3bp+mVwt1Kzys5bZeB7AnacB5B77f3DjyWHKsmwKhdyjLly59+ou2Xnx2n7X+ykPfozMx++JbvQTvdeP9d7XKQ3U/ZlezFBjvv9tpN/6v2D35ZsKadS9ghxHEkABgNIAwgBMDIDOkObEO5uhNukeIxP4dPChTFzXKxwdDRTjAhgXZjg8xhWEnICQKtWj4zEwLmE4GgMXMvURLpCJEVKZKB7CfvN9mXieZ4dhqKSUwBgznHNcF5h5yzI8I4QwcRxDs9mcFg4GA6WUwgMYwnngXBgppUmSZLEQb4iFeItzsrzw72/4PxTOyd7pyueZt1Doum4hDEMuhNCMMcUYm5yGc75Un0IJIVQURdPCer1exO9p1Wit59rgT7Fi8CtptVr3SbVaXfd9/3MQBIeUUp9mEwQB7fV6tNPpzCzabrdpt9tNszODxpdarZYjhJA1QsgFQsjFfwQ71n4DrxLjpa1wsjgAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 78.48101265822784%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB4ElEQVQ4y92TQWsTQRTHx4uCHvwKXurFUNymNIktWLBVIfHSntpiL1IQchGEHPwAXnYvwYrJKpiKhxBQwia7S0H8MF41kd0mmXkzO/Nk2uy6MYkQvDnw4715/31/Zoc35PDm8rXdYu5BdsN4tJY1ihuFldIEeaO0tVk4Zz1vlKb0wkrcU1w1bl0nS2vPs/eOTqL1p13MP+liZt/BzEGKfQdvH3rnTGljPXPQwczeZ7xx98Um2Tl6mX/d/gYfvg7x/ZdQ1vxQvfGChJqfzqe1mh/I+ulAHjvf8fGzV/fJcdXKwfAnIApEFBIRFGKkEOUYoX7X/tR0rhQil4qH+PHk3TYxTSv3o9cHygApA3U2GOqIwCMELpAyjoPh6CIORsiAJxoDTaSACxUEZ2jbb7eJZVm5Xq8HnHOklCrGmI4TxLVZmu4BABUEAdq2fWHY7/dBCKEbtIiLwAAU51yFYTjbUJ9iQf5uuPAJ/wvDhPGdzt3HtQlD0zT12IwAQFJKBaU0SsMYm5mnEIwxocemXq9vkWq1ekfP07wlpUxypR/FnKX/sNFoPCTlcnmp0+l88jzv1HVdz3VdP8ZxHL/VaiX7ZrPpt9tt3/M8P/Vd3NOtVCrLhBByiRBymRBy9R+5or1+AfNo4cxtSzIgAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;image&quot;
         title=&quot;image&quot;
-        src=&quot;/static/9f64498b1e9293dbe5f40ce687ca9557/f058b/asset-2.png&quot;
-        srcset=&quot;/static/9f64498b1e9293dbe5f40ce687ca9557/c26ae/asset-2.png 158w,
-/static/9f64498b1e9293dbe5f40ce687ca9557/6bdcf/asset-2.png 315w,
-/static/9f64498b1e9293dbe5f40ce687ca9557/f058b/asset-2.png 630w,
-/static/9f64498b1e9293dbe5f40ce687ca9557/5a190/asset-2.png 800w&quot;
+        src=&quot;/static/37199cd853b5261e6aad476e8b4e264a/f058b/asset-2.png&quot;
+        srcset=&quot;/static/37199cd853b5261e6aad476e8b4e264a/c26ae/asset-2.png 158w,
+/static/37199cd853b5261e6aad476e8b4e264a/6bdcf/asset-2.png 315w,
+/static/37199cd853b5261e6aad476e8b4e264a/f058b/asset-2.png 630w,
+/static/37199cd853b5261e6aad476e8b4e264a/40601/asset-2.png 945w,
+/static/37199cd853b5261e6aad476e8b4e264a/ad997/asset-2.png 1012w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;

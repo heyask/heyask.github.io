@@ -25,6 +25,15 @@
 <a href="https://app.codility.com/programmers/lessons/4-counting_elements/frog_river_one/">https://app.codility.com/programmers/lessons/4-counting_elements/frog_river_one/</a></p>
 <p>개구리가 강을 건너려고 한다. 잎이 하나 떨어지고 있는데 배열 <code class="language-text">A[K]</code>는 이 잎이 <code class="language-text">K</code>초에 어디(정수)에 위치하는지를 나타낸다. <code class="language-text">X</code>는 정수이고, 잎이 <code class="language-text">1</code>부터 <code class="language-text">X</code> 까지 모든 위치에 한번 이상 위치했을 때부터 건널 수 있다. 그 때가 몇 초인지를 찾는 문제다</p>
 <h3>풀이</h3>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">solution</span><span class="token punctuation">(</span>X<span class="token punctuation">,</span> A<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    appeared <span class="token operator">=</span> <span class="token builtin">set</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>A<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        appeared<span class="token punctuation">.</span>add<span class="token punctuation">(</span>A<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>appeared<span class="token punctuation">)</span> <span class="token operator">==</span> X<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> i
+
+    <span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">1</span></code></pre></div>
 <p><a href="https://app.codility.com/demo/results/training2NMCVQ-CKS/">https://app.codility.com/demo/results/training2NMCVQ-CKS/</a></p>
 <p>먼저 중복을 제외하기 위해 Set을 하나 선언해주고, 배열을 순회하면서 Set에 넣는다. Set의 길이가 <code class="language-text">X</code>와 같아지면 모든 위치에서 한번 이상 위치했다는 뜻이므로 그때의 배열 인덱스를 리턴해주면 된다.</p>
 <h3>오답</h3>
