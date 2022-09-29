@@ -16,11 +16,7 @@ jobs:
         run: npm install -g gatsby-cli gh-pages
       - name: Deploy
         run:  |
-          git config user.name "$USERNAME"
-          git config user.email "$EMAIL"
-          git remote set-url origin https://heyask:$GITHUB_TOKEN@github.com/heyask/heyask.github.io.git
+          git config user.name "${{ secrets.USERNAME }}"
+          git config user.email "${{ secrets.EMAIL }}"
+          git remote set-url origin https://heyask:${{ secrets.GITHUB_TOKEN }}@github.com/heyask/heyask.github.io.git
           npm run deploy
-        env:
-          USERNAME: ${{ secrets.GITHUB_TOKEN }}
-          EMAIL: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

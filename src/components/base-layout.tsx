@@ -5,9 +5,12 @@ import { dark, light, themeState } from "../styles/theme";
 import { useEffect } from "react";
 import { GlobalStyle } from "../styles/global";
 import Header from "./header";
+import { AppService } from "../utils/app_service";
+
 
 const BaseLayout = ({ children, ...props }) => {
   const [theme, setTheme] = useRecoilState(themeState);
+  AppService.getInstance();
 
   useEffect(() => {
     setTheme(localStorage.getItem("theme") ?? light.key);
