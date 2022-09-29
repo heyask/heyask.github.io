@@ -6,6 +6,11 @@
         <priority>1.00</priority>
     </url>
     <url>
+        <loc>https://heyask.github.io/about/</loc>
+        <changefreq>always</changefreq>
+        <priority>1.00</priority>
+    </url>
+    <url>
         <loc>https://heyask.github.io/develop/2022-09-17-EdgeCase-CornerCase/</loc>
         <changefreq>always</changefreq>
         <priority>1.00</priority>
