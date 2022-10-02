@@ -7,6 +7,7 @@ import Comment from "../components/comment";
 import { css, useTheme } from "@emotion/react";
 import Link from "../components/link";
 import "prismjs/themes/prism-okaidia.min.css";
+import { moveTop } from "../styles/keyframes";
 
 const BlogPostTemplate = ({ data: { previous, next, site, markdownRemark: post }, location }) => {
   const siteTitle = site.siteMetadata?.title || `Title`;

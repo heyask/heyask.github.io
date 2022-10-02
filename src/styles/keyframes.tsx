@@ -26,3 +26,11 @@ export const jump = keyframes`
       20% { transform: translateY(0); }
       100% { transform: translateY(0); }
 `;
+export const moveTop = keyframes`
+        // 0% { transform: translateX(30px); }
+      100% { transform: translateY(0); }
+  `;
+export const moveLeft = keyframes`
+        // 0% { transform: translateX(30px); }
+      100% { transform: translateX(0); }
+  `;

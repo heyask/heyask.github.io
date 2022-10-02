@@ -13,6 +13,7 @@ a {
   text-decoration: none;
 }
 * {
-  transition: background 300ms, border 300ms, color 100ms;
+  box-sizing: border-box;
+  transition: background 300ms, border 300ms, color 100ms, transform 300ms;
 }
 `);

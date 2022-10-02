@@ -66,7 +66,7 @@ const Header = ({ data }: any) => {
           ${theme.mq[0]} {
             font-size: 14px;
           }
-        `}>About</Link>
+        `}>Resume</Link>
         <Link to={"https://github.com/heyask"} style={css`
           font-family: 'Poppins';
           padding: 10px;

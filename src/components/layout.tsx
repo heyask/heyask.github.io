@@ -14,8 +14,11 @@ const Layout = ({ location, title, children }) => {
       <div css={css`
       `} data-is-root-path={isRootPath}>
         <main css={css`
+          display: flex;
+          flex-direction: column;
+          height: 100%;
           min-height: 80vh;
-          margin: 60px auto;
+          margin: 60px auto 0 auto;
           animation: ${fadeIn} 600ms;
         `}>{children}</main>
         <Footer />

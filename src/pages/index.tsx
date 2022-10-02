@@ -17,7 +17,7 @@ const BlogIndex = ({ data, location }) => {
   const categories = useMemo<string[]>(() => [...new Set(posts.map((post) => post.frontmatter.category) as string[])], []);
   const [selectedCategory, selectSelectedCategory] = useState(null);
   const theme = useTheme();
-  const catImage = getRandomCatImage();
+  const catImage = useMemo<string>(() => getRandomCatImage(), []);
 
   if (posts.length === 0) {
     return (
@@ -106,7 +106,6 @@ const BlogIndex = ({ data, location }) => {
                   h2 {
                     transform: translateX(3px);
                   }
-                  background: ${theme.colors.default[0]};
                 }
               `}>
                 <li>
@@ -136,7 +135,7 @@ const BlogIndex = ({ data, location }) => {
                         <h2 css={css`
                           margin: 6px 0 8px 0;
                           font-size: 16pt;
-                          transition: transform 100ms;
+                          color: ${theme.colors.default[25]};
                           ${theme.mq[0]} {
                             font-weight: 800;
                             font-size: 18px;
