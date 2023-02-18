@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkgatsby_starter_blog=self.webpackChunkgatsby_starter_blog||[]).push([[49],{1008:function(t,n,e){e(7294),e(9846),e(8440),e(4858)},5773:function(t,n,e){e.d(n,{S:function(){return s}});var s=(0,e(2653).cn)({key:"skipAnimation",default:!1})}}]);
-//# sourceMappingURL=component---src-pages-about-tsx-b38dc376f335815672c5.js.map
