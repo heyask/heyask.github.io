@@ -1,4 +1,75 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[기술블로그]]></description><link>https://heyask.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 20 Feb 2023 04:30:21 GMT</lastBuildDate><item><title><![CDATA[2023-02-13 TIL]]></title><description><![CDATA[TIL 인생은 선택의 연속…]]></description><link>https://heyask.github.io/TIL/2023-02-13-TIL/</link><guid isPermaLink="false">https://heyask.github.io/TIL/2023-02-13-TIL/</guid><pubDate>Mon, 13 Feb 2023 23:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;TIL&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[기술블로그]]></description><link>https://heyask.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 26 Feb 2023 17:01:33 GMT</lastBuildDate><item><title><![CDATA[2023-02-26 TIL]]></title><description><![CDATA[TIL Quote 데일 카네기 Link…]]></description><link>https://heyask.github.io/TIL/2023-02-26-TIL/</link><guid isPermaLink="false">https://heyask.github.io/TIL/2023-02-26-TIL/</guid><pubDate>Sun, 26 Feb 2023 23:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;TIL&lt;/h1&gt;
+&lt;h1&gt;Quote&lt;/h1&gt;
+&lt;h2&gt;데일 카네기 &lt;a href=&quot;https://www.youtube.com/watch?v=Iz25O6kvtwo&amp;#x26;t=724s&quot;&gt;Link&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;외부 상황이 고통의 원인이라면 같은 조건에서 모든 사람은 같은 고통을 겪어야 한다
+조건이 같도 누군가는 툭툭 털고 일어나는 반면, 누군가는 스스로 생을 마감하기도 한다
+&lt;em&gt;이는 고통이 외부 상황이 아니라 내부에서 비롯되는 걱정이 문제다&lt;/em&gt;&lt;/p&gt;
+&lt;h3&gt;걱정을 다스리는 3가지 방법 - 자기관리론&lt;/h3&gt;
+&lt;h4&gt;첫째, 할 수 있는 일과 할 수 없는 일을 구분하라&lt;/h4&gt;
+&lt;p&gt;큰 돈 들어가는 일들이 참 많다. 당장 결혼, 육아, 은퇴를 못하는 문제는 내 힘으로 어쩔 수 없는 문제다.
+할 수 없는 일을 걱정하니 당연히 답이 없다. 답이 안보이니 더 걱정한다. 악순환이 돌고 돈다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;주여, 저를 평온하게 하셔서&lt;/p&gt;
+&lt;p&gt;바꿀 수 없는 일은 받아들이게 하시고&lt;/p&gt;
+&lt;p&gt;바꿀 수 있는 일은 바꾸는 용기를 주시고&lt;/p&gt;
+&lt;p&gt;이 둘을 구별할 수 있는 지혜를 주소서&lt;/p&gt;
+&lt;p&gt;유니온 신학교의 응용기독교학 교수 라인홀드 니버 박사가 쓴 기도문&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4&gt;둘째, 바쁘게 살아라&lt;/h4&gt;
+&lt;p&gt;숨 돌릴 새 없이 계속 바쁘게 움직여라. 이를 작업치료라고 한다.
+가만히 앉아 자신의 처지에 대해 생각하면 하나 이상의 걱정거리는 무조건 떠오른다.
+가슴에 손을 얹고 생각해보자, 그 걱정 중 정말 하지 않으면 안되는 걱정이 얼마나 될까?
+걱정하느라 정작 해야할 일은 못하고 정신건강만 해치고 있는 일이 대부분이다.
+운동 뿐 아니라 무언가에 몰두하면 걱정은 사라진다. 그리고 걱정없이 무언가에 몰두할 때 우리는 편안함을 느낀다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;걱정이 스멀스멀 올라오면 바쁘게 움직여라.&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;비참해지는 비결은&lt;/p&gt;
+&lt;p&gt;자신이 행복한지 아닌지에 대해&lt;/p&gt;
+&lt;p&gt;고민할 여유를 갖는 것이다.&lt;/p&gt;
+&lt;p&gt;조지 버나드 쇼&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4&gt;셋째, 걱정이 없는 것 처럼 웃고, 기분 좋은 행동을 하라&lt;/h4&gt;
+&lt;p&gt;심리학자 윌리엄 제임스는 이렇게 말했다.
+행동은 감정을 따르는 것처럼 보이지만, 실제로는 행동과 감정이 함께 간다.
+우리는 흔히 걱정이 없어야 웃는다고 생각한다. 그런데, 가만히만 있어도 걱정거리 하씩은 무조건 떠오른다.
+걱정이 없어야 웃을 수 있다는 말은 아예 웃지 않겠다는 말이나 마찬가지다.
+행복하기 위해 웃는다. 몸이 지치고 고단하면 우리는 쉽게 우울해지고 가라앉는다. 마찬가지로, 몸이 먼저 즐겁고 행복한 행동을 하면
+마음도 행복해진다.
+마음을 쉽게 바꿀 수 없다면 몸을 바꾸면 된다. 진정한 행복에서 우러나오는 행동을 억지로라도 하다보면 우울하게 지내는 것이 ‘신체적으로 불가능’해진다.&lt;/p&gt;
+&lt;h3&gt;성공대화론&lt;/h3&gt;
+&lt;p&gt;주어진 주제 안에서 충분히 생각하고 연구하면서 ‘내 생각’을 만들내는 겁니다.
+면접이라면 주어진 질문에 답을 하되, 이 답변이 정말 솔직한 내 의견이고 내가 이 생각을 가지고 회사에서 어떤 일을 할 것인지 답변에서 느껴져야 합니다.
+진정성있는 말을 하기 위해선 평소 내 생각을 정리하는 습관 가지기&lt;/p&gt;
+&lt;p&gt;‘말’&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;나는 이 지구라는 행성을 안 다녀본 데 없이 거의 다 돌아다녔다. 다양한 경험도 했다.&lt;/p&gt;
+&lt;p&gt;하지만 청중 앞에 서서 그들을 내 뜻대로 이끄는 것보다 더 완전하며 지속적인 만족을 준 일은 없었다.&lt;/p&gt;
+&lt;p&gt;데일 카네기&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;동기부여 &lt;a href=&quot;https://www.youtube.com/watch?v=ydLcgeUQSzY&amp;#x26;t=685s&quot;&gt;Link&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;잡스와 워즈니악. 잡스와 주변인들이 끝없이 설득해 워즈니악은 한참이나 퇴사를 망설였다.
+결국 설득에 못 이겨 퇴사 후 애플을 창업했고, 결과는 다들 아시는대로.
+워즈니악의 능력이 뛰어난 건 모두가 알지만, 그의 잠재력이 폭발할 수 있었던 건 잡스처럼
+옆에서 등 떠미는 사람이 있었기 때문.
+주변에 그런 사람이 없다면, 우리 스스로 등을 떠밀어야 한다. 5초의 법칙.
+어떤 행동을 해야할 때 5초안에 실천하지 않으면 그건 그 일을 하지 않기로 선택한 겁니다.
+하루에도 수십번씩 우리는 행동하지 않기를 선택하며 수많은 5초를 낭비합니다.&lt;/p&gt;
+&lt;p&gt;몸에서 느끼기에 불안과 흥분은 동일하다. 유일한 차ㅣ점이라면 머릿속에서 어떻게 부르는가이다. 무엇을 선택하는지에 달렸다.&lt;/p&gt;
+&lt;p&gt;‘분노’ 대신 ‘열정’을
+‘좌절’ 대신 ‘침착함’을&lt;/p&gt;
+&lt;p&gt;긴장된다는 생각이 들면 5, 4, 3, 2, 1을 세고 ‘기분 좋은 흥분 상태다’라고 스스로에게 말하는 겁니다.&lt;/p&gt;
+&lt;h3&gt;셋째, 5초의 법칙은 생물학적 한계를 뛰어넘는다.&lt;/h3&gt;
+&lt;p&gt;우리 뇌는 불확실성을 싫어한다. 도전을 망설인다. 의지가 부족해서, 용기가 없어서도 아니고 생물학적 디폴트이다.
+어떤 일을 해한다는 생각이 떠오르면 우리 뇌는 순식간에 그 일을 하지 말아야 할 수십, 수백가지 이유를 만들어냅니다.
+그러니 5초안에 행동으로 옮겨야 합니다. 생물학적 두려움이 내 의지를 꺾기 전에 일단 시작.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;‘행동하고 싶은 때’란 없습니다. 우리는 원래 행동하기 좋아하도록 만들어지지 않았습니다. 불확실성을 싫어하고 안전을 추구하게 만들어졌습니다. 하고싶을때 한다는건 안한다는것이다.&lt;/strong&gt;&lt;/p&gt;
+&lt;h1&gt;Review&lt;/h1&gt;
+&lt;p&gt;기상 루틴 3일차&lt;/p&gt;
+&lt;p&gt;일어나는게 너무 힘들어 6시 깼다가 다시 자고 8시 기상&lt;/p&gt;
+&lt;p&gt;그럼에도 몸과 가슴이 답답해 샤워루틴 실천 못함&lt;/p&gt;</content:encoded></item><item><title><![CDATA[2023-02-18 TIL]]></title><description><![CDATA[TIL 양방향 데이터 통신 Quote Review]]></description><link>https://heyask.github.io/TIL/2023-02-18-TIL/</link><guid isPermaLink="false">https://heyask.github.io/TIL/2023-02-18-TIL/</guid><pubDate>Sat, 18 Feb 2023 23:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;TIL&lt;/h1&gt;
+&lt;p&gt;양방향 데이터 통신&lt;/p&gt;
+&lt;h1&gt;Quote&lt;/h1&gt;
+&lt;h1&gt;Review&lt;/h1&gt;</content:encoded></item><item><title><![CDATA[2023-02-13 TIL]]></title><description><![CDATA[TIL 인생은 선택의 연속…]]></description><link>https://heyask.github.io/TIL/2023-02-13-TIL/</link><guid isPermaLink="false">https://heyask.github.io/TIL/2023-02-13-TIL/</guid><pubDate>Mon, 13 Feb 2023 23:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;TIL&lt;/h1&gt;
 &lt;p&gt;인생은 선택의 연속&lt;/p&gt;
 &lt;p&gt;1%라도 후회없는 선택을 하자&lt;/p&gt;
 &lt;p&gt;선택의 기로에 놓여있을때&lt;/p&gt;
