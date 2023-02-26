@@ -3,7 +3,7 @@ title: "[Code Kata] Codility Lesson2 — OddOccurrencesInArray"
 description: "배열 A에는 같은 값을 가지는 숫자들이 pair된 상태, 즉 짝수개 존재한다. 하지만 그중 하나의 아이템은 pair되지 않은 값을 가지고 있다. 그 아이템의 값을 찾는 문제다."
 date: "2022-09-23T10:43:47.126Z"
 category: "codekata"
-published: false
+published: true
 ---
 
 ![image](./asset-1.png)

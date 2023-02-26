@@ -3,7 +3,7 @@ title: "[Code Kata] Codility Lesson3 — PermMissingElem"
 description: "1부터 N+1까지의 정수를 가지는 배열이 있는데 중간에 빠져있는 정수를 찾는 문제"
 date: "2022-09-23T11:43:08.235Z"
 category: "codekata"
-published: false
+published: true
 ---
 
 ![image](./asset-1.png)

@@ -3,7 +3,7 @@ title: "[Code Kata] 코딜리티 Codility Lesson 2 — CyclicRotation"
 description: "N개의 원소를 가진 배열의 원소들을 한칸씩 뒤로 K번 이동시켰을 때 결과를 리턴하는 문제다. `N-1`번째 아이템 즉, 마지막 아이템의 경우 맨 앞으로 온다. 그래서 문제 이름이 CyclicRotation이다."
 date: "2022-09-17T05:21:09.710Z"
 category: "codekata"
-published: false
+published: true
 ---
 
 ### 문제
