@@ -236,7 +236,6 @@ const BlogPostTemplate = ({ data: { previous, next, site, markdownRemark: post }
                         overflow: hidden;
                         text-overflow: ellipsis;
                       `}>{previous.frontmatter.title}</span>
-                      {previous.frontmatter.title}
                     </Link>
                   </>
                 )}
