@@ -44,5 +44,4 @@ def solution(X, A):
     return -1
 ```
 
-[**Test results - Codility**  
-_A small frog wants to get to the other side of a river. The frog is initially located on one bank of the river…_app.codility.com](https://app.codility.com/demo/results/trainingB2V5VP-9HN/ "https://app.codility.com/demo/results/trainingB2V5VP-9HN/")[](https://app.codility.com/demo/results/trainingB2V5VP-9HN/)
+[https://app.codility.com/demo/results/trainingB2V5VP-9HN/](https://app.codility.com/demo/results/trainingB2V5VP-9HN/)
