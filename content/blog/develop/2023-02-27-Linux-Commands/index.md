@@ -1,5 +1,5 @@
 ---
-title: "리눅스 명령어 모음"
+title: "커맨드 모음"
 description: ""
 date: "2023-02-27T10:00:00.000Z"
 category: "develop"
