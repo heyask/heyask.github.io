@@ -1,5 +1,96 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[기술블로그]]></description><link>https://heyask.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 26 Feb 2023 23:37:52 GMT</lastBuildDate><item><title><![CDATA[2023-02-27 월 TIL]]></title><description><![CDATA[오늘 하루도 최선을 다하자. 그냥 하자. TIL]]></description><link>https://heyask.github.io/TIL/2023-02-27-월-TIL/</link><guid isPermaLink="false">https://heyask.github.io/TIL/2023-02-27-월-TIL/</guid><pubDate>Mon, 27 Feb 2023 23:00:00 GMT</pubDate><content:encoded>&lt;p&gt;오늘 하루도 최선을 다하자. 그냥 하자.&lt;/p&gt;
-&lt;h1&gt;TIL&lt;/h1&gt;</content:encoded></item><item><title><![CDATA[2023-02-26 일 TIL]]></title><description><![CDATA[TIL Quote 데일 카네기 Link…]]></description><link>https://heyask.github.io/TIL/2023-02-26-일-TIL/</link><guid isPermaLink="false">https://heyask.github.io/TIL/2023-02-26-일-TIL/</guid><pubDate>Sun, 26 Feb 2023 23:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;TIL&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[기술블로그]]></description><link>https://heyask.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 27 Feb 2023 02:36:39 GMT</lastBuildDate><item><title><![CDATA[2023-02-27 월 TIL]]></title><description><![CDATA[오늘 하루도 최선을 다하자. 그냥 하자. TIL]]></description><link>https://heyask.github.io/TIL/2023-02-27-월-TIL/</link><guid isPermaLink="false">https://heyask.github.io/TIL/2023-02-27-월-TIL/</guid><pubDate>Mon, 27 Feb 2023 23:00:00 GMT</pubDate><content:encoded>&lt;p&gt;오늘 하루도 최선을 다하자. 그냥 하자.&lt;/p&gt;
+&lt;h1&gt;TIL&lt;/h1&gt;</content:encoded></item><item><title><![CDATA[리눅스 명령어 모음]]></title><description><![CDATA[SSH 비밀번호 없이 로그인하기 ssh tunneling 웹페이지 로딩 시간 측정 PyEnv rsync pm2 NVM nano 스핑크스 검색엔진 한글 인덱싱 관련 링크 rsync 많은 파일 복사]]></description><link>https://heyask.github.io/develop/2023-02-27-Linux-Commands/</link><guid isPermaLink="false">https://heyask.github.io/develop/2023-02-27-Linux-Commands/</guid><pubDate>Mon, 27 Feb 2023 10:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;SSH&lt;/h1&gt;
+&lt;h2&gt;비밀번호 없이 로그인하기&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;chmod&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;700&lt;/span&gt; ~/.ssh/
+&lt;span class=&quot;token function&quot;&gt;chmod&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;600&lt;/span&gt; ~/.ssh/authorized_keys
+
+ssh-keygen &lt;span class=&quot;token parameter variable&quot;&gt;-t&lt;/span&gt; rsa
+ssh-copy-id id@server &lt;span class=&quot;token parameter variable&quot;&gt;-p22&lt;/span&gt; 
+&lt;span class=&quot;token function&quot;&gt;scp&lt;/span&gt; ~/.ssh/id_rsa.pub &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;user&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;@&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;host&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;:~/.ssh/authorized_keys&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;ssh tunneling&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;ssh&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;REMOTE_HOST&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token parameter variable&quot;&gt;-L&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5900&lt;/span&gt;:localhost:5900 &lt;span class=&quot;token parameter variable&quot;&gt;-p&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;22&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h1&gt;웹페이지 로딩 시간 측정&lt;/h1&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;curl&lt;/span&gt; &lt;span class=&quot;token parameter variable&quot;&gt;-o&lt;/span&gt; /dev/null &lt;span class=&quot;token parameter variable&quot;&gt;-s&lt;/span&gt; &lt;span class=&quot;token parameter variable&quot;&gt;-w&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;%{time_total}&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;URL&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h1&gt;PyEnv&lt;/h1&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;pyenv &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;token parameter variable&quot;&gt;-list&lt;/span&gt;
+pyenv global &lt;span class=&quot;token number&quot;&gt;3.6&lt;/span&gt;.0
+pyenv versions&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h1&gt;rsync&lt;/h1&gt;
+&lt;h1&gt;pm2&lt;/h1&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;pm2 start &lt;span class=&quot;token parameter variable&quot;&gt;--name&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;{MYNAME}&quot;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; -- run server-test&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;pm2 delete &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;process_id&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+pm2 stop &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;process_id&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;pm2 startup
+pm2 save
+pm2 unstartup&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h1&gt;NVM&lt;/h1&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;nvm &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;token parameter variable&quot;&gt;--lts&lt;/span&gt;
+nvm use &lt;span class=&quot;token parameter variable&quot;&gt;--lts&lt;/span&gt;
+nvm &lt;span class=&quot;token builtin class-name&quot;&gt;alias&lt;/span&gt; default system&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h1&gt;nano&lt;/h1&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;파일 끝으로 이동: ^wv
+라인삭제 ^k&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h1&gt;스핑크스 검색엔진&lt;/h1&gt;
+&lt;p&gt;한글 인덱싱&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.iramine.com/entry/%EA%B2%80%EC%83%89%EC%97%94%EC%A7%84-%EC%8A%A4%ED%95%91%ED%81%AC%EC%8A%A4-Sphinx-%EB%8F%84%EC%9E%85&quot;&gt;관련 링크&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;charset_table = 0..9, A..Z-&gt;a..z, _, a..z,U+AC00..U+D7A3,U+1100..U+1159,U+1161..U+11A2,U+11A8..U+11F9,U+0021..U+002F,U+003A..U+0040,U+005B..U+0060,U+007B..U+007E 
+ngram_chars = U+AC00..U+D7A3&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;mysql&quot;&gt;&lt;pre class=&quot;language-mysql&quot;&gt;&lt;code class=&quot;language-mysql&quot;&gt;CREATE TABLE `search_table` (
+  `id` bigint(20) unsigned NOT NULL,
+  `weight` int(11) NOT NULL,
+  `query` varchar(3072) NOT NULL,
+  `group_id` int(11) DEFAULT NULL,
+  KEY `query` (`query`(1024))
+) ENGINE=SPHINX DEFAULT CHARSET=utf8;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[mysqld]
+character-set-server = utf8
+skip-character-set-client-handshake
+
+max_connections = 4096
+key_buffer_size = 1024M
+#max_allowed_packet = 512M
+max_allowed_packet = 512M
+table_open_cache = 2048
+#sort_buffer_size = 32M
+sort_buffer_size = 64M
+join_buffer_size = 64M
+read_buffer_size = 64M
+thread_cache_size = 120
+read_rnd_buffer_size = 64M
+myisam_sort_buffer_size = 128M
+
+query_cache_size = 4096M
+query_cache_type = 1
+default-storage-engine=InnoDB
+
+innodb_buffer_pool_size = 24G
+innodb_buffer_pool_instances = 16
+open-files-limit = 8192
+tmp_table_size = 4G
+max_heap_table_size = 4G
+innodb_read_io_threads = 64
+innodb_write_io_threads = 64
+
+thread_concurrency = 8
+
+slow_query_log = 1
+slow_query_log_file = /var/log/mysql-slow.log
+long_query_time=3
+
+#wait_timeout = 28800
+wait_timeout = 600
+lock_wait_timeout = 600
+innodb_lock_wait_timeout = 600
+
+skip-name-resolve
+skip-external-locking&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h1&gt;rsync&lt;/h1&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;rsync&lt;/span&gt; &lt;span class=&quot;token parameter variable&quot;&gt;-avh&lt;/span&gt; /Volumes/wd4tb01/ /Volumes/wd4tb02/
+&lt;span class=&quot;token function&quot;&gt;rsync&lt;/span&gt; &lt;span class=&quot;token parameter variable&quot;&gt;-avh&lt;/span&gt; &lt;span class=&quot;token parameter variable&quot;&gt;--delete&lt;/span&gt; --ignore-errors &lt;span class=&quot;token parameter variable&quot;&gt;--exclude&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;.Trashes&quot;&lt;/span&gt; &lt;span class=&quot;token parameter variable&quot;&gt;--exclude&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;.Spotlight-V100&quot;&lt;/span&gt; /Volumes/wd4tb03/ /Volumes/wd4tb04/
+&lt;span class=&quot;token function&quot;&gt;rsync&lt;/span&gt; &lt;span class=&quot;token parameter variable&quot;&gt;-avh&lt;/span&gt; &lt;span class=&quot;token parameter variable&quot;&gt;--delete&lt;/span&gt; --ignore-errors &lt;span class=&quot;token parameter variable&quot;&gt;--exclude&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;.Trashes&quot;&lt;/span&gt; &lt;span class=&quot;token parameter variable&quot;&gt;--exclude&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;.Spotlight-V100&quot;&lt;/span&gt; /Volumes/wd4tb01/ /Volumes/wd4tb02/
+&lt;span class=&quot;token function&quot;&gt;rsync&lt;/span&gt; &lt;span class=&quot;token parameter variable&quot;&gt;-avzh&lt;/span&gt; root@&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;host&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;:/disk2/ /Volumes/wd4tb04/&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h1&gt;많은 파일 복사&lt;/h1&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;find&lt;/span&gt; /dir/from &lt;span class=&quot;token parameter variable&quot;&gt;-type&lt;/span&gt; f &lt;span class=&quot;token parameter variable&quot;&gt;-name&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;*.swf&quot;&lt;/span&gt; &lt;span class=&quot;token parameter variable&quot;&gt;-exec&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;cp&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; /dir/to&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[2023-02-26 일 TIL]]></title><description><![CDATA[TIL Quote 데일 카네기 Link…]]></description><link>https://heyask.github.io/TIL/2023-02-26-일-TIL/</link><guid isPermaLink="false">https://heyask.github.io/TIL/2023-02-26-일-TIL/</guid><pubDate>Sun, 26 Feb 2023 23:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;TIL&lt;/h1&gt;
 &lt;h1&gt;Quote&lt;/h1&gt;
 &lt;h2&gt;데일 카네기 &lt;a href=&quot;https://www.youtube.com/watch?v=Iz25O6kvtwo&amp;#x26;t=724s&quot;&gt;Link&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;외부 상황이 고통의 원인이라면 같은 조건에서 모든 사람은 같은 고통을 겪어야 한다
