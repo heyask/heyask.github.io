@@ -2,8 +2,8 @@
 title: "2022년 상반기 회고"
 description: "회고"
 date: "2022-10-04T00:24:00.000Z"
-category: null
-published: true
+category: "review"
+published: false
 ---
 
 # 퇴사
