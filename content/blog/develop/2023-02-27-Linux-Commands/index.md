@@ -7,7 +7,7 @@ published: true
 ---
 
 # SSH 
-## 비밀번호 없이 로그인하기
+### 비밀번호 없이 로그인하기
 
 ```shell
 chmod 700 ~/.ssh/
@@ -18,7 +18,7 @@ ssh-copy-id id@server -p22
 scp ~/.ssh/id_rsa.pub [user]@[host]:~/.ssh/authorized_keys
 ```
 
-## ssh tunneling 
+### ssh tunneling 
 ```shell
 ssh {REMOTE_HOST} -L 5900:localhost:5900 -p 22
 ```
