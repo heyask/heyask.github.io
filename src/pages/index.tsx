@@ -13,11 +13,15 @@ import { wriggle, wriggleRight } from "../styles/keyframes";
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`;
-  const posts = data.allMarkdownRemark.nodes;
+  let posts = data.allMarkdownRemark.nodes;
   const categories = useMemo<string[]>(() => [...new Set(posts.map((post) => post.frontmatter.category) as string[])], []);
   const [selectedCategory, selectSelectedCategory] = useState(null);
   const theme = useTheme();
   const catImage = useMemo<string>(() => getRandomCatImage(), []);
+
+  if(selectedCategory == null) {
+    posts = posts.filter((post) => ['TIL', 'codekata'].indexOf(post.frontmatter.category) === -1);
+  }
 
   if (posts.length === 0) {
     return (
@@ -158,7 +162,6 @@ const BlogIndex = ({ data, location }) => {
                           }}
                           itemProp="description"
                           css={css`
-                            display: box;
                             font-size: 14px;
                             line-height: 20px;
                             margin: 0;
