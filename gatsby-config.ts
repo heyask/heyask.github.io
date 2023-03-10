@@ -6,7 +6,7 @@ module.exports = {
     title: `SeungHyun's Library`,
     author: {
       name: `김승현`,
-      summary: `웹 풀스택 개발자, React, Node.js, Typescript, Javascript, Flutter, Web, App`
+      summary: `Software Engineer/Front-end, React, Node.js, Typescript, Javascript, Flutter, Web, App`
     },
     description: `기술블로그`,
     siteUrl: `https://heyask.github.io/`,
