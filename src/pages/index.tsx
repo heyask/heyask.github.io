@@ -34,8 +34,7 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <div css={css`
         list-style: none;
-        // max-width: ${theme.breakpoints[3]}px;
-        max-width: 800px;
+        max-width: ${theme.breakpoints[1]}px;
         margin: 0 auto;
         padding: 30px 24px;
         ${theme.mq[0]} {

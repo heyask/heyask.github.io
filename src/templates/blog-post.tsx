@@ -16,9 +16,6 @@ const BlogPostTemplate = ({ data: { previous, next, site, markdownRemark: post }
   return (
     <Layout location={location} title={siteTitle}>
       <article
-        css={css`
-          max-width: 800px; margin: 0 auto;
-        `}
         itemScope
         itemType="https://schema.org/Article"
       >
