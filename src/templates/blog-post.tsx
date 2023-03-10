@@ -188,20 +188,29 @@ const BlogPostTemplate = ({ data: { previous, next, site, markdownRemark: post }
         <footer>
           <div css={css`
             display: flex;
-            max-width: 800px;
+            max-width: ${theme.breakpoints[1]}px;
             flex-direction: column;
-            margin: 50px 24px 24px 24px;
+            margin: 50px auto 24px auto;
             align-items: stretch;
             justify-content: center;
+            ${theme.mq[0]} {
+              padding: 0 24px 0 24px;
+            }
           `}>
             <Bio />
           </div>
-          <nav css={css`max-width: 800px; margin-bottom: 24px;`}>
+          <nav css={css`
+            max-width: ${theme.breakpoints[1]}px; 
+            margin: 0 auto 24px auto;
+            ${theme.mq[0]} {
+              padding: 0 24px 0 24px;
+            }
+          `}>
             <ul
               css={css`
                 display: flex;
                 list-style: none;
-                padding: 0 24px;
+                padding: 0;
               `}
             >
               <li css={css`

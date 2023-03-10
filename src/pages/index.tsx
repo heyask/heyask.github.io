@@ -34,36 +34,40 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <div css={css`
         list-style: none;
+        width: 100%;
         max-width: ${theme.breakpoints[1]}px;
         margin: 0 auto;
         padding: 30px 24px;
+
         ${theme.mq[0]} {
           padding: 24px 24px;
         }
       `}>
         <div css={css`
-            width: fit-content;
-            display: block;
-            text-align: center;
-            border: 4px solid ${theme.colors.default[16]};
-            padding: 30px 60px;
-            margin: 30px auto 50px auto;
-          `}>
+          width: fit-content;
+          display: block;
+          text-align: center;
+          border: 4px solid ${theme.colors.default[16]};
+          padding: 30px 60px;
+          margin: 30px auto 50px auto;
+        `}>
           <p css={css`
-            animation: ${wriggle} 2s infinite; 
+            animation: ${wriggle} 2s infinite;
           `}>✍️</p>
           <h2 css={css`color: ${theme.colors.default[25]};`}>
             개발자 김승현
           </h2>
-          <p css={css`font-weight: 200; color: ${theme.colors.default[16]};`}>그릿을 해빗으로</p>
+          <p css={css`font-weight: 200;
+            color: ${theme.colors.default[16]};`}>그릿을 해빗으로</p>
         </div>
         <div css={css`
-            margin-bottom: 16px;
-            overflow-x: scroll;
-            &::-webkit-scrollbar {
-              display: none;
-            }
-          `}>
+          margin-bottom: 16px;
+          overflow-x: scroll;
+
+          &::-webkit-scrollbar {
+            display: none;
+          }
+        `}>
           <div css={css`
             display: flex;
             white-space: nowrap;
@@ -72,13 +76,14 @@ const BlogIndex = ({ data, location }) => {
             {[null, ...categories].map((category) =>
               <span key={category} onClick={e => selectSelectedCategory(category)}
                     css={css`
-                      background: ${category == selectedCategory ? theme.colors.primary : theme.colors.default[1]}; 
-                      color: ${category == selectedCategory ? "white" : theme.colors.default[20]}; 
-                      padding: 8px 16px; 
-                      margin-right: 12px; 
-                      border-radius: 50px; 
+                      background: ${category == selectedCategory ? theme.colors.primary : theme.colors.default[1]};
+                      color: ${category == selectedCategory ? "white" : theme.colors.default[20]};
+                      padding: 8px 16px;
+                      margin-right: 12px;
+                      border-radius: 50px;
                       cursor: pointer;
                       font-size: 14px;
+
                       ${theme.mq[0]} {
                         margin-right: 6px;
                       }
@@ -100,13 +105,13 @@ const BlogIndex = ({ data, location }) => {
               <Link key={post.fields.slug}
                     to={post.fields.slug}
                     style={css`
-                display:block;
-                &:hover {
-                  h2 {
-                    transform: translateX(3px);
-                  }
-                }
-              `}>
+                      display: block;
+                      &:hover {
+                        h2 {
+                          transform: translateX(3px);
+                        }
+                      }
+                    `}>
                 <li>
                   <article
                     itemScope
@@ -115,14 +120,16 @@ const BlogIndex = ({ data, location }) => {
                       display: flex;
                       margin-bottom: 36px;
                       border: 1px solid ${theme.colors.default[1]};
+
                       ${theme.mq[0]} {
                         flex-direction: column-reverse;
                         padding: 0;
                       }
-                  `}>
+                    `}>
                     <div css={css`
                       flex-grow: 1;
                       padding: 24px 0 24px 24px;
+
                       ${theme.mq[0]} {
                         padding: 12px 24px;
                       }
@@ -135,6 +142,7 @@ const BlogIndex = ({ data, location }) => {
                           margin: 6px 0 8px 0;
                           font-size: 16pt;
                           color: ${theme.colors.default[25]};
+
                           ${theme.mq[0]} {
                             font-weight: 800;
                             font-size: 18px;
@@ -161,6 +169,7 @@ const BlogIndex = ({ data, location }) => {
                     </div>
                     <div css={css`
                       margin: 24px;
+
                       ${theme.mq[0]} {
                         font-weight: 800;
                         margin: 0;
@@ -177,6 +186,7 @@ const BlogIndex = ({ data, location }) => {
                             max-height: 150px;
                             object-fit: cover;
                             align-self: center;
+
                             ${theme.mq[0]} {
                               min-width: 100%;
                               max-width: 100%;
@@ -199,6 +209,7 @@ const BlogIndex = ({ data, location }) => {
                             object-fit: cover;
                             ${!post.frontmatter.thumbnail?.publicURL && "filter: grayscale(100%) contrast(50%);"}
                             align-self: center;
+
                             ${theme.mq[0]} {
                               min-width: 100%;
                               max-width: 100%;
@@ -237,12 +248,11 @@ export const pageQuery = graphql`
         }
         allMarkdownRemark(
             sort: { fields: [frontmatter___date], order: DESC }
-            filter: { 
+            filter: {
                 frontmatter: {
                     category: { ne: null },
-#                    category: { nin: [null, "codekata", "TIL"] },
-                    published: { eq: true } 
-                } 
+                    published: { eq: true }
+                }
             }
         ) {
             nodes {
