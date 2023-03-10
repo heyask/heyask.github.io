@@ -150,3 +150,79 @@ rsync -avzh root@[host]:/disk2/ /Volumes/wd4tb04/
 ```shell
 find /dir/from -type f -name "*.swf" -exec cp {} /dir/to
 ```
+
+# ffmpeg
+```shell
+ffmpeg -loop 1 -i /mnt/preview.png -threads 2 -n -i /example.swf -c:a aac -b:a 128k -c:v libx264 -shortest -strict -2 -pix_fmt yuv420p -vf scale=360:-2 "/example.mp4”;
+    
+ffmpeg -loop 1 -i /0.jpg -y -i /example.mp3 -c:a aac -b:a 128k -c:v libx264 -shortest -strict -2 -pix_fmt yuv420p /example.mp4
+    
+    
+    
+ffmpeg -loop 1 -i /example.jpg -y -i /example.mp3 -c:a aac -b:a 128k -c:v libx264 -shortest -strict -2 -pix_fmt yuv420p -vf scale=360:-2 /example.mp4
+    
+ffmpeg -loop 1 -i /example.jpg -y -i /example.mp3 -c:a aac -b:a 128k -c:v libx264 -shortest -strict -2 -pix_fmt yuv420p -vf scale=360:-2 /example.mp4
+    
+ffmpeg -loop 1 -i /example.jpg -y -i /example.mp3 -c:a aac -b:a 128k -c:v libx264 -shortest -strict -2 -pix_fmt yuv420p -vf scale=360:-2 /example.mp4
+    
+ffmpeg -loop 1 -i /example.jpg -y -i /example.mp3 -c:a aac -b:a 128k -c:v libx264 -shortest -strict -2 -pix_fmt yuv420p -vf scale=360:-2 /example.mp4
+    
+ffmpeg -loop 1 -i /example.jpg -y -i /example.mp3 -c:a aac -b:a 128k -c:v libx264 -shortest -strict -2 -pix_fmt yuv420p -vf scale=360:-2 /example.mp4
+    
+ffmpeg -loop 1 -i /example.jpg -y -i /example.mp3 -c:a aac -b:a 128k -c:v libx264 -shortest -strict -2 -pix_fmt yuv420p -vf scale=360:-2 /example.mp4
+    
+ffmpeg -loop 1 -i /example.jpg -y -i /example.mp3 -c:a aac -b:a 128k -c:v libx264 -shortest -strict -2 -pix_fmt yuv420p -vf scale=360:-2 /example.mp4
+    
+ffmpeg -loop 1 -i /example.jpg -y -i /example.mp3 -c:a aac -b:a 128k -c:v libx264 -shortest -strict -2 -pix_fmt yuv420p -vf scale=360:-2 /example.mp4
+```
+
+# b2, wasabi
+
+### rclone
+
+```
+rclone sync /from_dir wasabi:[host]/to_dir -v
+```
+
+### wasabi
+
+```
+export AWS_PROFILE=wasabi
+aws s3 sync /from_dir s3://[host]/to_dir
+
+```
+
+### b2
+
+```
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+b2 sync /from_dir b2://to_dir
+b2 sync --compareVersions size --replaceNewer /from_dir b2://to_dir
+
+```
+
+
+# MongoDB
+### admin
+```shell
+db.createUser({ user: "admin", pwd: "", roles: [ { role: "dbAdmin", db: "dbname" },{ role: "readWrite", db: "dbname" }]})
+```
+
+### backup
+```shell
+mongodump -host 127.0.0.1 -port 27017
+-username admin -password "pwd"
+-db dbname -authenticationDatabase dbname
+```
+
+### restore
+```shell
+mongorestore -host 127.0.0.1 -port 27017
+-username admin -password "pwd"
+-authenticationDatabase dbname ~/dump/
+```
+### migration
+```shell
+db.copyDatabase("fromdbname", "todbname", "host", "admin", "pwd", "SCRAM-SHA-1");
+```
