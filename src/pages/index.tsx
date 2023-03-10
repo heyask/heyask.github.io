@@ -239,7 +239,8 @@ export const pageQuery = graphql`
             sort: { fields: [frontmatter___date], order: DESC }
             filter: { 
                 frontmatter: {
-                    category: { nin: [null, "codekata", "TIL"] },
+                    category: { ne: null },
+#                    category: { nin: [null, "codekata", "TIL"] },
                     published: { eq: true } 
                 } 
             }
