@@ -238,7 +238,12 @@ export const pageQuery = graphql`
         }
         allMarkdownRemark(
             sort: { fields: [frontmatter___date], order: DESC }
-            filter: { frontmatter: { category: { ne: null }, published: { eq: true } } }
+            filter: { 
+                frontmatter: {
+                    category: { nin: [null, "codekata", "TIL"] },
+                    published: { eq: true } 
+                } 
+            }
         ) {
             nodes {
                 excerpt
